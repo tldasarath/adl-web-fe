@@ -2,7 +2,7 @@ import React from 'react';
 import Container from './Container';
 import MainButton from '../button/MainButton';
 
-const InnerBanner = () => {
+const InnerBanner = ({title,description,buttonText}) => {
   return (
   <Container>
       <section 
@@ -16,24 +16,23 @@ const InnerBanner = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
           <div className="p-3">
-                    <h3 className="text-xl md:text-2xl font-semibold mb-4">
-            Ready to Launch Your 
-Business in Dubai
+                    <h3 className="text-xl md:text-2xl max-w-md font-semibold mb-4">
+  {title}
             </h3>
                     <p className="text-base md:text-lg  font-light leading-normal ">
-             Let ADL Business Solutions handle the paperwork while you focus on growth. We make business setup seamless, fast, and affordable.
+{description}
             </p>
             
             {/* Mobile Center Button */}
             <div className="lg:hidden flex justify-center mt-8">
-                       <MainButton text='Start Your Business Now'/>
+                       <MainButton text={buttonText}/>
 
             </div>
           </div>
 
           {/* Right Side - Button (Desktop) */}
           <div className="hidden lg:flex items-center justify-center">
-            <MainButton text='Start Your Business Now'/>
+            <MainButton text={buttonText}/>
           </div>
         </div>
       </div>

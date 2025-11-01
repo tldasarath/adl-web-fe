@@ -51,7 +51,7 @@ export default function SocialMediaSection() {
                 key={index}
                 className="bg-gradient-to-b from-[#1c2334] to-[#0e1424] rounded-2xl overflow-hidden shadow-md min-w-[280px] sm:min-w-[320px] md:min-w-[360px] flex-shrink-0"
               >
-                <div className="relative w-full h-56">
+                <div className="relative w-full h-72">
                   <Image
                     src={post.image}
                     alt={post.title}
