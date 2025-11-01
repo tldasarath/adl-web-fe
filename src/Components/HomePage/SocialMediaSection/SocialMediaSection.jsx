@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const posts = [
   {
-    image: "/assets/images/post/post1.png",
+    image: "/assets/images/post/post1.jpg",
     title: "BEYOND BORDERS: YOUR GOLDEN VISA",
     description: "Your global lifestyle secured",
     date: "October 25, 2025",
   },
   {
-    image: "/assets/images/post/post2.png",
+    image: "/assets/images/post/post2.jpg",
     title: "Eid Mubarak",
     description: "Celebrating unity and blessings",
     date: "October 10, 2025",
@@ -20,13 +20,13 @@ const posts = [
     date: "November 2, 2025",
   },
   {
-    image: "/assets/images/post/post4.png",
+    image: "/assets/images/post/post4.jpg",
     title: "BANKING ON YOUR TERMS",
     description: "Where your money meets momentum",
     date: "October 29, 2025",
   },
   {
-    image: "/assets/images/post/post1.png",
+    image: "/assets/images/post/post1.jpg",
     title: "Celebrate Success",
     description: "Empowering business excellence",
     date: "November 10, 2025",
