@@ -376,10 +376,10 @@ const ServicesSection = () => {
                     transitionDelay: `${index * 0.1}s`,
                   }}
                 >
-                  <h3 className="xl:text-xl text-lg font-bold text-gray-800 dark:text-white mb-2 text-center">
+                  <h3 className="xl:text-xl text-lg font-bold  mb-2 text-center">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 text-center text-sm leading-relaxed mb-10">
+                  <p className="text-center text-sm leading-relaxed mb-10">
                     {service.description}
                   </p>
                   <button
@@ -387,7 +387,7 @@ const ServicesSection = () => {
                       absolute bottom-4 right-4
                       w-8 md:w-10 h-8 md:h-10 flex items-center justify-center
                       border border-[#E9C05F] rounded-full
-                      transition-all duration-300 hover:bg-[#E9C05F]/10 hover:translate-x-1
+                      transition-all duration-300  hover:translate-x-1
                     "
                   >
                     <ArrowUpRight className="w-6 h-6 text-[#E9C05F]" />
