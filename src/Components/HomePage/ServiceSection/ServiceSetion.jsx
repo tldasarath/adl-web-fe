@@ -210,13 +210,13 @@ const ServicesSection = () => {
     }
   }, []);
   // ✅ Detect screen size
-  // useEffect(() => {
-  //   if (typeof window === 'undefined') return;
-  //   const handleResize = () => setIsSmallOrMedium(window.innerWidth < 1024);
-  //   handleResize();
-  //   window.addEventListener('resize', handleResize);
-  //   return () => window.removeEventListener('resize', handleResize);
-  // }, []);
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const handleResize = () => setIsSmallOrMedium(window.innerWidth < 1024);
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // ✅ Desktop-only: lock section in view
   useEffect(() => {
