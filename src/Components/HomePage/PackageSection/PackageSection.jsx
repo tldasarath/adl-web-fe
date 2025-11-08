@@ -14,7 +14,7 @@ const PackageSection = () => {
                             alt="Decorative shapes"
                             width={240}
                             height={320}
-                            className="object-contain  md:w-60 w-30"
+                            className="object-contain  md:w-40 w-30"
                         />
                     </div>
                       <div className="absolute overflow-hidden right-0 top-0 pointer-events-none select-none  -z-10">
@@ -23,7 +23,7 @@ const PackageSection = () => {
                           alt="Decorative shapes"
                           width={240}
                           height={320}
-                          className="object-contain md:w-60 w-30"
+                          className="object-contain md:w-40 w-30"
                         />
                       </div>
    <Container>

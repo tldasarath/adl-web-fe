@@ -6,5 +6,5 @@ export  const teamMembers = [
     { id: 5, name: "David Wilson", position: "Product Manager", image: "/assets/images/team/person2.png" },
     { id: 6, name: "Lisa Thompson", position: "HR Manager", image: "/assets/images/team/person2.png" },
     { id: 7, name: "Alex Kumar", position: "Frontend Developer", image: "/assets/images/team/person2.png" },
-    { id: 8, name: "Maria Garcia", position: "Backend Engineer", image: "/assets/images/team/person1.png" },
+    { id: 8, name: "Maria Garcia", position: "Backend Engineer", image: "/assets/images/team/person2.png" },
   ];

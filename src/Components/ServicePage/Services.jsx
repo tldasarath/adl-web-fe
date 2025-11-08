@@ -162,9 +162,9 @@ const Services = () => {
                           <Link href={`/services/${service.id}`} key={`slider1-${service.id}-${index}`}>
                           <div
                            key={`slider1-${service.id}-${index}`}
-                           className="service-card group flex-shrink-0 md:w-96 w-72 md:h-96 h-80 rounded-xl shadow-lg p-6 
+                           className="service-card group flex-shrink-0 md:w-96 w-72 md:h-96 h-80 rounded-2xl shadow-lg p-6 
                            hover:shadow-2xl hover:scale-105 transition-transform duration-300 
-                           glass backdrop-blur-md border border-transparent hover:border-blue-400"
+                           glass-bg backdrop-blur-md border border-transparent hover:border-blue-400"
                            onMouseEnter={() => handleMouseEnter(1)}
                            onMouseLeave={() => handleMouseLeave(1)}
                          >
@@ -218,9 +218,9 @@ const Services = () => {
 
                              <div
                               key={`slider2-${service.id}-${index}`}
-                              className="service-card group flex-shrink-0 md:w-96 w-72 md:h-96 h-80 rounded-xl shadow-lg p-6 
+                              className="service-card group flex-shrink-0 md:w-96 w-72 md:h-96 h-80 rounded-2xl shadow-lg p-6 
                               hover:shadow-2xl hover:scale-105 transition-transform duration-300 
-                              glass backdrop-blur-md border border-transparent hover:border-blue-400"
+                              glass-bg backdrop-blur-md border border-transparent hover:border-blue-400"
                               onMouseEnter={() => handleMouseEnter(2)}
                               onMouseLeave={() => handleMouseLeave(2)}
                             >

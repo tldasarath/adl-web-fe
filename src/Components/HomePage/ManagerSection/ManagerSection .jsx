@@ -6,26 +6,26 @@ const ManagerSection = () => {
 
     return (
         <section className=" relative h-auto md:h-[800px]  py-8 md:py-14 ">
-             <div className="absolute left-[-10px] top-[30%] -translate-y-1/2 pointer-events-none select-none ">
-    <Image
-      src="/assets/images/bg/squares2.png"
-      alt="Decorative shapes"
-      width={240}
-      height={320}
-      className="object-contain md:w-60 w-36"
-    />
-  </div>
+            <div className="absolute left-[-10px] top-[30%] -translate-y-1/2 pointer-events-none select-none ">
+                <Image
+                    src="/assets/images/bg/squares2.png"
+                    alt="Decorative shapes"
+                    width={240}
+                    height={320}
+                    className="object-contain md:w-60 w-36"
+                />
+            </div>
 
-  {/* Bottom Right Decorative Shape */}
-  <div className="absolute overflow-hidden right-0 bottom-[-10px] pointer-events-none select-none  -z-10">
-    <Image
-      src="/assets/images/bg/square3.png"
-      alt="Decorative shapes"
-      width={240}
-      height={320}
-      className="object-contain md:w-60 w-40"
-    />
-  </div>
+            {/* Bottom Right Decorative Shape */}
+            <div className="absolute overflow-hidden right-0 bottom-[-10px] pointer-events-none select-none  -z-10">
+                <Image
+                    src="/assets/images/bg/square3.png"
+                    alt="Decorative shapes"
+                    width={240}
+                    height={320}
+                    className="object-contain md:w-60 w-40"
+                />
+            </div>
             <Container>
                 <div className="w-full  rounded-lg  overflow-hidden ">
                     {/* Image Section */}
@@ -51,13 +51,10 @@ const ManagerSection = () => {
 
                         {/* Description Section */}
                         <div className=" ">
-                                          <p className="text-md lg:text-xl font-light leading-relaxed">
-Jorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
-                                dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
-                                sollicitudin ut interdum tellus elit sed risus. Maecenas eget condimentum velit,
-                                sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
-                                per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante
-                                pulvinar. Donec ut rhonus ex. Suspendisse ac rheu tempor urna. </p>
+                            <p className="text-md lg:text-xl font-light leading-relaxed">
+                                With years of proven expertise in UAE business setup and government documentation services, I have supported hundreds of entrepreneurs and investors in establishing their businesses successfully in the UAE. At ADL Business Solutions, we don’t just process documents  we build foundations for your success.
+                                Me and my dedicated team ensure end-to-end support, from choosing the right license to securing visas, banking, and operational approvals. Your vision is our priority, and we are committed to turning your business dream into reality with trust, transparency, and excellence.
+                            </p>
                         </div>
                     </div>
                 </div>

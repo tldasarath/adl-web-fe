@@ -28,13 +28,13 @@ export default function WhyChooseDubai({
           </div>
 
           {/* Right Section (Static Content) */}
-          <div className="w-full xl:w-1/3 glass p-8 rounded-2xl shadow-lg">
+          <div className="w-full xl:w-1/3 glass-bg p-8 rounded-2xl shadow-lg">
             <h3 className="text-2xl font-semibold mb-4">{meetingTitle}
             </h3>
             <p className="text-base md:text-lg leading-normal mb-6">
 {meetingDescription}
             </p>
-            <button onClick={()=>handleScheduleClick(true)} className="w-full glass font-semibold py-3 rounded-xl hover:bg-gray-200 transition-all">
+            <button onClick={()=>handleScheduleClick(true)} className="w-full glass-bg cursor-pointer  font-semibold py-3 rounded-xl hover:bg-gray-200 transition-all">
               Book a Meeting Now
             </button>
           </div>

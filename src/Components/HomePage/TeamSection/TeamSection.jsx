@@ -65,7 +65,7 @@ const TeamSection = () => {
                       <h3 className="text-lg text-[#E9C05F] font-semibold truncate">
                         {member.name}
                       </h3>
-                      <button className="w-8 md:w-10 h-8 md:h-10 flex items-center justify-center border border-[#E9C05F] rounded-full transition-all duration-300 hover:bg-[#E9C05F]/10 hover:translate-x-1">
+                      <button className="w-8 md:w-10 h-8 md:h-10 flex ml-4 items-center justify-center border border-[#E9C05F] rounded-full transition-all duration-300 hover:bg-[#E9C05F]/10 hover:translate-x-1">
                         <ArrowUpRight className="w-6 h-6 text-[#E9C05F]" />
                       </button>
                     </div>
