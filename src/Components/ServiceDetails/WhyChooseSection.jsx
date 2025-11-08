@@ -37,7 +37,7 @@ const WhyChooseSection = ({
                             {normalizedPoints.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="flex items-center rounded-xl glass text-white px-4 py-3 backdrop-blur-sm"
+                                    className="flex items-center rounded-xl glass-bg text-white px-4 py-3 backdrop-blur-sm"
                                 >
                                     <span className="text-sm md:text-base font-medium">{item.label}</span>
                                 </div>

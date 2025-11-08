@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 const MainButton = ({ text = "Learn more", url }) => {
   const classes = `
     flex justify-center items-center gap-3 px-4 md:px-6 xl:px-8 py-4 text-lg font-semibold rounded-3xl 
- glass 
+ glass-bg 
     active:scale-95  
     shadow-lg group
   `;

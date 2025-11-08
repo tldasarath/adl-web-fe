@@ -96,7 +96,7 @@ export default function ContactForm() {
                   <a
                     key={platform}
                     href="#"
-                    className="border glass text-[#E9C05F] px-4 py-2 rounded-2xl transition"
+                    className="border glass-bg text-[#E9C05F] px-4 py-2 rounded-2xl transition"
                   >
                     {platform}
                   </a>
@@ -123,7 +123,7 @@ export default function ContactForm() {
                   placeholder="Enter your first name"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className={`glass rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
+                  className={`glass-bg rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
                     errors.firstName ? "focus:ring-red-500" : "focus:ring-[#E9C05F]"
                   }`}
                 />
@@ -141,7 +141,7 @@ export default function ContactForm() {
                   placeholder="Enter your last name"
                   value={formData.lastName}
                   onChange={handleChange}
-                  className={`glass rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
+                  className={`glass-bg rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
                     errors.lastName ? "focus:ring-red-500" : "focus:ring-[#E9C05F]"
                   }`}
                 />
@@ -162,7 +162,7 @@ export default function ContactForm() {
                   placeholder="Enter your email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`glass rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
+                  className={`glass-bg rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
                     errors.email ? "focus:ring-red-500" : "focus:ring-[#E9C05F]"
                   }`}
                 />
@@ -180,7 +180,7 @@ export default function ContactForm() {
                   placeholder="Enter your phone number"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`glass rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
+                  className={`glass-bg rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
                     errors.phone ? "focus:ring-red-500" : "focus:ring-[#E9C05F]"
                   }`}
                 />
@@ -200,7 +200,7 @@ export default function ContactForm() {
                 placeholder="Write your message here..."
                 value={formData.message}
                 onChange={handleChange}
-                className={`glass rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
+                className={`glass-bg rounded-2xl p-5 text-sm mb-1 text-white placeholder-gray-400 focus:outline-none focus:ring-2 ${
                   errors.message ? "focus:ring-red-500" : "focus:ring-[#E9C05F]"
                 }`}
               />

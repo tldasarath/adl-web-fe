@@ -6,7 +6,16 @@ const ServicesMobile = ({ services }) => {
   const containerRef = useRef(null);
   const [isLocked, setIsLocked] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(0);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const updateWidth = () => setWindowWidth(window.innerWidth);
+      updateWidth();
+      window.addEventListener("resize", updateWidth);
+      return () => window.removeEventListener("resize", updateWidth);
+    }
+  }, []);
   // Lock scroll when component is in view
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -190,7 +199,16 @@ const ServicesSection = () => {
   const [isSmallOrMedium, setIsSmallOrMedium] = useState(false);
 
   const totalCards = services.length;
+  const [windowWidth, setWindowWidth] = useState(0);
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const updateWidth = () => setWindowWidth(window.innerWidth);
+      updateWidth();
+      window.addEventListener("resize", updateWidth);
+      return () => window.removeEventListener("resize", updateWidth);
+    }
+  }, []);
   // ✅ Detect screen size
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -341,13 +359,13 @@ const ServicesSection = () => {
               let translateX = isVisible
                 ? 0
                 : isNextOne
-                ? window.innerWidth * 0.18
+                ? windowWidth * 0.18
                 : isNextTwo
-                ? window.innerWidth * 0.22
-                : window.innerWidth * 0.6;
+                ? windowWidth * 0.22
+                : windowWidth * 0.6;
 
               if (activeIndex === -1 && index === 0) {
-                translateX = window.innerWidth * 0.2;
+                translateX = windowWidth * 0.2;
               }
 
               if (activeIndex === -1 && index > 0) return null;
@@ -367,7 +385,7 @@ const ServicesSection = () => {
                         ? 'opacity-40 scale-85 blur-[1px]'
                         : 'opacity-0'
                     }
-                    w-[260px] sm:w-[232px] rounded-2xl shadow-xl p-6 glass h-[232px] 
+                    w-[260px] sm:w-[232px] rounded-2xl shadow-xl p-6 glass-bg h-[232px] 
                     origin-bottom-left flex flex-col justify-center
                   `}
                   style={{

@@ -44,12 +44,12 @@ export default function SubscribeSection() {
               placeholder="Enter your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-5 py-4 pr-32 rounded-full bg-[#1c2334] text-gray-300 focus:outline-none focus:ring-2 focus:glass placeholder-gray-500 border border-white/10"
+              className="w-full px-5 py-4 pr-32 rounded-full glass-bg text-gray-300 focus:outline-none focus:ring-2 focus:glass-bg placeholder-gray-500 border border-white/10"
               required
             />
             <button
               type="submit"
-              className="absolute glass-button top-1/2 right-1 -translate-y-1/2  font-medium px-6 py-2.5 rounded-full transition-all duration-300"
+              className="absolute glass-bg top-1/2 right-1 -translate-y-1/2  font-medium px-6 py-2.5 rounded-full transition-all duration-300"
             >
               Subscribe
             </button>

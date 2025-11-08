@@ -75,9 +75,9 @@ export default function ValuesSection() {
                       borderColor: { duration: 0.3 }, // smooth border color transition
                     },
                   }}
-                  className="absolute w-56 h-42 glass-button
+                  className="absolute w-56 h-42 glass-bg
                  text-center px-4 py-3 flex flex-col justify-start items-center
-                 border-4 shadow-md rounded-2xl"
+                 border-2 shadow-md rounded-2xl"
                   style={{
                     clipPath: 'polygon(25% 0%, 75% 0%, 100% 100%, 0% 100%)',
                   }}
@@ -89,7 +89,7 @@ export default function ValuesSection() {
                     <h3 className="text-yellow-400 font-semibold text-sm mb-1 leading-tight">
                       {value.title}
                     </h3>
-                    <p className="text-[14px]  leading-normal max-w-[130px]">
+                    <p className="text-[14px] p-2 leading-normal max-w-[130px]">
                       {value.desc}
                     </p>
                   </div>

@@ -153,9 +153,7 @@ const subCategories = {
                 </h2>
 
                 <p className="text-base lg:text-lg mb-8 font-light leading-normal">
-
-                  Let&apos;s connect and discuss your project. Choose your preferred way to reach out -
-                  instant chat for quick questions or schedule a call for detailed discussions.
+Start your UAE business journey with expert guidance. Book a meeting with our business setup specialists and get personalized advice on licensing, visas, banking, and company formation. We will help you choose the right structure and ensure a seamless setup process from start to finish.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -185,8 +183,8 @@ const subCategories = {
               <h3 className="text-3xl lg:text-4xl font-semibold text-white mb-3 ">
                 Schedule a Call</h3>
               <p className="text-base lg:text-lg mb-4 font-light leading-normal">
-                Gorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.             </p>
-
+Prefer a quick call instead? Choose your preferred date and time to connect with our team. We’ll walk you through requirements, timelines, and the best business setup options based on your goals and budget.
+</p>
               {/* Days Selection */}
               <div className="flex gap-4 mb-8 overflow-x-auto py-2">
                 {daysSchedule.map((day, index) => (
@@ -207,7 +205,7 @@ const subCategories = {
 
               <div
                 ref={sliderRef}
-                className="relative w-full  bg-white/20 backdrop-blur-sm border border-white/30 rounded-2xl h-14 flex items-center px-4 select-none overflow-hidden"
+                className="relative w-full  glass-bg rounded-2xl h-14 flex items-center px-4 select-none overflow-hidden"
               >
                 <p className="text-white text-center w-full font-semibold pointer-events-none">
                   Slide to Schedule
@@ -216,7 +214,7 @@ const subCategories = {
                 <div
                   onMouseDown={handleMouseDown}
                   onTouchStart={handleTouchStart}
-                  className="absolute slider-handle rounded-full h-12 w-12 ml-1 flex items-center justify-center cursor-grab active:cursor-grabbing transition-all duration-300"
+                  className="absolute glass-bg rounded-full  h-12 w-12 ml-1 flex items-center justify-center cursor-grab active:cursor-grabbing transition-all duration-300"
                   style={{
                     left: sliderPos,
                     transition: sliderPos === 0 ? "left 0.4s ease" : "none",

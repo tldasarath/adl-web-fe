@@ -3,7 +3,7 @@ import Container from '@/Components/Common/Container';
 import Image from 'next/image';
 
 // items: [{ id, title, description }]
-const PointsSection = ({ items }) => {
+const PointsSection = ({title,description,items }) => {
    
 
     const data = items;
@@ -23,10 +23,10 @@ const PointsSection = ({ items }) => {
                 {/* Header */}
                 <div className="max-w-3xl mb-10">
           <h2 className="text-2xl mb-3 md:text-3xl main-text font-bold text-white">
-                        Our Business Setup Solutions
+                      {title}
                     </h2>
                     <p className="text-base lg:text-lg mb-14 font-light leading-normal">
-                    We offer complete, end-to-end support for all types of business formations.
+{description}
                     </p>
                 </div>
 

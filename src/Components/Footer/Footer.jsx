@@ -1,8 +1,17 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Container from "../Common/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
+    const navLinks = [
+    { label: "About", href: "/about-us" },
+    { label: "Services", href: "/services" },
+    { label: "Blog", href: "/blog" },
+    { label: "Terms & Conditions", href: "/terms-and-conditions" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
+    { label: "Contact", href: "/contact" },
+  ];
   return (
     <footer className=" py-8 md:py-14  relative overflow-hidden">
 <div className="absolute overflow-hidden -right-20 bottom-10 pointer-events-none select-none  -z-10">
@@ -50,16 +59,17 @@ export default function Footer() {
           </div>
         </div>
         {/* Navigation Links */}
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-          {["About", "Services", "Blog", "Terms & Conditions", "Privacy Policy", "Contact"].map((item) => (
-            <button
-              key={item}
-              className="glass hover:bg-[#252c3d] px-5 py-4 rounded-full text-sm md:text-base font-light transition-colors"
-            >
-              {item}
-            </button>
-          ))}
-        </div>
+         <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="glass-bg hover:bg-[#252c3d] px-5 py-4 rounded-full text-sm md:text-base font-light transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
 
         {/* Divider */}
         <div className="border-t border-[#E9C05F] my-8"></div>
@@ -89,7 +99,7 @@ export default function Footer() {
           </div>
 
           {/* Map */}
-          <div className="py-4 glass px-5 rounded-3xl">
+          <div className="py-4 glass-bg px-5 rounded-3xl">
             <div className="w-full md:w-[300px] h-[200px]  rounded-xl overflow-hidden border border-white/10 shadow-lg">
             <iframe
               title="Google Map"
@@ -117,7 +127,7 @@ export default function Footer() {
                 key={i}
                 href={social.link}
                 target="_blank"
-                className="p-3 glass rounded-full text-white transition-all duration-300"
+                className="p-3 glass-bg rounded-full text-white transition-all duration-300"
               >
                 {social.icon}
               </a>

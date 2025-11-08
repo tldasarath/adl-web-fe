@@ -42,7 +42,7 @@ const FAQSection = ({
                         return (
                             <div
                                 key={item.id}
-                                className="rounded-xl overflow-hidden  border glass backdrop-blur-sm"
+                                className="rounded-xl overflow-hidden   glass-bg "
                             >
                                 <button
                                     type="button"
