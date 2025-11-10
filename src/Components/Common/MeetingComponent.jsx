@@ -90,7 +90,7 @@ const MeetingComponent = ({handleScheduleClick}) => {
                 setUserInfo({ ...userInfo, name: e.target.value });
                 setErrors((prev) => ({ ...prev, name: "" }));
               }}
-              className={`w-full glass rounded-2xl px-4 py-3 backdrop-blur-sm ${
+              className={`w-full glass-bg rounded-2xl px-4 py-3 backdrop-blur-sm ${
                 errors.name ? "border border-red-400" : ""
               }`}
               placeholder="Enter your name"
@@ -285,7 +285,7 @@ const MeetingComponent = ({handleScheduleClick}) => {
           </button>
           <button
             type="submit"
-            className="flex-1 glass-button bg-green-500/20 hover:bg-green-500/30 border-green-400/30 text-green-700 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105"
+            className="flex-1  bg-white border-green-400/30 text-green-700 py-3 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105"
           >
             Send via WhatsApp
           </button>

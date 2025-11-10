@@ -150,8 +150,11 @@ const HeroSection = ({ title, subTitle, decription, url, buttonText }) => {
                 variants={titleVariants}
               >
                 {title} <br className="hidden sm:block" />
-                { subTitle }
-                
+                 {subTitle && (
+                  <>
+                    <span className="">{subTitle}</span>
+                  </>
+                )}
               </motion.h1>
 
               {/* Description text */}
@@ -163,13 +166,13 @@ const HeroSection = ({ title, subTitle, decription, url, buttonText }) => {
               </motion.p>
 
               {/* Glass morphism button */}
-              <motion.div
+            {buttonText &&  <motion.div
                 variants={buttonVariants}
                 whileHover="hover"
                 className="inline-block w-62 xl:w-75"
               >
                 <MainButton text={buttonText} url={url} />
-              </motion.div>
+              </motion.div>}
             </div>
           </motion.div>
         </Container>

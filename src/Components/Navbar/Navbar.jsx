@@ -10,11 +10,15 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServiceOpen, setIsServiceOpen] = useState(false);
+  const [isLicenseOpen, setIsLicenseOpen] = useState(false);
+  const [isVisaOpen, setIsVisaOpen] = useState(false);
   const [dropdownWidth, setDropdownWidth] = useState(null);
 
   const pathname = usePathname();
   const glassRef = useRef(null);
   const dropdownRef = useRef(null);
+  const licenseDropdownRef = useRef(null);
+  const visaDropdownRef = useRef(null);
 
   const navItems = [
     { name: 'home', label: 'Home', path: '/' },
@@ -25,30 +29,49 @@ export default function Navbar() {
     { name: 'visa', label: 'Visa', path: '/visa' },
     { name: 'license', label: 'License', path: '/license' },
     { name: 'gallery', label: 'Gallery', path: '/gallery' },
-    { name: 'blog', label: 'Blog', path: '/blog' },
+    { name: 'blog', label: 'Blog', path: '/blogs' },
     { name: 'contact', label: 'Contact', path: '/contact' },
   ];
 
   const serviceItems = [
-    'Business Setup',
-    'Company Formation',
-    'Golden Visa',
-    'PRO Services',
-    'Local Sponsorship',
-    'Visa Services',
-    'ISO Certification & Trademark Registration',
-    'Virtual Office',
-    'Company Liquidation',
-    'Document Attestation',
-    'Legal Translation',
-    'Insurance & VAT Services',
-    'Bank Account Opening',
-    'Typing Services',
-    'UAE Government Approvals',
-    'Medical & Emirates ID Services',
-    'FREEZONE',
-    'Dubai Court Services',
-    'Online MOA & POA Services',
+    { name: 'Business Setup', path: '/services/business-setup' },
+    { name: 'Company Formation', path: '/services/company-formation' },
+    { name: 'Golden Visa', path: '/services/golden-visa' },
+    { name: 'PRO Services', path: '/services/pro-services' },
+    { name: 'Local Sponsorship', path: '/services/local-sponsorship' },
+    { name: 'Visa Services', path: '/services/visa-services' },
+    { name: 'ISO Certification & Trademark Registration', path: '/services/iso-trademark' },
+    { name: 'Virtual Office', path: '/services/virtual-office' },
+    { name: 'Company Liquidation', path: '/services/company-liquidation' },
+    { name: 'Document Attestation', path: '/services/document-attestation' },
+    { name: 'Legal Translation', path: '/services/legal-translation' },
+    { name: 'Insurance & VAT Services', path: '/services/insurance-vat' },
+    { name: 'Bank Account Opening', path: '/services/bank-account-opening' },
+    { name: 'Typing Services', path: '/services/typing-services' },
+    { name: 'UAE Government Approvals', path: '/services/uae-government-approvals' },
+    { name: 'Medical & Emirates ID Services', path: '/services/medical-emirates-id' },
+    { name: 'FREEZONE', path: '/services/freezone' },
+    { name: 'Dubai Court Services', path: '/services/dubai-court-services' },
+    { name: 'Online MOA & POA Services', path: '/services/online-moa-poa' },
+  ];
+
+  const licenseItems = [
+    { name: 'Commercial License', path: '/license' },
+    { name: 'Professional License', path: '/license/professional-license' },
+    { name: 'Industrial License', path: '/license/industrial-license' },
+    { name: 'Tourism License', path: '/license/tourism-license' },
+    { name: 'UAE-Craftmanship License', path: '/license/e-trader-license' },
+    { name: 'UAE-Warehousing Licencse', path: '/license/e-commercial-license' },
+    { name: 'E-Trader License', path: '/license/freezone' },
+    { name: 'Freelance Permit', path: '/license/offshore' },
+  ];
+
+  const visaItems = [
+    { name: 'Employment Visa', path: '/visa/employment-visa' },
+    { name: 'Investor Visa', path: '/visa/investor-visa' },
+    { name: 'Family Visa', path: '/visa/family-visa' },
+    { name: 'Golden Visa', path: '/visa/golden-visa' },
+    { name: 'Freelance Visa', path: '/visa/freelance-visa' },
   ];
 
   // detect active route
@@ -78,6 +101,22 @@ export default function Navbar() {
       ) {
         setIsServiceOpen(false);
       }
+      if (
+        licenseDropdownRef.current &&
+        !licenseDropdownRef.current.contains(e.target) &&
+        glassRef.current &&
+        !glassRef.current.contains(e.target)
+      ) {
+        setIsLicenseOpen(false);
+      }
+      if (
+        visaDropdownRef.current &&
+        !visaDropdownRef.current.contains(e.target) &&
+        glassRef.current &&
+        !glassRef.current.contains(e.target)
+      ) {
+        setIsVisaOpen(false);
+      }
     };
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
@@ -86,7 +125,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className=" top-0 left-0 right-0 z-[1000] bg-transparent transition-all duration-500">
+      <nav className="top-0 left-0 right-0 z-[1000] bg-transparent transition-all duration-500">
         <Container>
           <div
             ref={glassRef}
@@ -111,7 +150,23 @@ export default function Navbar() {
                 <div key={item.name} className="relative">
                   <Link
                     href={item.path}
-                    onMouseEnter={() => item.name === 'service' && setIsServiceOpen(true)}
+                    onMouseEnter={() => {
+                      if (item.name === 'service') {
+                        setIsServiceOpen(true);
+                        setIsLicenseOpen(false);
+                        setIsVisaOpen(false);
+                      }
+                      if (item.name === 'license') {
+                        setIsLicenseOpen(true);
+                        setIsServiceOpen(false);
+                        setIsVisaOpen(false);
+                      }
+                      if (item.name === 'visa') {
+                        setIsVisaOpen(true);
+                        setIsServiceOpen(false);
+                        setIsLicenseOpen(false);
+                      }
+                    }}
                     onClick={() => setActiveSection(item.name)}
                     className={`relative px-2 2xl:px-6 py-3 rounded-2xl 2xl:rounded-3xl font-normal transition-all duration-300 transform hover:scale-105 active:scale-95 ${
                       activeSection === item.name
@@ -166,53 +221,112 @@ export default function Navbar() {
         </Container>
       </nav>
 
-      {/* SERVICE DROPDOWN (below navbar) */}
+      {/* SERVICE DROPDOWN */}
       {isServiceOpen && (
-        
         <div
           ref={dropdownRef}
-          className="hidden lg:flex  justify-center absolute left-0 right-0 top-[95px] z-[9999]"
+          className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
           onMouseEnter={() => setIsServiceOpen(true)}
           onMouseLeave={() => setIsServiceOpen(false)}
         >
           <div
-            className="  glass-bg rounded-xl  overflow-hidden transition-all"
-            style={{
-              width: dropdownWidth ? `${dropdownWidth}px` : 'auto',
-            }}
+            className="glass-bg rounded-xl overflow-hidden transition-all"
+            style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
           >
             <div
               className="max-h-[230px] overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent"
-              style={{
-                scrollbarWidth: 'thin', // Firefox
-                scrollbarColor: 'rgba(255,255,255,0.3) transparent',
-              }}
             >
-              <style jsx>{`
-                /* WebKit browsers (Chrome, Edge, Safari) */
-                div::-webkit-scrollbar {
-                  width: 4px;
-                }
-                div::-webkit-scrollbar-track {
-                  background: transparent;
-                }
-                div::-webkit-scrollbar-thumb {
-                  background-color: rgba(255, 255, 255, 0.3);
-                  border-radius: 10px;
-                }
-              `}</style>
-
               <div className="grid grid-cols-4 gap-4 text-white items-center text-sm">
                 {serviceItems.map((service, i) => (
-                  <div
+                  <Link
+                    href={service.path}
                     key={i}
-                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer"
+                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
                   >
-                   <p className='font-normal text-white z-10'>{service}</p> 
-                  </div>
+                    <p className="font-normal text-white z-10">{service.name}</p>
+                  </Link>
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* LICENSE DROPDOWN */}
+      {isLicenseOpen && (
+        <div
+          ref={licenseDropdownRef}
+          className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
+          onMouseEnter={() => setIsLicenseOpen(true)}
+          onMouseLeave={() => setIsLicenseOpen(false)}
+        >
+          <div
+            className="glass-bg rounded-xl overflow-hidden transition-all"
+            style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
+          >
+            <div
+              className="max-h-[230px] overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent"
+            >
+              <div className="grid grid-cols-4 gap-4 text-white items-center text-sm">
+                {licenseItems.map((license, i) => (
+                  <Link
+                    href={license.path}
+                    key={i}
+                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
+                  >
+                    <p className="font-normal text-white z-10">{license.name}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* VISA DROPDOWN */}
+      {isVisaOpen && (
+        <div
+          ref={visaDropdownRef}
+          className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
+          onMouseEnter={() => setIsVisaOpen(true)}
+          onMouseLeave={() => setIsVisaOpen(false)}
+        >
+          <div
+            className="glass-bg rounded-xl overflow-hidden flex transition-all"
+            style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
+          >
+            {/* Left side: Visa options */}
+            <div
+              className="max-h-[230px] overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent w-2/3"
+            >
+              <div className="grid grid-cols-2 gap-4 text-white items-center text-sm">
+                {visaItems.map((visa, i) => (
+                  <Link
+                    href={visa.path}
+                    key={i}
+                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
+                  >
+                    <p className="font-normal text-white z-10">{visa.name}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Right side: Image */}
+          <div className="relative w-1/3 flex flex-col items-center justify-center  h-[230px] rounded-r-xl">
+  {/* Freezone */}
+  <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
+    <span>Freezone</span>
+    <span className="mt-1 w-20 border-b-[1.5px] border-yellow-400"></span>
+  </div>
+
+  {/* Offshore */}
+  <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
+    <span>Offshore</span>
+    <span className="mt-1 w-20 border-b-[1.5px] border-yellow-400"></span>
+  </div>
+</div>
+
           </div>
         </div>
       )}
