@@ -5,7 +5,7 @@ import Container from "@/Components/Common/Container";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
-const MainlandFAQSection = ({ faqs }) => {
+const FAQSection = ({ faqs }) => {
   const [openIndex, setOpenIndex] = useState(-1);
 
   const normalizedFaqs = Array.isArray(faqs)
@@ -142,4 +142,4 @@ const MainlandFAQSection = ({ faqs }) => {
   );
 };
 
-export default MainlandFAQSection;
+export default FAQSection;

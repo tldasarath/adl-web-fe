@@ -3,12 +3,8 @@ import HeroSection from "@/Components/Common/HeroSection";
 import InnerBanner from "@/Components/Common/InnerBanner";
 import Footer from "@/Components/Footer/Footer";
 import Navbar from "@/Components/Navbar/Navbar";
-import Blogs from "@/Components/ServiceDetails/blogs";
-import BusinessJourney from "@/Components/ServiceDetails/BusinessJourney";
-import WhyChooseDubai from "@/Components/ServiceDetails/Choose-Dubai";
-import FAQSection from "@/Components/ServiceDetails/FAQSection";
-import PointsSection from "@/Components/ServiceDetails/PointsSection";
-import WhyChooseSection from "@/Components/ServiceDetails/WhyChooseSection";
+import FAQSection from "@/Components/mainlandPage/FaqSection";
+import SuggestedBlogs from "@/Components/mainlandPage/SuggestedBlogs";
 import AboutVisa from "@/Components/visaPage/AboutVisa";
 import { visaDetails } from "@/Datas/visaData";
 import { useParams } from "next/navigation";
@@ -24,7 +20,7 @@ export default function Page() {
       <Navbar />
       <HeroSection 
       title={visa.heroSection.title} 
-      subTitle={visa.heroSection.subTitle} 
+      // subTitle={visa.heroSection.subTitle} 
       decription={visa.heroSection.description} 
       buttonText={visa.heroSection.buttonText} 
       url={visa.heroSection.buttonUrl} 
@@ -32,7 +28,18 @@ export default function Page() {
       <AboutVisa
       image={visa.image}
       title={visa.title}
+      para1={visa.paragraph1}
+      para2={visa.paragraph2}
        />
+      <InnerBanner 
+      title={visa.meeting.title} 
+      description={visa.meeting.description} 
+      buttonText={visa.meeting.buttonText} 
+      buttonUrl={visa.meeting.buttonUrl}
+      />
+      <FAQSection faqs={visa.faqs} />
+      <SuggestedBlogs blogs={visa.relatedBlogs} />
+
 
       {/* <BusinessJourney heading={service.title}
         imageSrc={service.image}

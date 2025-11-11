@@ -2,7 +2,7 @@ import HeroSection from "@/Components/Common/HeroSection";
 import InnerBanner from "@/Components/Common/InnerBanner";
 import Footer from "@/Components/Footer/Footer";
 import AboutMainland from "@/Components/mainlandPage/AboutMainland";
-import MainlandFAQSection from "@/Components/mainlandPage/MainlandFaqSection";
+import FAQSection from "@/Components/mainlandPage/FaqSection";
 import MainlandFormation from "@/Components/mainlandPage/MainlandFormation";
 import MainlandSetup from "@/Components/mainlandPage/MainlandSetup";
 import MainlandWhyChoose from "@/Components/mainlandPage/MainlandWhyChoose";
@@ -29,7 +29,7 @@ const page = () => {
       <MainlandSetup />
       <MainlandFormation />
       <MainlandWhyChoose />
-      <MainlandFAQSection faqs={MainlandFaqs} />
+      <FAQSection faqs={MainlandFaqs} />
       <SuggestedBlogs blogs={Blogposts} />
       <InnerBanner
         title={"Start Your IFZA Freezone Company Today"}

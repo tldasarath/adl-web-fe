@@ -12,17 +12,17 @@ export const visaDetails = [
       },
   
       heroSection: {
-        title: "Golden Visa Services",
-        subTitle: "10-Year Residency",
+        title: "UAE Golden Visa",
+        // subTitle: "10-Year Residency",
         description:
           "Secure long-term UAE residency through investment, property ownership, or exceptional professional achievement with ADL Business Solutions.",
         buttonText: "Check Your Eligibility",
         buttonUrl: "/"
       },
   
-      image: "/assets/images/service-details/golden-visa.png",
+      image: "/assets/images/visas/golden-visa-uae.png",
   
-      title: "Live, Work, and Thrive in the UAE with a Golden Visa",
+      title: "ADL Makes Your UAE\nGolden Visa Journey Effortless",
   
       paragraph1:
         "The UAE Golden Visa grants long-term 10-year residency to investors, property buyers, entrepreneurs, executives, scientists, and exceptional talent. This visa offers freedom to live, work, and study in the UAE without a sponsor, making it the most secure residency option for investors and high-achieving professionals.",
@@ -94,10 +94,30 @@ export const visaDetails = [
       ],
   
       relatedBlogs: [
-        { id: "blog-gv-1", title: "Complete Guide to UAE Golden Visa", href: "/blog/complete-guide-uae-golden-visa" },
-        { id: "blog-gv-2", title: "Property Investment Requirements for Golden Visa", href: "/blog/property-requirements-golden-visa" },
-        { id: "blog-gv-3", title: "Golden Visa for Entrepreneurs Explained", href: "/blog/golden-visa-entrepreneurs" },
-        { id: "blog-gv-4", title: "Benefits of 10-Year Residency in UAE", href: "/blog/benefits-10-year-residency" }
+        { 
+            id: "blog-gv-1", 
+            title: "Complete Guide to UAE Golden Visa", 
+            href: "/blog/complete-guide-uae-golden-visa", 
+        image:"/assets/images/visas/complete-guide-golden-visa.png"
+    },
+        { 
+            id: "blog-gv-2", 
+            title: "Property Investment Requirements for Golden Visa", 
+            href: "/blog/property-requirements-golden-visa", 
+        image:"/assets/images/visas/property-investment-golden-visa.png"
+        },
+        { 
+            id: "blog-gv-3", 
+            title: "Golden Visa for Entrepreneurs Explained", 
+            href: "/blog/golden-visa-entrepreneurs", 
+        image:"/assets/images/visas/entrepreneurs-explained-golden-visa.png"
+        },
+        { 
+            id: "blog-gv-4", 
+            title: "Benefits of 10-Year Residency in UAE", 
+            href: "/blog/benefits-10-year-residency", 
+        image:"/assets/images/visas/benefits-of-10-year-residency-in-uae.png"
+        }
       ]
     },
   
