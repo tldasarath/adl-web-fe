@@ -5,7 +5,7 @@ import Link from "next/link";
 import Container from "../Common/Container";
 import { ArrowUpRight } from "lucide-react";
 
-const BusinessJourney = ({
+const  BusinessJourney = ({
   heading,
   imageSrc,
   paragraph1,

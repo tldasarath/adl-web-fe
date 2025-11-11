@@ -3,30 +3,30 @@ import Container from '@/Components/Common/Container';
 import Image from 'next/image';
 
 // items: [{ id, title, description }]
-const PointsSection = ({title,description,items }) => {
-   
+const PointsSection = ({ title, description, items }) => {
+
 
     const data = items;
 
     return (
         <section className="relative py-8 md:py-14 overflow-hidden">
-              <div className="absolute overflow-hidden -right-10 top-0 pointer-events-none select-none  -z-10">
-    <Image
-      src="/assets/images/bg/square3.png"
-      alt="Decorative shapes"
-      width={240}
-      height={320}
-      className="object-contain md:w-60 w-40"
-    />
-  </div>
+            <div className="absolute overflow-hidden -right-10 top-0 pointer-events-none select-none  -z-10">
+                <Image
+                    src="/assets/images/bg/square3.png"
+                    alt="Decorative shapes"
+                    width={240}
+                    height={320}
+                    className="object-contain md:w-60 w-40"
+                />
+            </div>
             <Container>
                 {/* Header */}
                 <div className="max-w-3xl mb-10">
-          <h2 className="text-2xl mb-3 md:text-3xl main-text font-bold text-white">
-                      {title}
+                    <h2 className="text-2xl mb-3 md:text-3xl main-text font-bold text-white">
+                        {title}
                     </h2>
                     <p className="text-base lg:text-lg mb-14 font-light leading-normal">
-{description}
+                        {description}
                     </p>
                 </div>
 

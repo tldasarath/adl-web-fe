@@ -51,17 +51,17 @@ export default function ComparisonAtAGlance() {
     return (
         <section className=" relative text-white py-8 md:py-18 overflow-hidden">
             <div className="absolute left-[-10%] md:left-[-10px] -z-10 top-0   pointer-events-none select-none">
-                    <Image
-                      src="/assets/images/bg/left_glass_element.png"
-                      alt="Decorative shapes"
-                      width={219}
-                      height={247}
-                      className="object-contain  w-30 md:w-36 lg:w-60"
-                    />
-                  </div>
+                <Image
+                    src="/assets/images/bg/left_glass_element.png"
+                    alt="Decorative shapes"
+                    width={219}
+                    height={247}
+                    className="object-contain  w-30 md:w-36 lg:w-60"
+                />
+            </div>
             <Container>
                 <motion.div
-                    className="max-w-6xl mx-auto"
+                    className="w-full"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, amount: 0.3 }}
@@ -73,61 +73,56 @@ export default function ComparisonAtAGlance() {
                     </h2>
 
                     {/* Table */}
-                    <div className="w-full overflow-x-auto">
+                    <div className="w-full ">
                         {/* Header Table (with spacing between ths) */}
-                        <table className="w-full text-center text-sm md:text-base border-separate border-spacing-x-3">
-                            <thead>
+                        <table className="w-full table-fixed text-center text-sm md:text-base border-collapse">
+                            <colgroup>
+                                <col className="w-1/4" /> {/* Feature */}
+                                <col className="w-1/4" /> {/* Dubai */}
+                                <col className="w-1/4" /> {/* RAK */}
+                                <col className="w-1/4" /> {/* Ajman */}
+                            </colgroup>
+
+                            {/* ---------- TABLE HEADER ---------- */}
+                            <thead className="border-separate border-spacing-x-3">
                                 <tr>
-                                    <th className="w-[15%] px-4 py-3 text-left font-semibold glass-bg rounded-xl">
+                                    <th className="px-4 py-3 text-left font-semibold glass-bg rounded-xl">
                                         Feature
                                     </th>
-                                    <th className="w-[28%] px-4 py-3 font-semibold glass-bg rounded-xl">
+                                    <th className="px-4 py-3 font-semibold glass-bg rounded-xl">
                                         Dubai (JAFZA Offshore)
                                     </th>
-                                    <th className="w-[28%] px-4 py-3 font-semibold glass-bg rounded-xl">
+                                    <th className="px-4 py-3 font-semibold glass-bg rounded-xl">
                                         RAK Offshore
                                     </th>
-                                    <th className="w-[28%] px-4 py-3 font-semibold glass-bg rounded-xl">
+                                    <th className="px-4 py-3 font-semibold glass-bg rounded-xl">
                                         Ajman Offshore
                                     </th>
                                 </tr>
                             </thead>
-                        </table>
 
-                        {/* Body Table (keeps perfect column alignment) */}
-                        <table className="w-full border-collapse text-center text-sm md:text-base mt-2">
+                            {/* ---------- TABLE BODY ---------- */}
                             <tbody>
                                 {comparisonData.map((row, index) => (
                                     <tr key={index} className="transition duration-200">
-                                        {/* Feature Column */}
-                                        <td className="w-[15%] px-4 py-3 text-left text-gray-300 border-b border-[#376CBC]/80">
+                                        <td className="px-4 py-3 text-left text-gray-300 border-t border-[#376CBC]/80">
                                             {row.feature}
                                         </td>
-
-                                        {/* Dubai Column */}
-                                        <td className="w-[28%] px-4 py-3 border-b border-l border-[#376CBC]/80">
-                                            {typeof row.dubai === "number"
-                                                ? renderStars(row.dubai)
-                                                : row.dubai}
+                                        <td className="px-4 py-3 border-t border-l border-[#376CBC]/80">
+                                            {typeof row.dubai === 'number' ? renderStars(row.dubai) : row.dubai}
                                         </td>
-
-                                        {/* RAK Column */}
-                                        <td className="w-[28%] px-4 py-3 border-b border-l border-[#376CBC]/80">
-                                            {typeof row.rak === "number"
-                                                ? renderStars(row.rak)
-                                                : row.rak}
+                                        <td className="px-4 py-3 border-t border-l border-[#376CBC]/80">
+                                            {typeof row.rak === 'number' ? renderStars(row.rak) : row.rak}
                                         </td>
-
-                                        {/* Ajman Column */}
-                                        <td className="w-[28%] px-4 py-3 border-b border-l border-[#376CBC]/80">
-                                            {typeof row.ajman === "number"
-                                                ? renderStars(row.ajman)
-                                                : row.ajman}
+                                        <td className="px-4 py-3 border-t border-l border-[#376CBC]/80">
+                                            {typeof row.ajman === 'number' ? renderStars(row.ajman) : row.ajman}
                                         </td>
                                     </tr>
                                 ))}
                             </tbody>
                         </table>
+
+
                     </div>
 
                 </motion.div>

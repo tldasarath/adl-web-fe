@@ -28,7 +28,7 @@ const regions = [
       "Fast documentation & approvals",
       "Robust compliance and legal framework",
     ],
-    logo: "/assets/images/mainland/abudhabi-mainland.png",
+    logo: "/assets/images/offshore/ras-al-khaimah-offshore.png",
   },
   {
     key: "ajman",
@@ -41,7 +41,7 @@ const regions = [
       "International operations permitted",
       "Minimum documentation",
     ],
-    logo: "/assets/images/mainland/sharjah-mainland.png",
+    logo: "/assets/images/offshore/ajman-offshore.png",
   },
 ];
 

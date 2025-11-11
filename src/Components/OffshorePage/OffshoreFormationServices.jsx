@@ -66,7 +66,7 @@ export default function OffshoreFormationServices() {
             Our Offshore Company Formation Services Include
           </motion.h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-[1.6fr_1fr_1.6fr] items-center gap-0">
             {/* Left Column */}
             <motion.ul
               className="space-y-4 text-left md:text-right md:pr-6"
@@ -78,7 +78,7 @@ export default function OffshoreFormationServices() {
               {leftServices.map((item, index) => (
                 <motion.li
                   key={index}
-                  className="border text-start border-[#376CBC]/80 rounded-lg px-5 py-3 hover:border-blue-500/60 hover:bg-blue-500/10 transition inline-block w-full"
+                  className="border text-start  border-[#376CBC]/80 rounded-lg px-5 py-3 hover:border-blue-500/60 hover:bg-blue-500/10 transition inline-block w-full"
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3 }}
                 >

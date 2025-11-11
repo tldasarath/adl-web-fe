@@ -1,5 +1,7 @@
+"use client"
 import React from 'react';
 import Container from '../../Common/Container';
+import { useRouter } from 'next/navigation';
 
 const Companyformation = () => {
   const cards = [
@@ -7,22 +9,31 @@ const Companyformation = () => {
       id: 1,
       title: "Mainland",
       description: "Start your UAE Mainland business and trade anywhere within the Emirates, partner with government entities, and enjoy full operational flexibility. Ideal for retail, consulting, contracting, corporate offices, and service businesses seeking maximum market access.",
-      image: "/assets/images/company-formation/Main-land.png"
+      image: "/assets/images/company-formation/Main-land.png",
+      path:'mainland-company-formation-in-uae'
     },
     {
       id: 2,
       title: "Freezone",
       description: "Get 100% foreign ownership, tax benefits, and fast setup in UAE Freezones — ideal for e-commerce, trading, media, technology, and global businesses. ADL helps you choose the best Freezone based on your activity, budget, and visa needs.",
-      image: "/assets/images/company-formation/Freezone.png"
+      image: "/assets/images/company-formation/Freezone.png",
+            path:'freezone-company-formation-in-uae'
+
     },
     {
       id: 3,
       title: "Offshore",
       description: "Establish an Offshore entity for global trade, asset protection, and tax-efficient international operations  without a physical office in the UAE. ADL ensures a secure, compliant, and seamless Offshore company setup.",
-      image: "/assets/images/company-formation/Offshore.png"
+      image: "/assets/images/company-formation/Offshore.png",
+            path:'offshore-company-formation-in-uae'
+
     }
   ];
-
+  const router = useRouter();
+const handleNavigation = (path) => {
+  const route =path;
+  router.push(route);
+};
   return (
     <Container>
       <div className="xl:h-[700px] h-auto flex items-center justify-center py-8 md:py-14  relative overflow-hidden">
@@ -35,7 +46,7 @@ const Companyformation = () => {
           {/* Section Heading */}
           <div className="text-start mb-16">
             <h2 className="text-2xl md:text-3xl main-text font-bold text-white ">
-              Start Your Company in UAE
+              Start Your Company in the UAE
             </h2>
 
           </div>
@@ -43,7 +54,7 @@ const Companyformation = () => {
           {/* Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10 items-stretch">
   {cards.map((card) => (
-    <div key={card.id} className="flex flex-col items-center md:items-start h-full">
+    <div key={card.id}  onClick={() => handleNavigation(card.path)} className="flex cursor-pointer flex-col items-center md:items-start h-full">
       <div
         className="
           group relative w-72 md:w-80 p-3 rounded-3xl overflow-hidden
