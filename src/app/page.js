@@ -25,27 +25,27 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen">
-     <HeroSection/>
-     <Companyformation/>
-    <AboutSection/>
-    <ScheduleMeeting/>
-    <ManagerSection/>
-    <TeamSection/>
-    <ServicesSection/>
-    <BusinessServices/>
-    <BusinessSection/>
-    <PackageSection/>
-    <Banner/>
-    <VisaTypesSection/>
-    <ValuesSection/>
-    <PartnersSection/>
-    <BlogSection/>
-    <TestimonialSection/>
-    <SocialMediaSection/>
-    <FAQSection/>
-    <SubscribeSection/>
-    <Footer/> 
-   {/* <div className="flex h-screen justify-center items-center">
+      <HeroSection />
+      <Companyformation />
+      <AboutSection />
+      <ScheduleMeeting />
+      <ManagerSection />
+      <TeamSection />
+      <ServicesSection />
+      <BusinessServices />
+      <BusinessSection />
+      <PackageSection />
+      <Banner />
+      <VisaTypesSection />
+      <ValuesSection />
+      <PartnersSection />
+      <BlogSection />
+      <TestimonialSection />
+      <SocialMediaSection />
+      <FAQSection />
+      <SubscribeSection />
+      <Footer />
+      {/* <div className="flex h-screen justify-center items-center">
      <LiquidGlass/>
    </div> */}
     </div>

@@ -111,7 +111,7 @@ const VisaTypesSection = () => {
                   <div
                     key={visa.id}
                     onClick={() => handleCardClick(visa.id)} // allow flip on click
-                    className="group md:w-[180px] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden perspective-[1000px] cursor-pointer"
+                    className="group md:w-[200px] rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden perspective-[1000px] cursor-pointer"
                   >
                     <div
                       className={`relative w-full h-[180px] sm:h-56 transition-transform duration-700 transform-style-preserve-3d 
@@ -145,9 +145,9 @@ const VisaTypesSection = () => {
             </Container>
 
             {/* CTA Button */}
-            <div className="flex justify-center mb-4">
+            {/* <div className="flex justify-center mb-4">
               <MainButton />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

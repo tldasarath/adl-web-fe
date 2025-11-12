@@ -67,6 +67,27 @@ body {
     @apply  text-[#E2E2E2];
   }
 }
+/* Ultra-thin custom scrollbar */
+.scrollbar-ultrathin::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+.scrollbar-ultrathin::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 9999px;
+}
+
+.scrollbar-ultrathin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* For Firefox */
+.scrollbar-ultrathin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+
 
 .glass {
   z-index: 1;

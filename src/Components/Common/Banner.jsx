@@ -27,14 +27,14 @@ const Banner = () => {
             
             {/* Mobile Center Button */}
             <div className="lg:hidden flex justify-center mt-8">
-                       <MainButton text='Contact Us Now'/>
+                       <MainButton text='Contact Us Now' url={"/contact"}/>
 
             </div>
           </div>
 
           {/* Right Side - Button (Desktop) */}
           <div className="hidden lg:flex items-center justify-center">
-            <MainButton text='Contact Us Now'/>
+            <MainButton text='Contact Us Now'  url={"/contact"}/>
           </div>
         </div>
       </div>

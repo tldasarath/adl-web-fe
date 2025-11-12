@@ -6,16 +6,8 @@ import Container from '../Common/Container'
 // Place the provided image in your Next.js project's /public folder as: /public/mainland.png
 // Then import and use this component in any page (e.g. pages/index.js or app/page.js)
 
-export default function MainSection() {
-    const benefits = [
-    "International trading & consulting",
-    "Asset protection",
-    "Global structuring & holding company",
-    "IP & royalty holding",
-    "Real-estate ownership in UAE (specific zones)",
-    "No physical office requirement",
-    "Zero corporate & income tax (as per UAE regulations)",
-  ];
+export default function MainSection({title,paragraph,image}) {
+  
 
   const textVariant = {
     hidden: { opacity: 0, y: 50 },
@@ -43,16 +35,15 @@ export default function MainSection() {
       variants={textVariant}
     >
       <h2 className="text-3xl md:text-[2.5rem] font-bold mb-4">
-        Why Choose Offshore Company Setup in UAE
+       {title}
       </h2>
 
       <p className="text-base md:text-lg text-gray-300 leading-relaxed font-normal mb-4 max-w-prose">
-
-A Commercial License in the UAE authorizes companies to conduct trading activities, including buying, selling, import/export, distribution, and retail or wholesale trade. Whether you want to start an e-commerce company, general trading firm, or international trading business, a commercial license provides access to one of the world’s most powerful business hubs.
+{paragraph[0]}
       </p>
 
       <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 max-w-prose">
-    This license is available in Mainland, Free Zone, and Offshore jurisdictions, offering flexibility based on business model and growth goals. Investors benefit from 100% business ownership (in approved sectors), simplified visa processing, global market connectivity, and a business-friendly environment backed by world-class infrastructure.
+{paragraph[1]}
       </p>
 
      
@@ -72,8 +63,8 @@ A Commercial License in the UAE authorizes companies to conduct trading activiti
                 <div className="relative h-56 sm:h-64 md:h-72 lg:h-80">
                   {/* Use next/image for optimized loading. Put image at /public/mainland.png */}
                   <Image
-                    src="/assets/images/license/commercial-license.png"
-                    alt="Offshore"
+                    src={image}
+                    alt={title}
                     fill
                     sizes="(max-width: 1024px) 80vw, 420px"
                     className="object-cover"

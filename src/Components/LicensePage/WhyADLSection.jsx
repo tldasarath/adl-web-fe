@@ -3,17 +3,15 @@
 import { motion } from "framer-motion";
 import Container from "../Common/Container";
 
-export default function WhyADLSection() {
+export default function WhyADLSection({description}) {
   return (
     <section className="relative py-8 md:py-20 text-white overflow-hidden">
       <Container>
         {/* Wrapper for corner lines + content */}
         <div className="relative border-none">
           {/* Decorative gold corners inside container */}
-      <div className="absolute -top-15 left-0 lg:-left-10 w-24 md:w-[124px] h-10 border-b-6 border-r-6 border-[#E9C05F] rounded-br-full rotate-180"></div>
-                    <div className="absolute left-0 lg:-left-10 -top-5 h-16 md:h-[100px] w-1.5 bg-[#E9C05F]  rotate-180"></div>
-                    <div className="absolute -bottom-15 right-0 lg:-right-10 w-24 md:w-[124px] h-10 border-b-6 border-r-6 border-[#E9C05F] rounded-br-full"></div>
-                    <div className="absolute right-0 lg:-right-10  -bottom-5 h-16 md:h-[100px] w-1.5 bg-[#E9C05F] "></div>
+      <div className="absolute -top-8 md:-top-15 left-0 lg:-left-10 w-24 md:w-[124px] h-25 border-b-6 border-r-6 border-[#E9C05F] rounded-br-4xl rotate-180"></div>
+                    <div className="absolute -bottom-8 right-0 lg:-right-10 w-24 md:w-[124px] h-25 border-b-6 border-r-6 border-[#E9C05F] rounded-br-4xl"></div>
 
           {/* Animated content */}
           <motion.div
@@ -27,13 +25,7 @@ export default function WhyADLSection() {
               Why ADL Business Solutions
             </h2>
             <p className="text-gray-300 leading-relaxed text-sm md:text-base">
-              At ADL, we streamline your commercial license setup, ensuring
-              compliance with UAE laws and fast approvals. Our experts handle
-              documentation, activity selection, approvals, and visa processing
-              — from start to finish. With years of business consulting
-              experience, we guide you on the best jurisdiction, cost-efficient
-              options, and banking solutions to support your business growth in
-              the UAE.
+             {description}
             </p>
           </motion.div>
         </div>

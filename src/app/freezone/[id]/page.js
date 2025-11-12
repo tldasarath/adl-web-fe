@@ -1,7 +1,12 @@
 "use client"
 import HeroSection from "@/Components/Common/HeroSection";
 import Footer from "@/Components/Footer/Footer";
+import AboutFreezone from "@/Components/FreezoneDetailsPage/AboutFreezone";
+import FacilitiesSection from "@/Components/FreezoneDetailsPage/FacilitiesSection";
+import SetupPackages from "@/Components/FreezoneDetailsPage/SetupPackages";
+import TypesOfLicenses from "@/Components/FreezoneDetailsPage/TypesOfLicenses";
 import Navbar from "@/Components/Navbar/Navbar";
+import { freezoneDetails } from "@/Datas/freezoneDetails";
 import { useParams } from "next/navigation";
 
 export default function SerivceDetails() {
@@ -14,11 +19,15 @@ export default function SerivceDetails() {
     <div>
       <Navbar />
       <HeroSection 
-      title={freezone.heroSection.title} 
-      subTitle={freezone.heroSection.subTitle} 
-      decription={freezone.heroSection.description} 
-      buttonText={freezone.heroSection.buttonText} 
-      url={freezone.heroSection.buttonUrl} />
+      title={freezone.hero.headline} 
+      // subTitle={freezone.hero.subTitle} 
+      decription={freezone.hero.subheadline} 
+      buttonText={freezone.hero.ctaButtons[0].text} 
+      url={freezone.hero.ctaButtons[0].link} />
+        <AboutFreezone title={freezone.about.title} image={freezone.image} description={freezone.about.overview} highlights={freezone.about?.highlights} />
+      <TypesOfLicenses title={freezone.typesOfLicenses.title} licenses={freezone.typesOfLicenses.licenses} />
+     <FacilitiesSection/>
+     <SetupPackages/>
       {/* <BusinessJourney heading={service.title}
         imageSrc={service.image}
         paragraph1={service.paragraph1}

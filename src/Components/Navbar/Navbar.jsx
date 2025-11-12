@@ -56,12 +56,12 @@ export default function Navbar() {
   ];
 
   const licenseItems = [
-    { name: 'Commercial License', path: '/license' },
+    { name: 'Commercial License', path: '/license/commercial-license' },
     { name: 'Professional License', path: '/license/professional-license' },
     { name: 'Industrial License', path: '/license/industrial-license' },
     { name: 'Tourism License', path: '/license/tourism-license' },
-    { name: 'E-Trader License', path: '/license/freezone' },
-    { name: 'Freelance Permit', path: '/license/offshore' },
+    { name: 'E-Trader License', path: '/license/e-trader-license' },
+    { name: 'Freelance Permit', path: '/license/freelance-permit' },
   ];
 
   const visaItems = [
@@ -76,7 +76,11 @@ export default function Navbar() {
 
   // detect active route
   useEffect(() => {
-    const current = navItems.find((item) => item.path === pathname);
+    // Find the deepest matching route (not just '/')
+    const current = [...navItems]
+      .sort((a, b) => b.path.length - a.path.length) // longest path first
+      .find((item) => pathname.startsWith(item.path));
+
     if (current) setActiveSection(current.name);
   }, [pathname]);
 
@@ -167,12 +171,16 @@ export default function Navbar() {
                         setIsLicenseOpen(false);
                       }
                     }}
-                    onClick={() => setActiveSection(item.name)}
-                    className={`relative px-2 2xl:px-6 py-3 rounded-2xl 2xl:rounded-3xl font-normal transition-all duration-300 transform hover:scale-105 active:scale-95 ${
-                      activeSection === item.name
+                    onClick={(e) => {
+                      if (['service', 'license', 'visa'].includes(item.name)) {
+                        e.preventDefault(); // 🔒 Stop navigation for dropdowns
+                      } else {
+                        setActiveSection(item.name);
+                      }
+                    }} className={`relative px-2 2xl:px-6 py-3 rounded-2xl 2xl:rounded-3xl font-normal transition-all duration-300 transform hover:scale-105 active:scale-95 ${activeSection === item.name
                         ? 'glass-bg'
                         : 'text-white/80 hover:text-white hover:bg-white/5'
-                    }`}
+                      }`}
                   >
                     {item.label}
                     {activeSection === item.name && (
@@ -206,11 +214,10 @@ export default function Navbar() {
                       setActiveSection(item.name);
                       setIsMobileMenuOpen(false);
                     }}
-                    className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
-                      activeSection === item.name
+                    className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${activeSection === item.name
                         ? 'text-white bg-white/20 backdrop-blur-sm'
                         : 'text-white/80 hover:text-white hover:bg-white/10'
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </Link>
@@ -234,7 +241,7 @@ export default function Navbar() {
             style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
           >
             <div
-              className="max-h-[230px] overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent"
+              className="max-h-[230px] overflow-y-auto p-6 scrollbar-ultrathin"
             >
               <div className="grid grid-cols-4 gap-4 text-white items-center text-sm">
                 {serviceItems.map((service, i) => (
@@ -253,12 +260,12 @@ export default function Navbar() {
       )}
 
       {/* LICENSE DROPDOWN */}
-      {isLicenseOpen && (
+      {isVisaOpen && (
         <div
           ref={licenseDropdownRef}
           className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
-          onMouseEnter={() => setIsLicenseOpen(true)}
-          onMouseLeave={() => setIsLicenseOpen(false)}
+          onMouseEnter={() => setIsVisaOpen(true)}
+          onMouseLeave={() => setIsVisaOpen(false)}
         >
           <div
             className="glass-bg rounded-xl overflow-hidden transition-all"
@@ -268,38 +275,6 @@ export default function Navbar() {
               className="max-h-[230px] overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent"
             >
               <div className="grid grid-cols-4 gap-4 text-white items-center text-sm">
-                {licenseItems.map((license, i) => (
-                  <Link
-                    href={license.path}
-                    key={i}
-                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
-                  >
-                    <p className="font-normal text-white z-10">{license.name}</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* VISA DROPDOWN */}
-      {isVisaOpen && (
-        <div
-          ref={visaDropdownRef}
-          className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
-          onMouseEnter={() => setIsVisaOpen(true)}
-          onMouseLeave={() => setIsVisaOpen(false)}
-        >
-          <div
-            className="glass-bg rounded-xl overflow-hidden flex transition-all"
-            style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
-          >
-            {/* Left side: Visa options */}
-            <div
-              className="max-h-[230px] overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent w-2/3"
-            >
-              <div className="grid grid-cols-2 gap-4 text-white items-center text-sm">
                 {visaItems.map((visa, i) => (
                   <Link
                     href={visa.path}
@@ -311,21 +286,53 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
+          </div>
+        </div>
+      )}
+
+      {/* VISA DROPDOWN */}
+      {isLicenseOpen && (
+        <div
+          ref={visaDropdownRef}
+          className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
+          onMouseEnter={() => setIsLicenseOpen(true)}
+          onMouseLeave={() => setIsLicenseOpen(false)}
+        >
+          <div
+            className="glass-bg rounded-xl overflow-hidden flex transition-all"
+            style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
+          >
+            {/* Left side: Visa options */}
+            <div
+              className="max-h-[160px] overflow-y-auto p-6 scrollbar-ultrathin w-3/4"
+            >
+              <div className="grid grid-cols-3 gap-4 text-white items-center text-sm">
+                {licenseItems.map((license, i) => (
+                  <Link
+                    href={license.path}
+                    key={i}
+                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
+                  >
+                    <p className="font-normal text-white z-10">{license.name}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
 
             {/* Right side: Image */}
-          <div className="relative w-1/3 flex flex-col items-center justify-center  h-[230px] rounded-r-xl">
-  {/* Freezone */}
-  <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-    <span>Freezone</span>
-    <span className="mt-1 w-20 border-b-[1.5px] border-yellow-400"></span>
-  </div>
+            <div className="relative w-1/3 flex flex-col items-center justify-center  h-[230px] rounded-r-xl">
+              {/* Freezone */}
+              <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
+                <span>Freezone</span>
+                <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
+              </div>
 
-  {/* Offshore */}
-  <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-    <span>Offshore</span>
-    <span className="mt-1 w-20 border-b-[1.5px] border-yellow-400"></span>
-  </div>
-</div>
+              {/* Offshore */}
+              <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
+                <span>Offshore</span>
+                <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
+              </div>
+            </div>
 
           </div>
         </div>

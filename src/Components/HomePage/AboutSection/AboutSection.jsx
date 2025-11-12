@@ -116,7 +116,7 @@ At ADL Business Solutions, we simplify your business journey  from company forma
 With years of experience in UAE business consulting, we empower entrepreneurs, investors, and corporates to build strong and successful businesses with confidence, clarity, and transparency.</p>
             </div>
 
-            <SecondaryButton text="Read more" />
+            <SecondaryButton text="Read more" url={"/about-us"} />
 
             {/* Decorative Half Right Border */}
             {/* Horizontal line with rounded left-bottom corner */}

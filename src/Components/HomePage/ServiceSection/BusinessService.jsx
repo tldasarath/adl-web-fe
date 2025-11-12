@@ -49,7 +49,7 @@ const BusinessServices = () => {
             </div>
           </div>
           <div className="justify-center bottom-30 w-full flex gap-2 mt-8">
-            <SecondaryButton text="More Services" />
+            <SecondaryButton text="More Services" url={"/services"} />
           </div>
 
         </div>

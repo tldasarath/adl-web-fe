@@ -38,7 +38,7 @@ const PartnersSection = () => {
             {[...partners, ...partners].map((partner, i) => (
               <div
                 key={`${partner.id}-${i}`}
-                className="flex items-center justify-center w-40 md:w-60 h-20 md:h-28 mx-6 glass-bg rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200 hover:border-blue-300"
+                className="flex items-center justify-center w-40 md:w-60 h-20 md:h-28 mx-6 bg-white/50 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-200 hover:border-blue-300"
               >
                 <Image
                   src={partner.logo}

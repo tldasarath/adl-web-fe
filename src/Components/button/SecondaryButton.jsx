@@ -3,20 +3,18 @@ import { ArrowUpRight } from "lucide-react";
 
 const SecondaryButton = ({ text = "Learn more", url }) => {
   const classes = `
-    flex justify-center items-center gap-3   py-4 text-lg font-light rounded-3xl 
+    group flex justify-center items-center gap-3 py-4 text-lg font-light rounded-3xl 
     text-white/80 transition-all duration-300 
-    transform hover:scale-105 
-    active:scale-95
-    cursor-pointer
-    
-    
+    transform hover:scale-105 active:scale-95 cursor-pointer
   `;
 
   const content = (
     <>
-      {text}
-      <span className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center border border-[#E9C05F] rounded-full transition-all duration-300 group-hover:translate-x-1">
-        <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-[#E9C05F]" />
+      <span className="transition-colors duration-300 ">
+        {text}
+      </span>
+      <span className="w-6 h-6 md:w-8 md:h-8 flex items-center justify-center border border-[#E9C05F] rounded-full transition-all duration-300 group-hover:bg-[#E9C05F] group-hover:translate-x-1">
+        <ArrowUpRight className="w-5 h-5 md:w-6 md:h-6 text-[#E9C05F] transition-colors duration-300 group-hover:text-white" />
       </span>
     </>
   );

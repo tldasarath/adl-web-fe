@@ -119,7 +119,7 @@ const PackageSection = () => {
         </div>
                             <div className="justify-center bottom-30 w-full flex gap-2 mt-8">
 
-        <MainButton text='View more'/>
+        <MainButton text='View more' url={"/uae-freezone-business-setup"}/>
         </div>
       </div> 
    </Container>

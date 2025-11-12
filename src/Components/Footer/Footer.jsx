@@ -26,9 +26,8 @@ export default function Footer() {
 <Container>
       {/* Top Decorative Line */}
 
-      <div className="max-w-6xl p-4 text-center space-y-4 relative">
-   <div className="absolute top-0 left-0 w-20 md:w-40 lg:w-80 h-10 border-b-6 border-r-6 border-[#E9C05F] rounded-br-full rotate-180"></div>
-  <div className="absolute  left-0 top-10 h-12 lg:h-40 w-1.5 bg-[#E9C05F]  rotate-180"></div>
+      <div className="  text-center space-y-4 relative">
+   <div className="absolute top-0 left-0 w-20 md:w-40 lg:w-80 h-25 lg:h-40 border-b-6 border-r-6 border-[#E9C05F] rounded-br-4xl rotate-180"></div>
         {/* Logo */}
         <div className="flex justify-center">
           <img src="/assets/images/logos/adl.png" alt="ADL Business Solutions" className="h- md:h-30" />
