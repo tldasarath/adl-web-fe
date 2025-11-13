@@ -1,4 +1,3 @@
-import LiquidGlass from "@/Components/button/GlassButton";
 import Banner from "@/Components/Common/Banner";
 import Footer from "@/Components/Footer/Footer";
 import AboutSection from "@/Components/HomePage/AboutSection/AboutSection";
@@ -19,8 +18,14 @@ import TeamSection from "@/Components/HomePage/TeamSection/TeamSection";
 import TestimonialSection from "@/Components/HomePage/Testimonial/Testimonial";
 import ValuesSection from "@/Components/HomePage/ValuesSection/ValuesSection";
 import VisaTypesSection from "@/Components/HomePage/VisaTypes/VisaTypesSection";
-import Navbar from "@/Components/Navbar/Navbar";
-import Image from "next/image";
+
+export const metadata = {
+  title: "Business Setup Services in UAE | ADL Business Solutions | #UAE",
+  description:
+    "Professional business setup services in UAE by ADL Business Solutions. Expert support for company formation, licensing, visas, and PRO services.",
+  keywords:
+    "business setup services uae,business setup services dubai,company formation uae,company formation services uae,business setup consultants dubai,dubai business setup,uae company formation experts,start business in dubai,business setup support dubai,business consulting dubai",
+};
 
 export default function Home() {
   return (
@@ -45,9 +50,7 @@ export default function Home() {
       <FAQSection />
       <SubscribeSection />
       <Footer />
-      {/* <div className="flex h-screen justify-center items-center">
-     <LiquidGlass/>
-   </div> */}
+    
     </div>
   );
 }

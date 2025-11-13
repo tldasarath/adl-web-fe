@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Container from "../Common/Container";
+import ImageWithFallback from "../Common/ImageFallBack";
 
-export default function TypesOfLicenses({ title, licenses }) {
+export default function TypesOfLicenses({ title, licenses,description }) {
   // container fade animation
   const containerVariant = {
     hidden: { opacity: 0, y: 20 },
@@ -53,8 +54,7 @@ export default function TypesOfLicenses({ title, licenses }) {
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-3">{title}</h2>
             <p className="text-slate-400 max-w-2xl">
-              Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum
+              {description}
             </p>
           </motion.div>
 
@@ -82,12 +82,14 @@ export default function TypesOfLicenses({ title, licenses }) {
                   whileHover="hover"
                   viewport={{ once: false, amount: 0.4 }}
                 >
-                  <Image
-                    src={license.image}
-                    alt={license.type}
-                    fill
-                    className="object-cover object-center rounded-t-xl"
-                  />
+<ImageWithFallback
+  src={license.image}
+  fallback="/assets/images/freezone-details/license-types/license.png"
+  alt={license.type}
+  fill
+  className="object-cover object-center rounded-t-xl"
+/>
+
                   {/* gradient overlay */}
                 </motion.div>
 

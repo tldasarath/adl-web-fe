@@ -10,6 +10,14 @@ import SuggestedBlogs from "@/Components/mainlandPage/SuggestedBlogs";
 import Navbar from "@/Components/Navbar/Navbar";
 import { Blogposts, MainlandFaqs } from "@/Datas/mainlandData";
 import React from "react";
+export const metadata = {
+  title:
+    "Mainland Company Formation in UAE | Dubai, Abu Dhabi & Sharjah Mainland Setup | ADL Business Solutions",
+  description:
+    "Start your UAE mainland business with ADL Business Solutions. We offer expert mainland company setup in Dubai, Abu Dhabi, and Sharjah with full licensing, visa, office, and bank account support. 100% ownership options available.",
+  keywords:
+    "UAE mainland license, Dubai mainland company setup, Abu Dhabi LLC formation, Sharjah business license, mainland business setup UAE, corporate services Dubai, ADL Business Solutions, Dubai business setup consultant",
+};
 
 const page = () => {
   return (

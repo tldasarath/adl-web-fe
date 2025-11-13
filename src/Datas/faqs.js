@@ -1,33 +1,32 @@
-
 export const faqs = [
   {
-    question: "Yorem ipsum dolor sit amet consectetur dictum est a",
+    question: "How long does it take to set up a company in the UAE?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a mattis nulla. Sed dignissim, metus nec fringilla accumsan.",
+      "The timeline depends on the business license type, but most Freezone and Mainland setups can be completed within 3–7 working days, provided all documents are correct.",
   },
   {
-    question: "Yorem ipsum dolor sit amet consectetur dictum est a",
+    question: "Do I need to be in the UAE to start my company?",
     answer:
-      "Cras vel ligula nec sapien facilisis aliquam. Nulla facilisi. Integer non turpis sit amet metus ultrices malesuada.",
+      "Not always. Many freezones allow remote business setup. However, Mainland setup and Emirates ID/Visa stamping may require presence depending on the case.",
   },
   {
-    question: "Yorem ipsum dolor sit amet consectetur dictum est a",
+    question: "Which is the most affordable Freezone in the UAE?",
     answer:
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "Affordable options include Ajman Free Zone, SPC Free Zone, and Meydan Free Zone. Our experts will guide you to the best option based on your budget and activity.",
   },
   {
-    question: "Yorem ipsum dolor sit amet consectetur dictum est a",
+    question: "Can ADL help with corporate bank account opening?",
     answer:
-      "Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+      "Yes, we assist with bank account opening support and coordinate with UAE banks to ensure smooth onboarding for your company.",
   },
   {
-    question: "Yorem ipsum dolor sit amet consectetur dictum est a",
+    question: "Do I need a physical office to set up a company in UAE?",
     answer:
-      "Ut sit amet elit quis libero gravida elementum. Proin efficitur, justo sed viverra malesuada, magna urna laoreet velit.",
+      "Not always. Many Freezones offer flexi-desk & virtual office options, while Mainland businesses may require office space depending on activity and visa requirements.",
   },
   {
-    question: "Yorem ipsum dolor sit amet consectetur dictum est a",
+    question: "What types of visas can I apply for through ADL?",
     answer:
-      "Duis nec nisi vel lacus convallis pharetra. Nulla facilisi. Donec tempus metus ac eros tincidunt, at efficitur elit mattis.",
+      "We assist with all UAE visas — Golden Visa, Investor Visa, Employment Visa, Family Visa, and Freelancer Visa — including documentation & approvals.",
   },
 ];

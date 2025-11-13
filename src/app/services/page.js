@@ -4,6 +4,13 @@ import Footer from "@/Components/Footer/Footer";
 import ScheduleMeeting from "@/Components/HomePage/ScheduleMeeting/ScheduleMeeting";
 import Navbar from "@/Components/Navbar/Navbar";
 import Services from "@/Components/ServicePage/Services";
+export const metadata = {
+  title: "Business Setup in Dubai | Start Your UAE Company with ADL Business Solutions",
+  description:
+    "Start your business in Dubai with expert guidance from ADL Business Solutions. We handle trade licenses, approvals, and documentation to help you launch your company smoothly in Mainland, Freezone, or Offshore zones.",
+  keywords:
+    "Business setup in Dubai, UAE company formation, business license Dubai, mainland company setup, freezone business setup, start a company in UAE",
+};
 
 export default function Serivces() {
   return (

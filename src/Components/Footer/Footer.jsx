@@ -7,7 +7,7 @@ export default function Footer() {
     const navLinks = [
     { label: "About", href: "/about-us" },
     { label: "Services", href: "/services" },
-    { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "/blogs" },
     { label: "Terms & Conditions", href: "/terms-and-conditions" },
     { label: "Privacy Policy", href: "/privacy-policy" },
     { label: "Contact", href: "/contact" },

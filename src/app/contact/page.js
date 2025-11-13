@@ -4,6 +4,13 @@ import Footer from "@/Components/Footer/Footer";
 import PartnersSection from "@/Components/HomePage/PartnersSection/PartnersSection";
 import ScheduleMeeting from "@/Components/HomePage/ScheduleMeeting/ScheduleMeeting";
 import Navbar from "@/Components/Navbar/Navbar";
+export const metadata = {
+  title: " Business Setup Consultants in Dubai, UAE | Company Setup | ADL",
+  description:
+    "Find the best business setup consultants in the UAE with ADL Business Solutions. Expert support for company formation, licensing, visas, and complete business setup services.",
+  keywords:
+    "best business setup consultants uae,business setup consultants dubai,company formation consultants uae,top business setup companies uae,business setup experts dubai,uae company formation advisors",
+};
 
 export default function Contact() {
   return (

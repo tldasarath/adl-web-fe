@@ -11,18 +11,21 @@ const businessData = [
     title: "Freezone",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...",
     image: "/assets/images/businessSection/freezone.png",
+    url:"/uae-freezone-business-setup"
   },
   {
     id: 2,
     title: "Mainland",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...",
     image: "/assets/images/businessSection/mainland.png",
+    url:"/mainland-company-formation-in-uae"
   },
   {
     id: 3,
     title: "Offshore",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...",
     image: "/assets/images/businessSection/offshore.png",
+    url:"offshore-company-formation-in-uae"
   },
 ];
 
@@ -258,7 +261,7 @@ useEffect(() => {
                       {item.description}
                     </p>
                     <div>
-                      <SecondaryButton text='Explore Packages' />
+                      <SecondaryButton text='Explore Packages' url={item.url} />
                     </div>
                   </div>
                 </div>
