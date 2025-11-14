@@ -26,8 +26,8 @@ export default function Navbar() {
     { name: 'service', label: 'Service', path: '/services' },
     { name: 'freezone', label: 'Freezone', path: '/uae-freezone-business-setup' },
     { name: 'mainland', label: 'Mainland', path: '/mainland-company-formation-in-uae' },
-    { name: 'visa', label: 'Visa', path: '/visa' },
-    { name: 'license', label: 'License', path: '/license' },
+    { name: 'visa', label: 'Visa', path: '/visa/employment-visa' },
+    { name: 'license', label: 'License', path: '/license/commercial-license' },
     { name: 'gallery', label: 'Gallery', path: '/gallery' },
     { name: 'blog', label: 'Blog', path: '/blogs' },
     { name: 'contact', label: 'Contact', path: '/contact' },
@@ -204,7 +204,7 @@ export default function Navbar() {
 
           {/* Mobile Dropdown */}
           {isMobileMenuOpen && (
-            <div className="md:hidden switcher">
+            <div className="md:hidden ">
               <div className="space-y-1">
                 {navItems.map((item) => (
                   <Link
@@ -215,7 +215,7 @@ export default function Navbar() {
                       setIsMobileMenuOpen(false);
                     }}
                     className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${activeSection === item.name
-                        ? 'text-white bg-white/20 backdrop-blur-sm'
+                        ? 'text-white glass-bg'
                         : 'text-white/80 hover:text-white hover:bg-white/10'
                       }`}
                   >
