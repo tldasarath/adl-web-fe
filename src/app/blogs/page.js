@@ -4,6 +4,7 @@ import ExclusiveBlogs from "@/Components/BlogPage/ExclusiveBlogs";
 import HeroSection from "@/Components/Common/HeroSection";
 import Footer from "@/Components/Footer/Footer";
 import Navbar from "@/Components/Navbar/Navbar";
+import { blogs } from "@/Datas/blogs";
 
 import React from "react";
 export const metadata = {
@@ -20,10 +21,10 @@ const page = () => {
             <HeroSection
                 title={"Blogs"}
                 
-                decription={"Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. cnt per "}
+                decription={"Learn more about business setup, company formation, visas, compliance, and other essential UAE business services in our articles. Read more blogs to stay informed and make smarter decisions for your business. "}
                 
                 />
-                <ExclusiveBlogs/>
+                <ExclusiveBlogs blogs={blogs}/>
 <Blogs/>
 
 

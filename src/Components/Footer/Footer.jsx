@@ -35,16 +35,14 @@ export default function Footer() {
 
         {/* Description */}
         <p className=" max-w-2xl mx-auto text-sm md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.
-          Maecenas eget condimentum velit, sit amet feugiat lectus.
+        ADL Business Solutions offers reliable UAE business setup, visa processing, PRO services, and documentation support, ensuring smooth, transparent, and efficient company formation for entrepreneurs, investors, and corporates.
         </p>
 <div className=" hidden lg:block flex flex-col absolute right-0 xl:right-10 top-0 items-center gap-4 mt-8">
           <div className="flex flex-col gap-3  right-5 top-1/3 z-10">
             {[
-              { icon: <FaFacebookF />, link: "#" },
-              { icon: <FaInstagram />, link: "#" },
-              { icon: <FaLinkedinIn />, link: "#" },
-              { icon: <FaYoutube />, link: "#" },
+              { icon: <FaFacebookF />, link: "https://www.facebook.com/profile.php?id=61581712689548" },
+              { icon: <FaInstagram />, link: "https://www.instagram.com/adl_business_solutions_/" },
+              { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/feed/" },
             ].map((social, i) => (
               <a
                 key={i}

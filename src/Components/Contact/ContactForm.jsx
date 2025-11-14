@@ -15,32 +15,35 @@ export default function ContactForm() {
 
   const [errors, setErrors] = useState({});
 
-  // ✅ Validation function
+  // ⚡ UAE Phone Number Validation
+  const uaePhoneRegex = /^(?:\+971|971|0)?5\d{8}$/;
+
   const validate = () => {
     const newErrors = {};
+
     if (!formData.firstName.trim()) newErrors.firstName = "First name is required.";
     if (!formData.lastName.trim()) newErrors.lastName = "Last name is required.";
+
     if (!formData.email.trim()) {
       newErrors.email = "Email is required.";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "Please enter a valid email.";
     }
+
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone number is required.";
-    } else if (!/^\+?\d{7,15}$/.test(formData.phone)) {
-      newErrors.phone = "Enter a valid phone number.";
-    }
+    } 
+
     if (!formData.message.trim()) newErrors.message = "Message cannot be empty.";
+
     return newErrors;
   };
 
-  // ✅ Handle change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); // Clear field error as user types
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
-  // ✅ Handle submit (with WhatsApp integration)
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -50,74 +53,100 @@ export default function ContactForm() {
       return;
     }
 
-    // Format WhatsApp message
+    // WhatsApp Message
     const message = `
-🌟 *New Contact Form Message* 🌟
----------------------------------
-👤 *Name:* ${formData.firstName} ${formData.lastName}
-📧 *Email:* ${formData.email}
-📞 *Phone:* ${formData.phone}
-💬 *Message:* ${formData.message}
----------------------------------
+New Contact Form Message
+-------------------------
+Name: ${formData.firstName} ${formData.lastName}
+Email: ${formData.email}
+Phone: ${formData.phone}
+Message: ${formData.message}
+-------------------------
 `;
 
-    // Replace with your WhatsApp number (with country code, no spaces)
-    const phoneNumber = "1234567890";
+    const phoneNumber = "971542179221";
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-    // Open WhatsApp
     window.open(whatsappURL, "_blank");
   };
 
   return (
-    <div className="relative py-8 md:pb-14 md:pt-48 flex items-center justify-center ">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="-z-10 absolute w-[380px] h-[180px] -right-24 top-50 bg-[#376CBC] opacity-30 blur-[100px] rounded-[60%]" />
-            </div>
+    <div className="relative py-8 md:pb-14 md:pt-48 flex items-center justify-center">
+      {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute w-[380px] h-[180px] -left-24 top-50 bg-[#376CBC] opacity-30 blur-[100px] rounded-[60%]" />
-            </div>
-        <Container>
-        <div className=" w-full grid md:grid-cols-2 gap-12">
-          {/* Left Side */}
+        <div className="-z-10 absolute w-[380px] h-[180px] -right-24 top-50 bg-[#376CBC] opacity-30 blur-[100px] rounded-[60%]" />
+      </div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute w-[380px] h-[180px] -left-24 top-50 bg-[#376CBC] opacity-30 blur-[100px] rounded-[60%]" />
+      </div>
+
+      <Container>
+        <div className="w-full grid md:grid-cols-2 gap-12">
+          {/* Left Section */}
           <div>
             <h2 className="text-2xl mb-5 md:text-3xl font-bold text-white">
               Say Hello,<br />Let’s Start Business
             </h2>
+
             <p className="text-sm md:text-base mb-8 font-light leading-normal">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis.
             </p>
 
+            {/* Social Links */}
             <div>
               <h2 className="text-lg font-semibold mb-4">Follow Us</h2>
               <div className="flex gap-3 flex-wrap">
-                {["Instagram", "LinkedIn", "Facebook", "Youtube"].map((platform) => (
-                  <a
-                    key={platform}
-                    href="#"
-                    className="border glass-bg text-[#E9C05F] px-4 py-2 rounded-2xl transition"
-                  >
-                    {platform}
-                  </a>
-                ))}
+
+                <a
+                  href="https://www.instagram.com/adl_business_solutions_/"
+                  target="_blank"
+                  className="border glass-bg text-[#E9C05F] px-4 py-2 rounded-2xl transition"
+                >
+                  Instagram
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/feed/"
+                  target="_blank"
+                  className="border glass-bg text-[#E9C05F] px-4 py-2 rounded-2xl transition"
+                >
+                  LinkedIn
+                </a>
+
+                <a
+                  href="https://www.facebook.com/profile.php?id=61581712689548"
+                  target="_blank"
+                  className="border glass-bg text-[#E9C05F] px-4 py-2 rounded-2xl transition"
+                >
+                  Facebook
+                </a>
+{/* 
+                <a
+                  href="https://youtube.com/"
+                  target="_blank"
+                  className="border glass-bg text-[#E9C05F] px-4 py-2 rounded-2xl transition"
+                >
+                  YouTube
+                </a> */}
+
               </div>
             </div>
           </div>
 
-          {/* Right Side (Form) */}
+          {/* Form Section */}
           <form
             onSubmit={handleSubmit}
             className="rounded-2xl shadow-lg backdrop-blur-md"
           >
-            {/* First Name + Last Name */}
+            {/* First + Last Name */}
             <div className="grid md:grid-cols-2 gap-4 mb-4">
+              {/* First Name */}
               <div className="flex flex-col">
-                <label htmlFor="firstName" className="text-sm text-gray-300 mb-1 font-medium">
+                <label className="text-sm text-gray-300 mb-1 font-medium">
                   First Name
                 </label>
                 <input
-                  id="firstName"
                   type="text"
                   name="firstName"
                   placeholder="Enter your first name"
@@ -130,12 +159,12 @@ export default function ContactForm() {
                 {errors.firstName && <p className="text-red-400 text-xs">{errors.firstName}</p>}
               </div>
 
+              {/* Last Name */}
               <div className="flex flex-col">
-                <label htmlFor="lastName" className="text-sm text-gray-300 mb-1 font-medium">
+                <label className="text-sm text-gray-300 mb-1 font-medium">
                   Last Name
                 </label>
                 <input
-                  id="lastName"
                   type="text"
                   name="lastName"
                   placeholder="Enter your last name"
@@ -151,12 +180,12 @@ export default function ContactForm() {
 
             {/* Email + Phone */}
             <div className="grid md:grid-cols-2 gap-4 mb-4">
+              {/* Email */}
               <div className="flex flex-col">
-                <label htmlFor="email" className="text-sm text-gray-300 mb-1 font-medium">
+                <label className="text-sm text-gray-300 mb-1 font-medium">
                   Email
                 </label>
                 <input
-                  id="email"
                   type="email"
                   name="email"
                   placeholder="Enter your email"
@@ -169,11 +198,12 @@ export default function ContactForm() {
                 {errors.email && <p className="text-red-400 text-xs">{errors.email}</p>}
               </div>
 
+              {/* Phone */}
               <div className="flex flex-col">
-                <label htmlFor="phone" className="text-sm text-gray-300 mb-1 font-medium">
+                <label className="text-sm text-gray-300 mb-1 font-medium">
                   Phone Number
                 </label>
-                <input
+                  <input
                   id="phone"
                   type="tel"
                   name="phone"
@@ -190,11 +220,10 @@ export default function ContactForm() {
 
             {/* Message */}
             <div className="flex flex-col mb-6">
-              <label htmlFor="message" className="text-sm text-gray-300 mb-1 font-medium">
+              <label className="text-sm text-gray-300 mb-1 font-medium">
                 Message
               </label>
               <textarea
-                id="message"
                 name="message"
                 rows={5}
                 placeholder="Write your message here..."
@@ -219,9 +248,10 @@ export default function ContactForm() {
                 </span>
               </button>
             </div>
+
           </form>
         </div>
-    </Container>
-      </div>
+      </Container>
+    </div>
   );
 }

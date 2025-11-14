@@ -27,11 +27,8 @@ export default function SubscribeSection() {
           Subscribe newsletter  
         </h2>
                 <p className="text-sm md:text-base  mb-8 font-light leading-normal">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-          turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-          fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
-          elit sed risus. Maecenas eget condimentum velit, sa nostra, per
-          inceptos himenaeos.
+      Get expert insights on UAE business setup, visa updates, and government regulations — straight to your inbox. Stay informed and ahead in the UAE business world.
+
         </p>
 
         {!submitted ? (

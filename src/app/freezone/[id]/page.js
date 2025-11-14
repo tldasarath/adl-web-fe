@@ -9,8 +9,7 @@ import FacilitiesSection from "@/Components/FreezoneDetailsPage/FacilitiesSectio
 import SetupPackages from "@/Components/FreezoneDetailsPage/SetupPackages";
 import TypesOfLicenses from "@/Components/FreezoneDetailsPage/TypesOfLicenses";
 import WhyChoose from "@/Components/FreezoneDetailsPage/WhyChoose";
-import WhyChooseADL from "@/Components/FreezoneDetailsPage/WhyChooseADL";
-import Navbar from "@/Components/Navbar/Navbar";
+ import Navbar from "@/Components/Navbar/Navbar";
 import { freezoneDetails } from "@/Datas/freezoneDetails";
 import { useParams } from "next/navigation";
 
@@ -36,7 +35,6 @@ export default function page() {
       <SetupPackages title={freezone.setupPackages.title} note={freezone.setupPackages.note} packages={freezone.setupPackages.packages} />
       <WhyChoose title={freezone.whyChoose.title} description={freezone.whyChoose.description} points={freezone.whyChoose.points} documents={freezone.requiredDocuments.documents} />
       <WhyChooseADL title={freezone.whyChooseADL.title} points={freezone.whyChooseADL.points} />
-
       <InnerBanner title={freezone.banner.title} description={freezone.banner.description} buttonText={"Start Your Business Now"} />
       <ClientExperiences />
       <Footer />

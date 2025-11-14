@@ -144,7 +144,7 @@ export const serviceDetails = [
       subTitle:
         "in Dubai",
       description:
-      "From strategy to licensing, ADL Business Solutions provides complete company formation support in Mainland, Freezone, and Offshore jurisdictions across the UAE.",
+        "From strategy to licensing, ADL Business Solutions provides complete company formation support in Mainland, Freezone, and Offshore jurisdictions across the UAE.",
       buttonText: "Get a Free Consultation",
       buttonUrl: "/"
     },
@@ -156,7 +156,7 @@ export const serviceDetails = [
     paragraph1:
       "Starting a company in Dubai is an exciting opportunity to expand into one of the world’s most dynamic economies — but it requires expert navigation through multiple legal, governmental, and banking processes. At ADL Business Solutions, we make company formation simple, fast, and fully compliant with UAE regulations.",
     paragraph2:
-    "Our team handles everything from selecting the right business activity and jurisdiction to preparing legal documents, getting trade approvals, and obtaining your business license. Whether you’re a first-time entrepreneur or an established investor, we help you build a strong foundation for your success in the UAE.With years of experience and a deep understanding of UAE business laws, we ensure every step of your setup is seamless. Our dedicated consultants provide transparent guidance, personalized strategies, and ongoing support — making your business journey in Dubai smooth, secure, and set for long-term growth. ",
+      "Our team handles everything from selecting the right business activity and jurisdiction to preparing legal documents, getting trade approvals, and obtaining your business license. Whether you’re a first-time entrepreneur or an established investor, we help you build a strong foundation for your success in the UAE.With years of experience and a deep understanding of UAE business laws, we ensure every step of your setup is seamless. Our dedicated consultants provide transparent guidance, personalized strategies, and ongoing support — making your business journey in Dubai smooth, secure, and set for long-term growth. ",
     button1Text: "Schedule a Free Consultation",
     button1Url: "/",
     button2Text: "Start Your Company",
@@ -257,7 +257,7 @@ export const serviceDetails = [
   },
   {
     id: "golden-visa",
-  
+
     seo: {
       title: "Golden Visa Services in Dubai | UAE Long-Term Residency by ADL Business Solutions",
       description:
@@ -265,29 +265,29 @@ export const serviceDetails = [
       keywords:
         "UAE Golden Visa, Dubai Golden Visa, long-term residency UAE, investor visa Dubai, 10-year visa UAE, UAE residence visa for professionals"
     },
-  
+
     heroSection: {
       title: "Golden Visa Services",
       subTitle:
         "in Dubai",
-      description:"ADL Business Solutions helps investors, professionals, and families secure long-term UAE residency through the prestigious Golden Visa program.",
+      description: "ADL Business Solutions helps investors, professionals, and families secure long-term UAE residency through the prestigious Golden Visa program.",
       buttonText: "Check Your Eligibility",
       buttonUrl: "/"
     },
-  
+
     image: "/assets/images/service-details/business-setup.png",
-  
+
     title: " Live, Work, and Thrive in the UAE with a Golden Visa",
-  
+
     paragraph1:
-"    The UAE Golden Visa opens the door to a secure and prosperous future — offering long-term residency, business freedom, and exclusive benefits for investors, skilled professionals, and outstanding achievers. With ADL Business Solutions, obtaining your Golden Visa becomes a streamlined, stress-free experience handled entirely by experts.",  
+      "    The UAE Golden Visa opens the door to a secure and prosperous future — offering long-term residency, business freedom, and exclusive benefits for investors, skilled professionals, and outstanding achievers. With ADL Business Solutions, obtaining your Golden Visa becomes a streamlined, stress-free experience handled entirely by experts.",
     paragraph2:
-  "We manage your eligibility assessment, documentation, medicals, and application submission directly through UAE authorities. Whether you’re applying as an investor, entrepreneur, or specialized professional, our team ensures your visa is processed quickly and without errors — so you can enjoy life and opportunity in Dubai with complete peace of mind.Our consultants stay updated with every UAE immigration regulation to provide accurate, reliable guidance. From family sponsorship to business setup support, we assist you beyond the visa process. With ADL Business Solutions, you gain not only residency -but a trusted partner committed to your long-term success in the UAE.",
+      "We manage your eligibility assessment, documentation, medicals, and application submission directly through UAE authorities. Whether you’re applying as an investor, entrepreneur, or specialized professional, our team ensures your visa is processed quickly and without errors — so you can enjoy life and opportunity in Dubai with complete peace of mind.Our consultants stay updated with every UAE immigration regulation to provide accurate, reliable guidance. From family sponsorship to business setup support, we assist you beyond the visa process. With ADL Business Solutions, you gain not only residency -but a trusted partner committed to your long-term success in the UAE.",
     button1Text: "Check Your Eligibility",
     button1Url: "/",
     button2Text: "Apply for Golden Visa",
     button2Url: "/",
-  
+
     meeting: {
       title: "Check Your Eligibility for a UAE Golden Visa",
       description:
@@ -295,7 +295,7 @@ export const serviceDetails = [
       buttonText: "Book a Free Consultation",
       buttonUrl: "/book-consultation"
     },
-  
+
     section1: {
       title: "Why the UAE Golden Visa Matters",
       description1:
@@ -303,7 +303,7 @@ export const serviceDetails = [
       description2:
         "Dubai’s strong economy, tax-free environment, and world-class living standards make it an ideal destination for long-term residency. With a Golden Visa, you gain freedom, stability, and access to exclusive government and business privileges."
     },
-  
+
     section2: {
       title: "Who Can Apply for a Golden Visa",
       description:
@@ -347,7 +347,7 @@ export const serviceDetails = [
         }
       ]
     },
-  
+
     section3: {
       title: "Why Choose ADL Business Solutions for Golden Visa",
       description:
@@ -361,7 +361,7 @@ export const serviceDetails = [
       ],
       image: { src: "/assets/images/service-details/why-choose-us.png", alt: "Business meeting" }
     },
-  
+
     faqs: [
       {
         question: "What is the validity of the UAE Golden Visa?",
@@ -388,7 +388,7 @@ export const serviceDetails = [
   },
   {
     id: "pro-services",
-  
+
     seo: {
       title: "PRO Services in Dubai | Government & Document Clearing by ADL Business Solutions",
       description:
@@ -396,29 +396,29 @@ export const serviceDetails = [
       keywords:
         "PRO services Dubai, document clearing UAE, government approvals Dubai, visa typing Dubai, corporate PRO service, business setup assistance"
     },
-  
+
     heroSection: {
       title: "PRO Services",
       subTitle:
-"in Dubai",
+        "in Dubai",
       description:
-" From government approvals to visa processing — ADL Business Solutions handles all your public relations needs efficiently and professionally.",
+        " From government approvals to visa processing — ADL Business Solutions handles all your public relations needs efficiently and professionally.",
       buttonText: "Get a Quote",
       buttonUrl: "/"
     },
-  
+
     image: "/assets/images/service-details/business-setup.png",
-  
+
     title: "  Reliable PRO Services to Keep Your Business Moving",
-  
+
     paragraph1:
-'Every successful business in Dubai needs seamless coordination with government departments. ADL Business Solutions offers a comprehensive suite of PRO (Public Relations Officer) services designed to handle all administrative, legal, and compliance-related tasks — so you can focus on running your company.',  
+      'Every successful business in Dubai needs seamless coordination with government departments. ADL Business Solutions offers a comprehensive suite of PRO (Public Relations Officer) services designed to handle all administrative, legal, and compliance-related tasks — so you can focus on running your company.',
     paragraph2:
-'    Our expert PRO team takes care of visa renewals, license processing, document attestation, and labor department transactions, ensuring you stay compliant and avoid unnecessary delays or penalties. With our transparent process and dedicated support, you can experience the convenience of having your government work done right, the first time.We understand the importance of time and accuracy in every government transaction. That’s why ADL Business Solutions provides tailored PRO support for startups, SMEs, and large enterprises alike. Our proactive approach ensures smooth operations, timely renewals, and complete peace of mind for your business in the UAE. ',    button1Text: "Get a Quote",
+      '    Our expert PRO team takes care of visa renewals, license processing, document attestation, and labor department transactions, ensuring you stay compliant and avoid unnecessary delays or penalties. With our transparent process and dedicated support, you can experience the convenience of having your government work done right, the first time.We understand the importance of time and accuracy in every government transaction. That’s why ADL Business Solutions provides tailored PRO support for startups, SMEs, and large enterprises alike. Our proactive approach ensures smooth operations, timely renewals, and complete peace of mind for your business in the UAE. ', button1Text: "Get a Quote",
     button1Url: "/",
     button2Text: "Book a Consultation",
     button2Url: "/",
-  
+
     meeting: {
       title: "Book Your PRO Consultation Today",
       description:
@@ -426,7 +426,7 @@ export const serviceDetails = [
       buttonText: "Book a Free Consultation",
       buttonUrl: "/book-consultation"
     },
-  
+
     section1: {
       title: "What Are PRO Services in Dubai?",
       description1:
@@ -434,11 +434,11 @@ export const serviceDetails = [
       description2:
         "At ADL Business Solutions, our professional PRO team ensures your business operations run smoothly by handling employee visas, government paperwork, license amendments, and other compliance-related processes with precision."
     },
-  
+
     section2: {
       title: "Why Choose ADL Business Solutions for PRO Services",
       description:
-"      Our mission is to make government interactions simple, fast, and reliable — giving you more time to focus on growing your business.",      points: [
+        "      Our mission is to make government interactions simple, fast, and reliable — giving you more time to focus on growing your business.", points: [
           {
             id: 1,
             title: "End-to-End Government Liaison",
@@ -465,9 +465,9 @@ export const serviceDetails = [
             description: "Personalized support for every business client."
           }
         ]
-        
+
     },
-  
+
     section3: {
       title: "Our PRO Services Include",
       description:
@@ -488,7 +488,7 @@ export const serviceDetails = [
         alt: "Business meeting"
       }
     },
-  
+
     faqs: [
       {
         question: "What does a PRO service company do?",
@@ -519,94 +519,94 @@ export const serviceDetails = [
   },
   {
     id: "local-sponsorship",
-  
-    seo: {
-  title: "Local Sponsorship Services in Dubai | Trusted UAE Nationals by ADL Business Solutions",
-  description:
-    "Find reliable and trustworthy local sponsors for your business setup in Dubai with ADL Business Solutions. We connect you with verified UAE nationals ensuring 100% legal compliance and smooth business operations.",
-  keywords:
-    "local sponsor Dubai, UAE national sponsor, company formation Dubai, business setup UAE, Emirati local partnership, corporate sponsorship Dubai"
-},
 
-  
+    seo: {
+      title: "Local Sponsorship Services in Dubai | Trusted UAE Nationals by ADL Business Solutions",
+      description:
+        "Find reliable and trustworthy local sponsors for your business setup in Dubai with ADL Business Solutions. We connect you with verified UAE nationals ensuring 100% legal compliance and smooth business operations.",
+      keywords:
+        "local sponsor Dubai, UAE national sponsor, company formation Dubai, business setup UAE, Emirati local partnership, corporate sponsorship Dubai"
+    },
+
+
     heroSection: {
       title: "Local Sponsorship Services",
       subTitle:
-"in Dubai",
+        "in Dubai",
       description:
-" Partner with verified UAE nationals through ADL Business Solutions — ensuring legal compliance, protection, and trust in every partnership.",
+        " Partner with verified UAE nationals through ADL Business Solutions — ensuring legal compliance, protection, and trust in every partnership.",
       buttonText: "Get a Quote",
       buttonUrl: "/"
     },
-  
+
     image: "/assets/images/service-details/business-setup.png",
-  
+
     title: "   Reliable Local Sponsors to Build Your Business Foundation in Dubai",
-  
+
     paragraph1:
-"Setting up a mainland company in Dubai requires a reliable UAE national sponsor to represent your business as per UAE laws. At ADL Business Solutions, we simplify this process by connecting you with trustworthy and government-approved local sponsors who provide full legal coverage while giving you 100% operational control of your business.",
+      "Setting up a mainland company in Dubai requires a reliable UAE national sponsor to represent your business as per UAE laws. At ADL Business Solutions, we simplify this process by connecting you with trustworthy and government-approved local sponsors who provide full legal coverage while giving you 100% operational control of your business.",
     paragraph2:
-"We understand how important transparency and protection are in sponsorship agreements. That’s why we ensure every partnership is legally documented, secure, and aligned with your business interests — so you can focus on growth while we handle all compliance and formalities.Our team carefully evaluates each sponsor to ensure credibility, reliability, and confidentiality throughout your business journey. From drafting agreements to obtaining approvals, we handle every detail with precision. With ADL Business Solutions, you gain a trusted local partner who safeguards your interests and supports your long-term success in Dubai.  ",
+      "We understand how important transparency and protection are in sponsorship agreements. That’s why we ensure every partnership is legally documented, secure, and aligned with your business interests — so you can focus on growth while we handle all compliance and formalities.Our team carefully evaluates each sponsor to ensure credibility, reliability, and confidentiality throughout your business journey. From drafting agreements to obtaining approvals, we handle every detail with precision. With ADL Business Solutions, you gain a trusted local partner who safeguards your interests and supports your long-term success in Dubai.  ",
     button1Text: " Find a Local Sponsor",
     button1Url: "/",
     button2Text: "Book a Consultation",
     button2Url: "/",
-  
+
     meeting: {
       title: " Book a Free Consultation for Local Sponsorship",
       description:
-" Schedule a meeting with our business setup experts to find a trusted local sponsor for your mainland business. We’ll explain all the sponsorship models, agreements, and your legal rights in detail.",
+        " Schedule a meeting with our business setup experts to find a trusted local sponsor for your mainland business. We’ll explain all the sponsorship models, agreements, and your legal rights in detail.",
       buttonText: "Book a Free Consultation",
       buttonUrl: "/book-consultation"
     },
-  
+
     section1: {
       title: "Why You Need a Local Sponsor in Dubai",
       description1:
-"In the UAE mainland, certain business structures require a UAE national to act as a local sponsor or service agent. This ensures legal compliance with government regulations while allowing foreign investors to conduct business smoothly within the country.",
+        "In the UAE mainland, certain business structures require a UAE national to act as a local sponsor or service agent. This ensures legal compliance with government regulations while allowing foreign investors to conduct business smoothly within the country.",
       description2:
-"ADL Business Solutions ensures that your sponsor agreement is secure, fully transparent, and backed by legal documentation — offering both flexibility and peace of mind for international entrepreneurs."
+        "ADL Business Solutions ensures that your sponsor agreement is secure, fully transparent, and backed by legal documentation — offering both flexibility and peace of mind for international entrepreneurs."
     },
-  
+
     section2: {
       title: "Why Choose ADL Business Solutions for Sponsorship",
       description:
-" We act as your bridge between opportunity and compliance, ensuring your mainland business grows under a safe and transparent structure.",     
-points: [
-  {
-    id: 1,
-    title: "Verified Emirati Sponsors",
-    description: "We work only with government-approved, trusted UAE nationals."
-  },
-  {
-    id: 2,
-    title: "Legally Protected Agreements",
-    description: "All sponsorships come with notarized MOA and side agreements."
-  },
-  {
-    id: 3,
-    title: "100% Business Control",
-    description: "You retain full financial and operational control of your company."
-  },
-  {
-    id: 4,
-    title: "Transparent Annual Fees",
-    description: "No commissions or hidden costs."
-  },
-  {
-    id: 5,
-    title: "Fast Documentation",
-    description: "Complete sponsorship and licensing setup within days."
-  }
-]
+        " We act as your bridge between opportunity and compliance, ensuring your mainland business grows under a safe and transparent structure.",
+      points: [
+        {
+          id: 1,
+          title: "Verified Emirati Sponsors",
+          description: "We work only with government-approved, trusted UAE nationals."
+        },
+        {
+          id: 2,
+          title: "Legally Protected Agreements",
+          description: "All sponsorships come with notarized MOA and side agreements."
+        },
+        {
+          id: 3,
+          title: "100% Business Control",
+          description: "You retain full financial and operational control of your company."
+        },
+        {
+          id: 4,
+          title: "Transparent Annual Fees",
+          description: "No commissions or hidden costs."
+        },
+        {
+          id: 5,
+          title: "Fast Documentation",
+          description: "Complete sponsorship and licensing setup within days."
+        }
+      ]
 
-        
+
     },
-  
+
     section3: {
       title: "Our Local Sponsorship Models",
       description:
-"We offer multiple partnership structures to suit different business types and ownership preferences:",
+        "We offer multiple partnership structures to suit different business types and ownership preferences:",
       points: [
         "Individual Local Sponsorship",
         "Corporate Local Sponsorship",
@@ -618,38 +618,2005 @@ points: [
         alt: "Business meeting"
       }
     },
-  
-   faqs: [
-  {
-    question: "Why is a local sponsor required in Dubai?",
-    answer:
-      "A UAE national sponsor is required for foreign investors to legally operate a mainland business in certain commercial sectors."
-  },
-  {
-    question: "Does the local sponsor control my business?",
-    answer:
-      "No. You maintain 100% operational and financial control through legally drafted side agreements."
-  },
-  {
-    question: "How are local sponsors selected by ADL?",
-    answer:
-      "We partner only with verified Emirati nationals approved by relevant authorities."
-  },
-  {
-    question: "Can I change my sponsor later?",
-    answer:
-      "Yes, our legal team can assist with sponsor transfer and documentation if needed."
-  },
-  {
-    question: "Is sponsorship required for Free Zone companies?",
-    answer:
-      "No, Free Zone entities can have 100% foreign ownership and do not require a local sponsor."
-  }
-]
 
-  }
-  
-  
+    faqs: [
+      {
+        question: "Why is a local sponsor required in Dubai?",
+        answer:
+          "A UAE national sponsor is required for foreign investors to legally operate a mainland business in certain commercial sectors."
+      },
+      {
+        question: "Does the local sponsor control my business?",
+        answer:
+          "No. You maintain 100% operational and financial control through legally drafted side agreements."
+      },
+      {
+        question: "How are local sponsors selected by ADL?",
+        answer:
+          "We partner only with verified Emirati nationals approved by relevant authorities."
+      },
+      {
+        question: "Can I change my sponsor later?",
+        answer:
+          "Yes, our legal team can assist with sponsor transfer and documentation if needed."
+      },
+      {
+        question: "Is sponsorship required for Free Zone companies?",
+        answer:
+          "No, Free Zone entities can have 100% foreign ownership and do not require a local sponsor."
+      }
+    ]
+
+  },
+  {
+    id: "visa-services",
+
+    seo: {
+      title: "Visa Services in Dubai | UAE Residence & Work Visas by ADL Business Solutions",
+      description:
+        "Get hassle-free visa services in Dubai with ADL Business Solutions. We handle investor, partner, employee, and family visas, along with Emirates ID, medical tests, and renewals — ensuring fast and compliant processing.",
+      keywords:
+        "UAE visa services, Dubai residence visa, work visa Dubai, family visa UAE, visa renewal Dubai, Emirates ID services, medical test Dubai"
+    },
+
+
+
+    heroSection: {
+      title: "Visa Services",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions manages all types of UAE visas — from employee and investor visas to family and partner visas — ensuring fast, accurate, and legal processing.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "Comprehensive Visa Services for Individuals and Businesses",
+
+    paragraph1:
+      "Navigating the UAE visa system can be complex and time-consuming, especially with the different types of visas, approvals, and medical requirements. At ADL Business Solutions, we provide end-to-end visa services that simplify the process for companies, employees, investors, and their families. Our team ensures all documentation, approvals, and Emirates ID processes are handled efficiently.",
+    paragraph2:
+      "Whether it’s obtaining a new residence visa, renewing an existing visa, sponsoring family members, or managing employee visa changes, ADL’s experts ensure your applications are processed quickly, accurately, and fully compliant with UAE regulations — so you can focus on your business and lifestyle.",
+    button1Text: " Find a Local Sponsor",
+    button1Url: "/",
+    button2Text: "Book a Consultation",
+    button2Url: "/",
+
+    meeting: {
+      title: "Book a Free Visa Consultation",
+      description:
+        "Schedule a meeting with our visa experts to determine the best visa type for your needs. We’ll guide you through document preparation, submission, and follow-up with UAE authorities.",
+      buttonText: "Book Now",
+      buttonUrl: "/book-consultation"
+    },
+
+
+    section1: {
+      title: "Types of Visa Services We Provide",
+      description1:
+        "ADL Business Solutions provides UAE visa services covering investor and partner visas, employee work permits, and family sponsorships. We assist students, professionals, and businesses with easy processing, renewals, compliance for residency and employment needs."
+      , description2:
+        "We handle visa cancellations, Emirates ID typing, biometrics, and medical test support, ensuring quick and smooth completion for applicants."
+    },
+
+    section2: {
+      title: "Why Choose ADL for Visa Services",
+      description:
+        "ADL ensures your visa processing is seamless, saving you time and avoiding unnecessary delays or fines.",
+      points: [
+        {
+          id: 1,
+          title: "Full Government Liaison",
+          description: "We handle all communication with immigration and labor authorities."
+        },
+        {
+          id: 2,
+          title: "Fast Turnaround",
+          description: "Quick processing times with regular status updates."
+        },
+        {
+          id: 3,
+          title: "Accurate Documentation",
+          description: "We ensure all forms and approvals meet government standards."
+        },
+        {
+          id: 4,
+          title: "Flexible Packages",
+          description: "Solutions tailored for companies, investors, and families."
+        },
+        {
+          id: 5,
+          title: "Expert Guidance",
+          description: "Experienced team to advise on visa eligibility and requirements."
+        }
+      ]
+    },
+
+    section3: {
+      title: "Our Process",
+      description:
+        "A streamlined visa processing workflow to ensure fast and compliant approvals.",
+      points: [
+        "Eligibility Assessment: Determine the right visa type based on your profile or business activity.",
+        "Document Preparation: Collect and review all required documents.",
+        "Application Submission: Submit applications to immigration and relevant government authorities.",
+        "Medical & Emirates ID Processing: Coordinate medical tests and ID registration.",
+        "Approval & Handover: Deliver your visa and Emirates ID with renewal instructions."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Visa processing steps"
+      }
+    },
+
+    faqs: [
+      {
+        question: "How long does visa processing take in Dubai?",
+        answer: "Typically 2–4 weeks, depending on the type of visa and document approvals."
+      },
+      {
+        question: "Can ADL sponsor my family on my business visa?",
+        answer: "Yes, spouse, children, and domestic staff can be sponsored with your visa."
+      },
+      {
+        question: "What documents are needed for a work visa?",
+        answer: "Passport copies, labor contract, Emirates ID details, medical test results, and company approval."
+      },
+      {
+        question: "Can ADL handle visa renewals?",
+        answer: "Yes, we manage renewals and cancellations efficiently."
+      },
+      {
+        question: "Do you provide assistance for Emirates ID registration?",
+        answer: "Absolutely. We handle typing, biometrics, and all related formalities."
+      }
+    ],
+
+    blogs: [
+      "Step-by-Step Guide to Obtaining a UAE Residence Visa",
+      "Investor vs Employee Visa in Dubai: What You Need to Know",
+      "How to Sponsor Your Family for a UAE Visa",
+      "Top 5 Mistakes to Avoid During Visa Applications in the UAE",
+      "Emirates ID and Medical Tests — Simplifying the Process for Residents"
+    ]
+  },
+  {
+    id: "iso-certification-trademark-registration",
+
+    seo: {
+      title: "ISO Certification & Trademark Registration Dubai | ADL Business Solutions",
+      description:
+        "Obtain ISO certification and trademark registration in Dubai with ADL Business Solutions. Ensure your business meets global standards and protects its brand identity in the UAE and internationally.",
+      keywords:
+        "ISO certification Dubai, ISO consultancy UAE, trademark registration Dubai, brand protection UAE, ISO compliance services, intellectual property UAE"
+    },
+
+
+
+    heroSection: {
+      title: "ISO Certification & Trademark Registration",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions helps businesses in Dubai secure ISO certifications and trademark registrations, ensuring quality compliance and intellectual property protection.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: " Protect Your Brand & Achieve International Standards",
+
+    paragraph1:
+      "ISO certification demonstrates that your business adheres to international standards for quality, safety, and efficiency — boosting credibility, operational excellence, and customer trust. At ADL Business Solutions, we guide you through the entire ISO certification process, from gap analysis to documentation, audits, and final approval.",
+    paragraph2:
+      "Trademark registration is equally critical for protecting your brand identity and preventing unauthorized use of your company’s intellectual property. Our experts ensure smooth registration with the UAE Ministry of Economy, handling all legal requirements and document submissions so you can secure your brand confidently."
+    , button1Text: " Find a Local Sponsor",
+    button1Url: "/",
+    button2Text: "Book a Consultation",
+    button2Url: "/",
+
+    meeting: {
+      title: "Schedule a Consultation for ISO Certification & Trademark Registration",
+      description:
+        "Book a free consultation with our experts to understand your ISO certification needs or trademark registration process. We provide a roadmap for compliance and legal protection in Dubai and the UAE.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+    section1: {
+      title: "Why ISO Certification is Important",
+      description1:
+        "ISO certification helps businesses meet global standards for quality, environmental management, health and safety, and information security. It boosts customer trust, improves operational efficiency, expands global market access, and enhances overall credibility.",
+      description2:
+        "ADL Business Solutions offers consultancy and support for ISO 9001, 14001, 45001 and 27001, ensuring smooth certification for your company"
+    },
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "With ADL, your business achieves international standards and brand protection efficiently and reliably.",
+      points: [
+        {
+          id: 1,
+          title: "Expert Guidance",
+          description: "Experienced consultants for both ISO certification and trademark registration."
+        },
+        {
+          id: 2,
+          title: "Complete Documentation Handling",
+          description: "From application to approval, we manage every step of the process."
+        },
+        {
+          id: 3,
+          title: "Fast & Compliant Processing",
+          description: "Avoid delays with government and certification body requirements."
+        },
+        {
+          id: 4,
+          title: "Tailored Solutions",
+          description: "Customized services based on your business type and industry."
+        },
+        {
+          id: 5,
+          title: "Transparent Pricing",
+          description: "No hidden fees — clear and straightforward cost structure for ISO and trademark services."
+        }
+      ]
+    },
+
+
+    section3: {
+      title: "Trademark Registration Services",
+      description:
+        "Trademark registration protects your company’s brand, logo, or slogan legally in the UAE. We assist with search, filing, approval, and renewal, ensuring your intellectual property is fully compliant with UAE law.",
+      points: [
+        "Exclusive Rights: Secure full legal ownership of your brand and logo.",
+        "Brand Protection: Safeguard your business from infringement and misuse.",
+        "Nationwide Recognition: Strengthen your credibility across the UAE market.",
+        "International Support: Guidance for GCC and global trademark applications.",
+        "Complete Process Handling: We manage search, filing, approval, and renewals."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Trademark registration process"
+      }
+    },
+
+
+    faqs: [
+      {
+        question: "How long does ISO certification take?",
+        answer: "Typically 4–12 weeks depending on the type of ISO standard and the size of the company."
+      },
+      {
+        question: "Can a UAE company register a trademark for international use?",
+        answer: "Yes, we provide guidance for filing trademarks in multiple jurisdictions through WIPO or local agreements."
+      },
+      {
+        question: "What documents are needed for trademark registration?",
+        answer: "Company trade license, logo or mark design, owner details, and relevant business documents."
+      },
+      {
+        question: "How often does ISO certification need renewal?",
+        answer: "ISO certifications are valid for 3 years, with annual surveillance audits required to maintain compliance."
+      },
+      {
+        question: "Can ADL handle both ISO and trademark services together?",
+        answer: "Absolutely. We provide end-to-end support for all compliance and brand protection needs."
+      }
+    ],
+
+
+    blogs: [
+      "Step-by-Step Guide to ISO Certification in Dubai",
+      "Why Every UAE Business Needs Trademark Registration",
+      "ISO vs Local Quality Standards — What You Need to Know",
+      "Common Mistakes in Trademark Registration and How to Avoid Them",
+      "Benefits of ISO Certification for UAE Startups and SMEs"
+    ]
+
+  },
+  {
+    id: "company-liquidation",
+
+    seo: {
+      title: "Company Liquidation Services Dubai | Business Closure Assistance by ADL",
+      description:
+        "Close your business smoothly with ADL Business Solutions’ company liquidation services in Dubai. We handle legal formalities, clearance, and documentation to ensure hassle-free business closure.",
+      keywords:
+        "company liquidation Dubai, business closure UAE, company dissolution UAE, cancel trade license Dubai, corporate liquidation services"
+    },
+
+
+
+
+    heroSection: {
+      title: " Company Liquidation",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions manages the entire company closure process — from legal formalities to government approvals — ensuring stress-free liquidation."
+      , buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Smooth & Compliant Company Liquidation in Dubai",
+
+    paragraph1:
+      "Closing a company in Dubai involves multiple legal steps, government approvals, and document submissions. ADL Business Solutions provides end-to-end company liquidation services, helping business owners dissolve their entities efficiently, minimize liabilities, and ensure compliance with UAE laws.",
+    paragraph2:
+      "Our experts manage all procedures including license cancellation, visa cancellations, bank account closures, and final clearance from government departments. With ADL handling your liquidation, you can exit your business responsibly, avoiding penalties or future liabilities.",
+    button1Text: " Find a Local Sponsor",
+    button1Url: "/",
+    button2Text: "Book a Consultation",
+    button2Url: "/",
+
+    meeting: {
+      title: "Book Your Free Company Liquidation Consultation",
+      description:
+        "Schedule a consultation with our experts to understand the liquidation process, required documents, and timelines for closing your company in Dubai.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+    section1: {
+      title: "Why Company Liquidation is Important",
+      description1:
+        "Liquidating a business in Dubai is essential to comply with UAE regulations, avoid fines, and formally close obligations with authorities, banks, and employees. Proper liquidation protects business owners from future liabilities and ensures a clean exit from the market.",
+      description2:
+        "ADL Business Solutions provides expert guidance through every step, ensuring full compliance and peace of mind throughout the closure process."
+    },
+
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "ADL ensures your business exit is smooth, compliant, and stress-free, protecting your interests and reputation.",
+      points: [
+        {
+          id: 1,
+          title: "Full Compliance",
+          description: "Legal and regulatory closure handled professionally across all required authorities."
+        },
+        {
+          id: 2,
+          title: "Hassle-Free Process",
+          description: "End-to-end support, covering documentation, clearances, deregistration, and approvals."
+        },
+        {
+          id: 3,
+          title: "Experienced Team",
+          description: "Experts familiar with all mainland and Freezone liquidation procedures."
+        },
+        {
+          id: 4,
+          title: "Transparent Fees",
+          description: "No hidden costs — clear and straightforward pricing throughout the liquidation process."
+        },
+        {
+          id: 5,
+          title: "Fast Turnaround",
+          description: "Efficient processing to minimize delays and ensure timely company closure."
+        }
+      ]
+    },
+
+
+
+    section3: {
+      title: "Our Company Liquidation Services",
+      description:
+        "We provide complete end-to-end company liquidation support, ensuring all government, financial, and legal obligations are properly closed in compliance with UAE regulations.",
+      points: [
+        "Trade License Cancellation",
+        "Employee Visa Cancellation",
+        "Bank Account Closure Assistance",
+        "Final Clearance from Government Departments",
+        "Document Submission & Notarization",
+        "Coordination with Free Zones or Mainland Authorities"
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Company liquidation process"
+      }
+    },
+
+
+
+    faqs: [
+      {
+        question: "How long does it take to liquidate a company in Dubai?",
+        answer: "Typically 2–8 weeks depending on the company type, Freezone, and regulatory requirements."
+      },
+      {
+        question: "What documents are required for liquidation?",
+        answer: "Trade license, shareholder resolutions, visa documents, bank closure letters, and government clearance forms."
+      },
+      {
+        question: "Can ADL handle both Mainland and Freezone company liquidation?",
+        answer: "Yes, we manage liquidation for all types of entities across Dubai and the UAE."
+      },
+      {
+        question: "Are there any penalties for late liquidation?",
+        answer: "Yes, failure to close a company on time may result in fines. ADL ensures timely and compliant closure."
+      },
+      {
+        question: "Do you also cancel employee visas?",
+        answer: "Absolutely. We handle all employee and partner visa cancellations along with required government filings."
+      }
+    ],
+
+
+
+    blogs: [
+      "Step-by-Step Guide to Company Liquidation in Dubai",
+      "Avoiding Common Mistakes During Business Closure",
+      "Liquidating a Freezone Company vs Mainland Company",
+      "How to Minimize Costs During Company Closure",
+      "Essential Checklist for Company Liquidation in UAE"
+    ]
+
+
+  },
+  {
+    id: "document-attestation",
+
+    seo: {
+      title: "Document Attestation Services Dubai | UAE Legal & Educational Attestation",
+      description:
+        "Get your documents attested in Dubai with ADL Business Solutions. We provide UAE embassy, MOFA, and educational attestation services for personal, corporate, and legal documents.",
+      keywords:
+        "document attestation Dubai, UAE MOFA attestation, certificate attestation UAE, educational attestation Dubai, legal document attestation, embassy attestation UAE"
+    },
+
+
+
+
+
+    heroSection: {
+      title: " Document Attestation Services",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions manages all types of document attestation — for personal, corporate, and educational purposes — ensuring smooth processing with UAE authorities."
+      , buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Smooth & Compliant Company Liquidation in Dubai",
+
+    paragraph1:
+      "Document attestation is essential for legalizing your personal, educational, or corporate documents in the UAE. ADL Business Solutions offers complete attestation services, including embassy attestation, MOFA attestation, and notarization, making the process fast, accurate, and hassle-free.",
+
+    paragraph2:
+      "Our experienced team handles all submissions, approvals, and verifications on your behalf. Whether you need attestation for employment, education, business setup, or legal purposes, ADL ensures your documents are processed efficiently, compliant with UAE regulations, and delivered on time.",
+
+    button1Text: " Find a Local Sponsor",
+    button1Url: "/",
+    button2Text: "Book a Consultation",
+    button2Url: "/",
+
+    meeting: {
+      title: "Book Your Document Attestation Consultation",
+      description:
+        "Schedule a free consultation to understand the attestation process for your documents. We’ll guide you through the requirements, submission steps, and approvals needed for UAE attestation.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+
+    section1: {
+      title: "Types of Documents We Attest",
+      description1:
+        "We assist with attestation for personal documents such as passports, birth and marriage certificates, and academic records like diplomas and degrees. We also manage corporate files including trade licenses, MOAs, and other legal documents that require official authentication.",
+
+      description2:
+        "We ensure all documents meet UAE government regulations, embassy verification standards, and MOFA authentication requirements, delivering a smooth, reliable, and fully compliant attestation service.",
+    },
+
+
+    section2: {
+      title: "Why Choose ADL for Document Attestation",
+      description:
+        "ADL makes the attestation process simple, efficient, and legally compliant, saving you time and effort.",
+      points: [
+        {
+          id: 1,
+          title: "End-to-End Process",
+          description: "From collection to submission, we manage the entire attestation workflow."
+        },
+        {
+          id: 2,
+          title: "Fast Processing",
+          description: "Quick attestation services for personal, educational, and corporate documents."
+        },
+        {
+          id: 3,
+          title: "Embassy & MOFA Liaison",
+          description: "Direct coordination with embassies and the UAE Ministry of Foreign Affairs."
+        },
+        {
+          id: 4,
+          title: "Secure Handling",
+          description: "Strict confidentiality and professional handling of all sensitive documents."
+        },
+        {
+          id: 5,
+          title: "Transparent Fees",
+          description: "No hidden charges — clear and straightforward pricing for all attestation services."
+        }
+      ]
+    },
+
+
+
+
+    section3: {
+      title: "Our Document Attestation Process",
+      description:
+        "We ensure your documents are authenticated properly through each required stage, meeting UAE and international standards.",
+      points: [
+        "Document Review: Verify authenticity and prepare required paperwork.",
+        "Notarization & Local Attestation: Complete initial verification steps for embassy submission.",
+        "MOFA Attestation: Coordinate authentication with the UAE Ministry of Foreign Affairs.",
+        "Embassy Submission: Handle embassy-level attestation for foreign documents.",
+        "Delivery: Receive your attested documents securely at your preferred location."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Document attestation process"
+      }
+    },
+
+
+
+    faqs: [
+      {
+        question: "How long does document attestation take in Dubai?",
+        answer: "Typically 3–10 business days depending on the document type and embassy requirements."
+      },
+      {
+        question: "Which documents require attestation for UAE visa or employment?",
+        answer: "Educational certificates, birth certificates, marriage certificates, and professional credentials usually require attestation."
+      },
+      {
+        question: "Can ADL handle attestation for documents from any country?",
+        answer: "Yes, we provide attestation services for documents issued in most countries worldwide."
+      },
+      {
+        question: "Is notarization necessary before UAE attestation?",
+        answer: "Yes, documents generally must be notarized in the home country before embassy or MOFA attestation."
+      },
+      {
+        question: "Does ADL offer document delivery after attestation?",
+        answer: "Absolutely — we provide secure delivery to your preferred address once attestation is complete."
+      }
+    ],
+
+
+
+
+    blogs: [
+      "Step-by-Step Guide to Document Attestation in Dubai",
+      "Why MOFA Attestation is Required for UAE Employment",
+      "Educational Certificate Attestation for UAE Universities and Employers",
+      "Common Mistakes in Document Attestation and How to Avoid Them",
+      "How ADL Simplifies Corporate Document Attestation in Dubai"
+    ]
+
+
+
+  },
+  {
+    id: "legal-translation",
+
+    seo: {
+      title: "Legal Translation Services Dubai | Certified Arabic & English Translation",
+      description:
+        "ADL Business Solutions provides professional legal translation services in Dubai. Certified translations for contracts, agreements, certificates, and legal documents in Arabic, English, and other languages.",
+      keywords:
+        "legal translation Dubai, certified translation UAE, Arabic to English translation, English to Arabic translation, document translation Dubai, contract translation UAE"
+    },
+
+
+
+
+
+
+    heroSection: {
+      title: "  Legal Translation Services ",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions offers expert translation services for all legal documents, ensuring compliance and official acceptance in UAE authorities."
+      , buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Smooth & Compliant Company Liquidation in Dubai",
+
+    paragraph1:
+      "Legal documents require precise and certified translations to be recognized by UAE authorities, courts, and government departments. ADL Business Solutions provides professional translation services for contracts, agreements, certificates, and other legal documents in Arabic, English, and various international languages.",
+
+    paragraph2:
+      "Our certified translators ensure linguistic accuracy, legal compliance, and cultural relevance, minimizing errors that could affect document validity. Whether you need translations for government submissions, court filings, immigration purposes, or corporate use, ADL ensures your documents are officially certified and accepted across the UAE.",
+
+    button1Text: " Find a Local Sponsor",
+    button1Url: "/",
+    button2Text: "Book a Consultation",
+    button2Url: "/",
+
+    meeting: {
+      title: "Schedule Your Legal Translation Consultation",
+      description:
+        "Book a free consultation with our certified translators to understand your legal translation requirements. We provide guidance for document certification and official acceptance by UAE authorities.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+
+    section1: {
+      title: "Types of Legal Documents We Translate",
+      description1:
+        "We provide certified translation for contracts, court papers, legal notices, powers of attorney, affidavits, corporate documents, MOAs and POAs, certificates, licenses, and immigration or visa files. Our expert legal translators ensure precise and accurate translations that fully meet UAE standards.",
+
+      description2:
+        "All certified translations are prepared in compliance with UAE legal requirements for official submission and verification. ADL delivers accurate, valid, and professionally certified documents accepted by courts, ministries, and government authorities across the UAE.",
+    },
+
+
+    section2: {
+      title: "Why Choose ADL for Legal Translation",
+      description:
+        "ADL provides a seamless translation experience that guarantees official recognition and accuracy.",
+      points: [
+        {
+          id: 1,
+          title: "Certified Translators",
+          description: "Professional translators with legal expertise, certified to provide official translations."
+        },
+        {
+          id: 2,
+          title: "Accurate & Reliable",
+          description: "Linguistically precise and legally compliant translations for official use."
+        },
+        {
+          id: 3,
+          title: "Fast Turnaround",
+          description: "Quick delivery timelines without compromising on translation quality."
+        },
+        {
+          id: 4,
+          title: "Official Acceptance",
+          description: "Translations accepted by UAE courts, ministries, and government authorities."
+        },
+        {
+          id: 5,
+          title: "Confidential & Secure",
+          description: "Secure handling and strict confidentiality for all sensitive legal documents."
+        }
+      ]
+    },
+
+
+
+
+
+    section3: {
+      title: "Our Legal Translation Process",
+      description:
+        "We ensure your legal documents are translated accurately, certified professionally, and accepted by all UAE authorities.",
+      points: [
+        "Document Review: Check source documents for completeness and clarity.",
+        "Translation: Accurate translation completed by certified legal translators.",
+        "Certification & Notarization: Apply official stamps and legal certifications when required.",
+        "Delivery: Receive professionally translated documents digitally or in physical form."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Legal translation process"
+      }
+    },
+
+
+
+    faqs: [
+      {
+        question: "Are your translations legally recognized in UAE courts?",
+        answer: "Yes, all translations are certified and accepted by UAE courts and government authorities."
+      },
+      {
+        question: "How long does legal translation take?",
+        answer: "Most translations are completed within 1–5 business days, depending on the document's length and complexity."
+      },
+      {
+        question: "Which languages do you support?",
+        answer: "We support Arabic, English, and all major international languages for certified legal translation."
+      },
+      {
+        question: "Can ADL translate corporate contracts for submission to UAE authorities?",
+        answer: "Yes, we handle corporate, governmental, and private contracts professionally and accurately."
+      },
+      {
+        question: "Do you provide notarized or attested translations?",
+        answer: "Absolutely — translations can be notarized or attested for official and legal use in the UAE."
+      }
+    ],
+
+    blogs: [
+      "Certified Legal Translation Services in Dubai Explained",
+      "Why Accurate Legal Translation is Crucial for UAE Contracts",
+      "Step-by-Step Guide to Translating Documents for UAE Government",
+      "Top Mistakes to Avoid in Legal Document Translation",
+      "How ADL Ensures Compliance in Legal Translation Services"
+    ]
+
+
+
+
+  },
+  {
+    id: "insurance-vat-services",
+
+    seo: {
+      title: "Insurance & VAT Services Dubai | Corporate & Personal Solutions",
+      description:
+        "ADL Business Solutions provides insurance and VAT services in Dubai. Get corporate insurance, personal coverage, VAT registration, compliance, and filing support for your UAE business.",
+      keywords:
+        "insurance services Dubai, VAT registration UAE, VAT filing Dubai, corporate insurance UAE, personal insurance Dubai, VAT compliance UAE"
+    },
+
+
+
+
+
+
+
+    heroSection: {
+      title: "   Insurance & VAT Services ",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions offers expert insurance and VAT services, ensuring compliance, risk coverage, and seamless financial operations for businesses and individuals in Dubai."
+      , buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Smooth & Compliant Company Liquidation in Dubai",
+
+    paragraph1:
+      "Managing insurance and VAT requirements in Dubai can be complex and time-consuming. ADL Business Solutions provides end-to-end solutions, including corporate and personal insurance, VAT registration, filing, and compliance support. Our expert team ensures your business meets all regulatory obligations while protecting your assets and minimizing risks.",
+
+    paragraph2:
+      "We offer tailored solutions for companies of all sizes, from startups to large enterprises. Whether it’s corporate liability insurance, health coverage, or VAT filing and reporting, ADL ensures efficient processes, accurate documentation, and complete peace of mind—allowing you to focus on growing your business.",
+
+    button1Text: " Find a Local Sponsor",
+    button1Url: "/",
+    button2Text: "Book a Consultation",
+    button2Url: "/",
+
+    meeting: {
+      title: "Book Your Consultation for Insurance & VAT Services",
+      description:
+        "Schedule a free consultation with our experts to discuss insurance plans for your business or personal needs, as well as VAT registration and filing services.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+
+
+    section1: {
+      title: " Our Insurance Services",
+      description1:
+        "We provide comprehensive corporate insurance solutions including liability, property, and employee health coverage, along with personal insurance such as health, life, and travel. We also offer specialized coverage for construction, logistics, and other professional sectors, supported by detailed risk assessments and customized plans.",
+
+      description2:
+        "ADL ensures your insurance needs are met with the right coverage, competitive rates, and expert guidance. Our team provides a smooth, hassle-free experience from plan selection to claims support, ensuring full protection for your business and personal needs.",
+    },
+
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "ADL helps businesses and individuals manage insurance and VAT efficiently, reducing risk and ensuring compliance.",
+      points: [
+        {
+          id: 1,
+          title: "Expert Guidance",
+          description: "Experienced insurance and VAT consultants providing professional support."
+        },
+        {
+          id: 2,
+          title: "Full Compliance",
+          description: "Ensure your business meets all UAE legal, financial, and VAT regulations."
+        },
+        {
+          id: 3,
+          title: "Tailored Solutions",
+          description: "Customized insurance and VAT packages designed for your business size and industry."
+        },
+        {
+          id: 4,
+          title: "Time-Saving Services",
+          description: "End-to-end management from registration to filing, renewals, and claims."
+        },
+        {
+          id: 5,
+          title: "Transparent Pricing",
+          description: "Clear and honest cost structures with no hidden fees."
+        }
+      ]
+    },
+
+
+
+
+
+
+    section3: {
+      title: "Our VAT Services",
+      description:
+        "We make VAT compliance simple, helping you avoid penalties and stay fully compliant with UAE Federal Tax Authority regulations.",
+      points: [
+        "VAT Registration for Businesses",
+        "VAT Filing and Compliance",
+        "VAT Advisory & Consultancy",
+        "Audit Support & Documentation",
+        "Penalty Avoidance & Legal Guidance"
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "VAT services process"
+      }
+    },
+
+
+
+
+    faqs: [
+      {
+        question: "Is VAT registration mandatory in the UAE?",
+        answer: "Yes, businesses meeting the mandatory turnover threshold of AED 375,000 must register for VAT."
+      },
+      {
+        question: "What types of insurance are mandatory in Dubai?",
+        answer: "Health insurance for employees is mandatory; other insurance types depend on your business activities."
+      },
+      {
+        question: "Can ADL file VAT returns on behalf of my business?",
+        answer: "Yes, we provide complete VAT filing, reporting, and compliance services."
+      },
+      {
+        question: "How long does VAT registration take?",
+        answer: "Typically 2–5 business days, depending on your business type and documentation readiness."
+      },
+      {
+        question: "Does ADL provide corporate and personal insurance?",
+        answer: "Yes, we offer tailored insurance solutions for both businesses and individuals."
+      }
+    ],
+
+
+    blogs: [
+      "Complete Guide to VAT Registration and Compliance in Dubai",
+      "Top Insurance Plans for Businesses in the UAE",
+      "How to Avoid VAT Penalties in Dubai",
+      "Corporate vs Personal Insurance – Choosing the Right Coverage",
+      "Benefits of Outsourcing VAT & Insurance Management to Experts"
+    ]
+
+
+
+
+  },
+  {
+    id: "bank-account-opening",
+    seo: {
+      title: "Corporate Bank Account Opening Dubai | ADL Business Solutions",
+      description:
+        "Open corporate bank accounts in Dubai with ADL Business Solutions. We guide businesses through UAE banking procedures, documentation, approvals, and compliance for smooth account setup.",
+      keywords:
+        "corporate bank account Dubai, UAE business banking, company bank account UAE, corporate account opening, business banking Dubai"
+    },
+
+    heroSection: {
+      title: "   Corporate Bank Account Opening Services ",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions helps businesses open corporate bank accounts in Dubai efficiently, handling all documentation, approvals, and regulatory requirements."
+      , buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Smooth & Compliant Company Liquidation in Dubai",
+
+    paragraph1:
+      "Opening a corporate bank account in Dubai requires navigating banking regulations, document verification, and compliance checks. ADL Business Solutions simplifies this process for businesses of all sizes, guiding you through bank selection, documentation preparation, and account approval procedures.",
+
+    paragraph2:
+      "Our experienced consultants ensure that your corporate bank account is opened smoothly, with minimal delays, and meets all UAE regulatory requirements. Whether you are a startup, Freezone, or mainland company, ADL provides expert support to help you access the banking services your business needs.",
+
+    button1Text: "  Book Bank Account Consultation",
+    button1Url: "/",
+    button2Text: "Open Your Corporate Account",
+    button2Url: "/",
+    meeting: {
+      title: "Schedule Your Corporate Bank Account Consultation",
+      description:
+        "Book a free consultation to understand the requirements for opening a corporate bank account in Dubai. We guide you on bank selection, document submission, and account activation.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+
+
+
+    section1: {
+      title: " Our Corporate Bank Account Services",
+      description1:
+        "We assist UAE companies with bank selection, document preparation, verification, coordination with banks, and opening business accounts for both Freezone and Mainland firms. Our team also supports multi-currency account options, online banking setup, and guidance on choosing the right account type and fee structure.",
+
+      description2:
+        "We help businesses choose the right banking solution to meet operational, transactional, and compliance needs with expert guidance."
+    },
+
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "ADL ensures your corporate banking setup is smooth, efficient, and fully compliant with UAE regulations.",
+      points: [
+        {
+          id: 1,
+          title: "Expert Guidance",
+          description: "Experienced consultants with deep knowledge of all major UAE banks."
+        },
+        {
+          id: 2,
+          title: "Complete Documentation Support",
+          description: "Preparation, verification, and organization of all required documents."
+        },
+        {
+          id: 3,
+          title: "Fast Processing",
+          description: "Minimize delays and ensure timely account approval."
+        },
+        {
+          id: 4,
+          title: "Tailored Solutions",
+          description: "Banking options customized to your business structure, size, and industry."
+        },
+        {
+          id: 5,
+          title: "Compliance Assurance",
+          description: "Meet all regulatory requirements for UAE corporate banking."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+    section3: {
+      title: "Our Account Opening Process",
+      description:
+        "We handle every step of the corporate account opening process to ensure your business banking setup is smooth and compliant.",
+      points: [
+        "Assessment: Understand your business structure, banking needs, and eligibility.",
+        "Documentation: Prepare trade license, shareholder documents, passports, and required bank forms.",
+        "Bank Liaison: Submit applications, coordinate with bank officials, and handle all queries.",
+        "Account Activation: Finalize account approval, enable online banking, and complete setup."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Corporate bank account opening process"
+      }
+    },
+
+
+
+
+    faqs: [
+      {
+        question: "How long does corporate bank account opening take in Dubai?",
+        answer: "Typically 2–4 weeks depending on the bank, business activity, and company structure."
+      },
+      {
+        question: "Can Freezone companies open a UAE corporate bank account?",
+        answer: "Yes, most Freezone companies can open corporate accounts with the required documentation."
+      },
+      {
+        question: "What documents are required for account opening?",
+        answer: "Trade license, shareholder passports, company incorporation documents, and board resolution (if applicable)."
+      },
+      {
+        question: "Can ADL assist with multi-currency accounts?",
+        answer: "Yes, we provide full support for opening multi-currency corporate accounts."
+      },
+      {
+        question: "Do you provide follow-up support after account opening?",
+        answer: "Absolutely — ADL assists with account activation, online banking setup, and ongoing banking queries."
+      }
+    ],
+
+
+    blogs: [
+      "Step-by-Step Guide to Corporate Bank Account Opening in Dubai",
+      "Top Banks for Business Accounts in the UAE",
+      "Common Challenges in UAE Corporate Banking and How to Avoid Them",
+      "Multi-Currency Accounts for UAE Businesses Explained",
+      "How ADL Simplifies Corporate Banking for New Companies in Dubai"
+    ]
+
+
+
+
+
+  },
+  {
+    id: "typing-services",
+    seo: {
+      title: "Typing Services Dubai | Professional Document Typing & Processing",
+      description:
+        "ADL Business Solutions offers professional typing services in Dubai for visa applications, government forms, contracts, and other corporate or personal documents. Fast, accurate, and reliable.",
+      keywords:
+        "typing services Dubai, document typing UAE, visa typing services, government forms typing, corporate document typing, professional typing Dubai"
+    },
+
+
+    heroSection: {
+      title: "Typing Services ",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions provides professional typing services in Dubai, assisting with visas, government forms, corporate documents, and more with precision and speed."
+      , buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Smooth & Compliant Company Liquidation in Dubai",
+
+    paragraph1:
+      "Typing and processing documents for government approvals, visa applications, and corporate procedures can be time-consuming and prone to errors. ADL Business Solutions offers accurate and professional typing services, ensuring your documents are correctly formatted and ready for submission to UAE authorities.",
+
+    paragraph2:
+      "Our experienced team handles all types of documents, including visa forms, corporate agreements, MOAs, POAs, and other legal or official paperwork. With ADL, you can save time, avoid errors, and streamline your administrative processes efficiently.",
+
+    button1Text: " Book Typing Services Consultation",
+    button1Url: "/",
+    button2Text: "Get Your Documents Typed",
+    button2Url: "/",
+
+    meeting: {
+      title: "Schedule Your Typing Services Consultation",
+      description:
+        "Book a consultation to discuss your typing and document processing needs. Our team ensures accuracy, formatting compliance, and timely completion of all forms and paperwork.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+    section1: {
+      title: " Types of Typing Services We Provide",
+      description1:
+        "We provide typing services for visa applications, government forms, corporate agreements, MOAs, POAs, and legal documents. Our team also supports notarization and attestation processes, ensuring every document is prepared accurately and meets UAE submission standards.",
+
+      description2:
+        "ADL ensures all typed documents meet UAE government requirements, providing accurate, compliant, and fully prepared paperwork for smooth submission across visa, corporate, and legal processes.",
+    },
+
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "We help businesses and individuals streamline documentation and administrative processes with speed and accuracy.",
+      points: [
+        {
+          id: 1,
+          title: "Professional Accuracy",
+          description: "Experienced staff with strong attention to detail and document precision."
+        },
+        {
+          id: 2,
+          title: "Fast Turnaround",
+          description: "Efficient typing and processing for urgent or same-day requirements."
+        },
+        {
+          id: 3,
+          title: "Compliance Ready",
+          description: "Documents formatted to meet UAE government and corporate standards."
+        },
+        {
+          id: 4,
+          title: "Comprehensive Services",
+          description: "Typing, proofreading, formatting, and submission support all in one place."
+        },
+        {
+          id: 5,
+          title: "Secure & Confidential",
+          description: "All documents handled with strict confidentiality and data protection."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+    section3: {
+      title: "Our Typing Service Process",
+      description:
+        "We ensure your documents are typed, formatted, and verified according to UAE government and corporate requirements.",
+      points: [
+        "Document Review: Assess forms and paperwork for completeness.",
+        "Typing & Formatting: Prepare documents as per official standards and requirements.",
+        "Verification: Ensure all information is accurate, consistent, and error-free.",
+        "Delivery: Provide typed documents digitally or as printed copies.",
+        "Optional Submission Support: Assistance with government or corporate document submission."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Typing service process"
+      }
+    },
+
+
+
+
+
+    faqs: [
+      {
+        question: "Which documents can ADL type for submission?",
+        answer: "We type visa forms, government applications, corporate agreements, MOA/POA, and other legal documents."
+      },
+      {
+        question: "How long does typing take?",
+        answer: "Most documents are completed within 24–48 hours, depending on complexity."
+      },
+      {
+        question: "Are your typed documents accepted by UAE authorities?",
+        answer: "Yes, all documents are formatted to meet UAE government submission requirements."
+      },
+      {
+        question: "Can ADL handle urgent typing requests?",
+        answer: "Absolutely — we offer fast-track typing services for urgent cases."
+      },
+      {
+        question: "Do you also assist with document submission?",
+        answer: "Yes, we provide optional submission support for government and corporate requirements."
+      }
+    ],
+
+
+    blogs: [
+      "Why Professional Typing Services Save Time and Errors in Dubai",
+      "Step-by-Step Guide to Typing Visa and Government Forms in UAE",
+      "Top Tips for Accurate Corporate Document Typing",
+      "How ADL Streamlines Typing Services for Businesses",
+      "Common Mistakes to Avoid in Document Typing and Submission"
+    ]
+
+
+
+
+
+
+  },
+  {
+    id: "uae-government-approvals",
+    seo: {
+      title: "UAE Government Approvals Services | ADL Business Solutions",
+      description:
+        "ADL Business Solutions offers complete UAE government approval services, including licenses, permits, and regulatory clearances for businesses. Fast, compliant, and reliable processing across Dubai and the UAE.",
+      keywords:
+        "UAE government approvals, business permits Dubai, license approvals UAE, regulatory compliance UAE, government clearance Dubai"
+    },
+
+
+
+    heroSection: {
+      title: "UAE Government Approvals Services",
+
+      description:
+        " ADL Business Solutions manages all government approvals, licenses, and permits, ensuring your business operations comply with UAE regulations efficiently.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "   Fast and Reliable UAE Government Approvals for Your Business",
+
+    paragraph1:
+      "Obtaining government approvals in the UAE can be complex and time-consuming due to multiple authorities, documentation requirements, and compliance checks. ADL Business Solutions provides end-to-end assistance for all approvals, streamlining processes and ensuring timely compliance.",
+
+    paragraph2:
+      "From trade licenses to operational permits, visas, and other regulatory clearances, our experts handle submissions, follow-ups, and approvals on your behalf. With ADL, businesses can operate confidently, knowing all government requirements are met professionally and efficiently.",
+
+    button1Text: " Book Government Approvals Consultation",
+    button1Url: "/",
+    button2Text: "Get Your Approvals Processed",
+    button2Url: "/",
+
+    meeting: {
+      title: "Schedule Your UAE Government Approvals Consultation",
+      description:
+        "Book a free consultation with our experts to understand the government approvals required for your business. We provide guidance on document submission, follow-up, and compliance.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+    section1: {
+      title: " Types of Government Approvals We Provide",
+      description1:
+        "We handle all types of government approvals, including trade license processing, operational permits, municipality clearances, visa and labour approvals, and both industrial and commercial licensing. Our team also manages full regulatory compliance verification to keep your business aligned with UAE requirements.",
+
+      description2:
+        "ADL ensures every approval is processed efficiently, reducing delays and ensuring your business meets all regulatory and authority standards.",
+    },
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "ADL makes obtaining government approvals seamless, allowing you to focus on business growth.",
+      points: [
+        {
+          id: 1,
+          title: "Experienced Liaison",
+          description: "Direct coordination with Dubai and UAE government authorities."
+        },
+        {
+          id: 2,
+          title: "Fast Processing",
+          description: "Expedited approval handling through expert documentation and follow-up."
+        },
+        {
+          id: 3,
+          title: "Compliance Assurance",
+          description: "Avoid fines and operational risks with fully compliant processes."
+        },
+        {
+          id: 4,
+          title: "Tailored Solutions",
+          description: "Approval services customized for your business type and industry requirements."
+        },
+        {
+          id: 5,
+          title: "Transparent Fees",
+          description: "Clear and upfront costs for all types of government approval services."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+    section3: {
+      title: "Our Approval Process",
+      description:
+        "We ensure your business receives all required government approvals quickly and in full compliance with UAE regulations.",
+      points: [
+        "Eligibility & Requirement Assessment: Determine necessary approvals for your business.",
+        "Document Preparation: Collect, review, and verify required documents.",
+        "Submission & Follow-Up: Submit applications and follow up with relevant authorities.",
+        "Approval & Handover: Receive approvals, permits, and licenses with compliance guidance.",
+        "Ongoing Support: Assistance with renewals, updates, and regulatory changes."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Government approval process"
+      }
+    },
+
+
+
+
+
+
+    faqs: [
+      {
+        question: "Which approvals are mandatory for a Dubai business?",
+        answer: "Approvals vary based on the business activity and may include trade licenses, permits, visas, and municipal clearances."
+      },
+      {
+        question: "Can ADL handle approvals for Freezone and Mainland companies?",
+        answer: "Yes, we provide approval services for both Freezone and mainland entities across the UAE."
+      },
+      {
+        question: "How long does the government approval process take?",
+        answer: "Processing times depend on the approval type and authority, typically ranging from 1–4 weeks."
+      },
+      {
+        question: "Can ADL assist with visa-related approvals?",
+        answer: "Absolutely, we manage all visa and labor approvals for employees, partners, and investors."
+      },
+      {
+        question: "Are your services compliant with UAE regulations?",
+        answer: "Yes, all approvals are processed in full compliance with UAE laws and government standards."
+      }
+    ],
+
+
+
+    blogs: [
+      "Complete Guide to UAE Government Approvals for Businesses",
+      "Top Permits and Licenses Required in Dubai",
+      "Avoid Delays in Government Approvals with Expert Guidance",
+      "Step-by-Step Process for Freezone and Mainland Approvals",
+      "How ADL Simplifies UAE Business Regulatory Compliance"
+    ]
+
+
+
+
+
+
+
+  },
+  {
+    id: "medical-emirates-id-services",
+    seo: {
+      title: "Medical & Emirates ID Services Dubai | ADL Business Solutions",
+      description:
+        "ADL Business Solutions provides medical fitness tests and Emirates ID services in Dubai. Fast, reliable, and compliant processing for residents and businesses in the UAE.",
+      keywords:
+        "Emirates ID services Dubai, medical fitness test Dubai, UAE ID registration, residency ID UAE, visa medical test Dubai"
+    },
+
+
+
+
+    heroSection: {
+      title: " Medical & Emirates ID Services",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions manages medical fitness tests and Emirates ID registration for residents and businesses, ensuring fast and compliant processing in the UAE.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "   Fast and Reliable UAE Government Approvals for Your Business",
+
+    paragraph1:
+      "Medical fitness tests and Emirates ID registration are mandatory steps for residency visas and employment in Dubai. ADL Business Solutions provides end-to-end support, including booking medical tests, handling documents, and coordinating with government authorities for Emirates ID issuance.",
+
+    paragraph2:
+      "Our experts ensure all procedures are completed accurately and efficiently, helping individuals and companies meet UAE residency and employment requirements. With ADL handling the process, you save time, avoid delays, and ensure full compliance with UAE regulations.",
+
+    button1Text: " Book Medical & Emirates ID Consultation",
+    button1Url: "/",
+    button2Text: "Get Your Emirates ID",
+    button2Url: "/",
+
+    meeting: {
+      title: "Schedule Your Medical & Emirates ID Consultation",
+      description:
+        "Book a consultation to understand the medical fitness and Emirates ID process for residents or employees. We guide you through document requirements, appointments, and approvals.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+    section1: {
+      title: " Medical & Emirates ID Services We Provide",
+      description1:
+        "We assist with medical fitness test booking, Emirates ID applications, biometric registration, and coordination with DHA and ICP. Our team also manages visa medical reports, certificates, and residency processing for employees and families, ensuring smooth and accurate completion.",
+
+      description2:
+        "ADL ensures fast, accurate, and reliable processing for individuals, employees, and corporate groups across all medical, biometric, and residency requirements.",
+    },
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "We help you complete all mandatory residency and employment requirements with ease and accuracy.",
+      points: [
+        {
+          id: 1,
+          title: "Fast & Efficient",
+          description: "Complete medical tests and Emirates ID services quickly and without delays."
+        },
+        {
+          id: 2,
+          title: "Compliance Assured",
+          description: "All procedures fully comply with UAE government regulations and standards."
+        },
+        {
+          id: 3,
+          title: "Corporate & Individual Services",
+          description: "Support available for individuals, families, employees, and corporate groups."
+        },
+        {
+          id: 4,
+          title: "Expert Guidance",
+          description: "Experienced team managing all appointments, forms, and documentation."
+        },
+        {
+          id: 5,
+          title: "Transparent Pricing",
+          description: "Clear, upfront pricing with no hidden service fees."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+    section3: {
+      title: "Our Process",
+      description:
+        "We ensure your medical tests and Emirates ID procedures are completed accurately and on time.",
+      points: [
+        "Document Collection: Gather required documents for medical and ID processing.",
+        "Appointment Scheduling: Book medical fitness tests and biometric registration slots.",
+        "Submission & Verification: Submit medical reports and application forms to authorities.",
+        "Emirates ID Issuance: Obtain Emirates ID cards and necessary certificates quickly.",
+        "Follow-Up: Assistance with renewals, updates, corrections, and re-issuance if needed."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Medical and Emirates ID process"
+      }
+    },
+
+
+
+
+
+
+    faqs: [
+      {
+        question: "How long does the Emirates ID process take in Dubai?",
+        answer: "Typically 7–14 business days after biometric registration and medical clearance."
+      },
+      {
+        question: "Is a medical test mandatory for all residents?",
+        answer: "Yes, medical fitness tests are required for both employment and residency visa approval."
+      },
+      {
+        question: "Can ADL assist with family Emirates ID applications?",
+        answer: "Yes, we provide support for individuals, families, employees, and corporate groups."
+      },
+      {
+        question: "What documents are needed for Emirates ID registration?",
+        answer: "Passport copy, visa copy, medical fitness certificate, and application forms."
+      },
+      {
+        question: "Do you handle renewals and corrections for Emirates ID?",
+        answer: "Absolutely — we assist with renewals, updates, corrections, and reapplications."
+      }
+    ],
+
+
+
+    blogs: [
+      "Step-by-Step Guide to Emirates ID Registration in Dubai",
+      "Medical Fitness Tests for UAE Residency: What You Need to Know",
+      "Family Emirates ID Applications Made Easy",
+      "Avoid Delays in Emirates ID Processing with Expert Assistance",
+      "Corporate Employee Medical & ID Services in Dubai"
+    ]
+
+  },
+  {
+    id: "freezone-company-setup",
+    seo: {
+      title: "FREEZONE Company Setup Dubai | ADL Business Solutions",
+      description:
+        "ADL Business Solutions provides expert FREEZONE company setup services in Dubai. From license registration to compliance and support, start your business smoothly in UAE Freezones.",
+      keywords:
+        "FREEZONE company setup Dubai, UAE Freezone registration, Dubai Freezone license, company formation UAE, business setup Freezone"
+    },
+
+
+
+
+
+    heroSection: {
+      title: "  FREEZONE Company Setup Services",
+      subTitle:
+        "in Dubai",
+      description:
+        " ADL Business Solutions offers comprehensive Freezone company setup services, helping businesses register, license, and operate efficiently in Dubai Freezones.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "   Start Your Business in Dubai FREEZONE Seamlessly",
+
+    paragraph1:
+      "Setting up a company in a Dubai Freezone provides 100% ownership, tax advantages, and business-friendly regulations. ADL Business Solutions guides you through the entire Freezone setup process, including license selection, document preparation, and approvals.",
+
+    paragraph2:
+      "Our experts ensure a hassle-free experience for startups, SMEs, and international companies. From legal documentation to banking support, ADL helps your Freezone company become fully operational quickly and compliantly, giving you a solid foundation for growth.",
+
+    button1Text: " Book FREEZONE Setup Consultation",
+    button1Url: "/",
+    button2Text: "Start Your Freezone Company",
+    button2Url: "/",
+    meeting: {
+      title: "Schedule Your FREEZONE Company Setup Consultation",
+      description:
+        "Book a consultation to understand the Freezone options, licensing requirements, and the setup process. Our team guides you step-by-step to establish your business efficiently.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+    section1: {
+      title: " FREEZONE Company Setup Services We Provide",
+      description1:
+        "We assist with license selection, company incorporation, documentation, and registering shareholders and directors. Our team also supports visa processing, employee sponsorship, office or virtual office setup, and bank account assistance to ensure a smooth and compliant Freezone setup.",
+
+      description2:
+        "We provide complete support to ensure your Freezone company setup is smooth, compliant, and fully ready for operations from day one.",
+    },
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "ADL helps businesses leverage the advantages of Freezones while avoiding administrative hassles.",
+      points: [
+        {
+          id: 1,
+          title: "Expert Guidance",
+          description: "Extensive knowledge of all Dubai Freezones and their regulations."
+        },
+        {
+          id: 2,
+          title: "Full Compliance",
+          description: "We ensure licenses, visas, and legal requirements are fully met."
+        },
+        {
+          id: 3,
+          title: "Fast Setup",
+          description: "Efficient processing to minimize delays and speed up business launch."
+        },
+        {
+          id: 4,
+          title: "Tailored Solutions",
+          description: "Freezone selection and packages customized to your business activity."
+        },
+        {
+          id: 5,
+          title: "Transparent Fees",
+          description: "Clear and upfront pricing for all Freezone setup services."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+    section3: {
+      title: "Our FREEZONE Setup Process",
+      description:
+        "We streamline the entire Freezone setup journey to ensure your company is operational quickly and compliantly.",
+      points: [
+        "Business Consultation: Determine the most suitable Freezone and license type.",
+        "Document Preparation: Collect and prepare shareholder, director, and corporate documents.",
+        "License Application: Submit documents and complete company registration with the Freezone authority.",
+        "Visa & Bank Account Assistance: Support with employee visas and corporate banking setup.",
+        "Operational Setup: Assistance with office space, virtual offices, flexi-desks, and other operational needs."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Freezone company setup process"
+      }
+    },
+
+
+
+
+
+
+    faqs: [
+      {
+        question: "Which Freezones are available in Dubai?",
+        answer:
+          "Dubai offers Freezones such as DMCC, JAFZA, DAFZA, Dubai Silicon Oasis, and more—each offering specific benefits and license types."
+      },
+      {
+        question: "Can a foreigner own 100% of a Freezone company?",
+        answer: "Yes, Freezone businesses allow 100% foreign ownership."
+      },
+      {
+        question: "How long does it take to set up a Freezone company?",
+        answer: "Typically 5–15 business days depending on the Freezone and the business activity."
+      },
+      {
+        question: "Do Freezone companies require local sponsors?",
+        answer: "No, Freezones do not require a local sponsor."
+      },
+      {
+        question: "Can ADL assist with office space in Freezones?",
+        answer:
+          "Yes, we provide assistance with physical offices, virtual offices, and flexi-desk options based on your business needs."
+      }
+    ],
+
+
+
+    blogs: [
+      "Benefits of Setting Up a Freezone Company in Dubai",
+      "Step-by-Step Freezone Company Formation Guide",
+      "Top Freezones for Startups and SMEs in Dubai",
+      "Freezone vs Mainland Company: Which is Right for You?",
+      "How ADL Simplifies Freezone Business Setup in Dubai"
+    ]
+
+
+  },
+  {
+    id: "dubai-court-services",
+    seo: {
+      title: "Dubai Court Services | Legal & Court Support in Dubai",
+      description:
+        "ADL Business Solutions provides professional Dubai court services, including case filing, legal document handling, and court representation support for individuals and businesses.",
+      keywords:
+        "Dubai court services, legal support Dubai, court case filing UAE, Dubai legal documentation, court representation Dubai, UAE litigation support"
+    },
+
+
+    heroSection: {
+      title: "  Dubai Court Services",
+
+      description:
+        " ADL Business Solutions offers comprehensive court support services in Dubai, assisting with legal document preparation, filings, and court procedures efficiently and reliably.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "   Start Your Business in Dubai FREEZONE Seamlessly",
+
+    paragraph1:
+      "Navigating Dubai’s legal and court systems can be challenging due to extensive documentation, procedural steps, and strict compliance requirements. ADL Business Solutions provides expert support for individuals and businesses, assisting with legal documentation, court filings, and procedural coordination to ensure accuracy and efficiency.",
+
+    paragraph2:
+      "From case submission and document management to coordinating with legal representatives and authorities, ADL helps you stay fully prepared for court proceedings. Our services minimize delays, reduce errors, and allow clients to focus on their legal matters while we handle the administrative and procedural requirements.",
+
+    button1Text: " Book Dubai Court Services Consultation",
+    button1Url: "/",
+    button2Text: "Get Court Assistance",
+    button2Url: "/",
+
+    meeting: {
+      title: "Schedule Your Dubai Court Services Consultation",
+      description:
+        "Book a consultation to discuss your court service requirements. ADL guides you through document preparation, filings, and court procedures with expertise and reliability.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+
+    section1: {
+      title: " Dubai Court Services We Provide",
+      description1:
+        "We assist with case filing, registration, legal document preparation, submission, and coordination with lawyers and legal teams. We also support court representation arrangements, notarization, certification, and follow-up on all procedures for both individual and corporate clients in Dubai.",
+
+      description2:
+        "ADL ensures timely and accurate court services for individuals and corporate clients, delivering reliable support across all legal and procedural requirements.",
+    },
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "ADL provides dependable court services, ensuring compliance and minimizing procedural hurdles for clients.",
+      points: [
+        {
+          id: 1,
+          title: "Expert Knowledge",
+          description: "Experienced in Dubai court procedures, documentation, and filing processes."
+        },
+        {
+          id: 2,
+          title: "Reliable Support",
+          description: "Efficient handling of court submissions and procedural requirements."
+        },
+        {
+          id: 3,
+          title: "Confidential & Secure",
+          description: "Strict confidentiality for all sensitive legal documents and matters."
+        },
+        {
+          id: 4,
+          title: "Comprehensive Assistance",
+          description: "End-to-end support from documentation to court follow-ups."
+        },
+        {
+          id: 5,
+          title: "Transparent Fees",
+          description: "Clear and straightforward pricing with no hidden charges."
+        }
+      ]
+    },
+
+
+
+
+
+
+
+
+
+
+    section3: {
+      title: "Our Dubai Court Service Process",
+      description:
+        "We streamline your court-related procedures by managing filings, documentation, and coordination with legal teams.",
+      points: [
+        "Case Assessment: Understand the requirements and details of your legal matter.",
+        "Document Preparation: Draft and prepare all required legal documents accurately.",
+        "Filing & Submission: Submit documentation and applications to the appropriate court.",
+        "Follow-Up & Coordination: Work closely with lawyers, court officials, and legal teams.",
+        "Completion: Ensure filings, approvals, and procedural steps are completed efficiently."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Dubai court service process"
+      }
+    },
+
+
+
+
+
+
+
+    faqs: [
+      {
+        question: "Can ADL assist with both civil and commercial cases?",
+        answer: "Yes, we provide support for civil, commercial, and corporate court matters."
+      },
+      {
+        question: "Do you handle document notarization for court submissions?",
+        answer: "Absolutely, we manage document notarization and certification when required."
+      },
+      {
+        question: "How long does court service processing usually take?",
+        answer: "Processing times vary based on case type, court schedules, and document requirements."
+      },
+      {
+        question: "Can ADL liaise directly with lawyers and court officials?",
+        answer: "Yes, we coordinate with lawyers, court officials, and other legal authorities to ensure smooth procedures."
+      },
+      {
+        question: "Are your court services suitable for both individuals and companies?",
+        answer: "Yes, we support both personal and corporate clients requiring court-related assistance."
+      }
+    ],
+
+
+    blogs: [
+      "Step-by-Step Guide to Dubai Court Procedures",
+      "Common Mistakes in Legal Document Filing and How to Avoid Them",
+      "Corporate Legal Support Services in Dubai",
+      "How ADL Simplifies Court Procedures for Individuals and Businesses",
+      "Understanding Dubai Court Timelines and Filing Processes"
+    ]
+
+
+
+  },
+  {
+    id: "online-moa-poa-services",
+    seo: {
+      title: "Online MOA & POA Services Dubai | ADL Business Solutions",
+      description:
+        "ADL Business Solutions provides online MOA (Memorandum of Association) and POA (Power of Attorney) services in Dubai. Fast, secure, and legally compliant document preparation and notarization.",
+      keywords:
+        "online MOA Dubai, POA services UAE, Memorandum of Association UAE, Power of Attorney Dubai, document notarization UAE"
+    },
+
+
+    heroSection: {
+      title: " Online MOA & POA Services ",
+
+      description:
+        " ADL Business Solutions offers professional online services for creating and notarizing MOA and POA documents, ensuring compliance with UAE legal requirements.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Fast & Secure Online MOA & POA Services in Dubai",
+
+    paragraph1:
+      "Creating a valid MOA or POA is essential for business operations, legal authority delegation, and official approvals in Dubai. ADL Business Solutions provides online services to draft, notarize, and attest these documents, making the process quick, secure, and hassle-free.",
+
+    paragraph2:
+      "Our experienced team ensures that all MOA and POA documents meet UAE legal standards, reducing delays and errors. Whether it’s for corporate, personal, or business purposes, ADL provides fully compliant services that are recognized by government authorities and legal institutions.",
+    button1Text: " Book Online MOA & POA Consultation",
+    button1Url: "/",
+    button2Text: "Get MOA / POA Services",
+    button2Url: "/",
+
+    meeting: {
+      title: "Schedule Your Online MOA & POA Consultation",
+      description:
+        "Book a consultation to understand the MOA and POA creation process, notarization requirements, and online submission options. Our team ensures secure and efficient handling.",
+      buttonText: "Book Your Free Consultation",
+      buttonUrl: "/book-consultation"
+    },
+
+
+
+
+
+
+    section1: {
+      title: "Online MOA & POA Services We Provide",
+      description1:
+        "We assist with drafting MOA and POA documents, offering notarization, legal authentication, online submission, and attestation. Our team supports both corporate and personal POA services, including renewals and updates, ensuring every document is accurate, legally valid, and fully compliant with UAE requirements.",
+
+      description2:
+        "We provide complete support for creating, authenticating, and submitting MOA and POA documents online. ADL streamlines the entire process, helping businesses and individuals save time while ensuring every step meets UAE legal standards.",
+    },
+
+    section2: {
+      title: "Why Choose ADL Business Solutions",
+      description:
+        "ADL ensures your MOA and POA services are convenient, reliable, and fully compliant with UAE laws.",
+      points: [
+        {
+          id: 1,
+          title: "Expert Legal Drafting",
+          description: "Accurate and legally compliant MOA and POA document creation."
+        },
+        {
+          id: 2,
+          title: "Fast & Secure",
+          description: "Online services streamline the process, reducing delays and eliminating paperwork."
+        },
+        {
+          id: 3,
+          title: "Corporate & Personal Solutions",
+          description: "MOA and POA drafting tailored for both individuals and businesses."
+        },
+        {
+          id: 4,
+          title: "Official Compliance",
+          description: "All documents are accepted by UAE courts and government authorities."
+        },
+        {
+          id: 5,
+          title: "Transparent Fees",
+          description: "Clear and straightforward pricing with no hidden charges."
+        }
+      ]
+    },
+
+
+
+    section3: {
+      title: "Our Online MOA & POA Process",
+      description:
+        "We streamline MOA and POA creation with a fully digital, secure, and legally compliant workflow.",
+      points: [
+        "Consultation: Understand your requirements for MOA or POA.",
+        "Drafting: Prepare documents accurately according to UAE legal standards.",
+        "Review & Verification: Ensure completeness, accuracy, and legal compliance.",
+        "Notarization & Authentication: Complete online notarization and required government attestations.",
+        "Delivery & Filing: Receive digitally signed, authenticated documents ready for official use."
+      ],
+      image: {
+        src: "/assets/images/service-details/why-choose-us.png",
+        alt: "Online MOA and POA process"
+      }
+    },
+
+
+    faqs: [
+      {
+        question: "Can MOA and POA be notarized online in Dubai?",
+        answer:
+          "Yes, ADL provides secure online notarization services fully recognized by UAE authorities."
+      },
+      {
+        question: "What documents are needed to create a POA?",
+        answer:
+          "Typically passport copies, signature verification, and details depending on the POA type."
+      },
+      {
+        question: "How long does the online MOA & POA process take?",
+        answer:
+          "Usually 2–5 business days depending on document type and verification requirements."
+      },
+      {
+        question: "Are the documents legally recognized by UAE authorities?",
+        answer:
+          "Yes, all MOA and POA documents we prepare are compliant and officially accepted."
+      },
+      {
+        question: "Can ADL handle corporate MOA drafting for companies?",
+        answer:
+          "Absolutely — we specialize in drafting MOAs and POAs for both corporate and personal needs."
+      }
+    ],
+
+
+
+    blogs: [
+      "Step-by-Step Guide to Online MOA & POA Services in Dubai",
+      "Why MOA & POA Are Essential for Businesses in UAE",
+      "Digital Notarization: Fast & Secure MOA & POA in Dubai",
+      "Common Mistakes to Avoid in MOA & POA Drafting",
+      "How ADL Simplifies Online MOA & POA Services for Corporates"
+    ]
+
+
+
+
+  },
+
+
 ];
 
 
@@ -660,7 +2627,7 @@ export const service = [
     logo: "/assets/images/services/business-setup.png",
     title: "Business Setup",
     description:
-      "Starting a business in Dubai demands planning, licensing, and compliance. ADL Business Solutions simplifies the process — from company registration to visa and PRO services — ensuring quick, compliant setup so you can focus on growing your venture."
+      "Starting a  business in Dubai demands planning, licensing, and compliance. ADL Business Solutions simplifies the process — from company registration to visa and PRO services — ensuring quick, compliant setup so you can focus on growing your venture."
   },
   {
     id: "company-formation",
