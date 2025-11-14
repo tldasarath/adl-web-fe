@@ -30,7 +30,7 @@ const page = () => {
           "Start your UAE business with full access to the local market, 100% ownership options, visa quota, and corporate banking support. ADL Business Solutions makes your mainland setup simple, fast, and fully compliant."
         }
         buttonText={"Get a Free Consultation"}
-        url={"/"}
+       url={"#schedule-meeting"}
       />
 
       <AboutMainland />

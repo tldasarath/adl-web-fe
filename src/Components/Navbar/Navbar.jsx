@@ -24,7 +24,7 @@ export default function Navbar() {
     { name: 'home', label: 'Home', path: '/' },
     { name: 'about', label: 'About', path: '/about-us' },
     { name: 'service', label: 'Service', path: '/services' },
-    { name: 'freezone', label: 'Freezone', path: '/freezone' },
+    { name: 'freezone', label: 'Freezone', path: '/uae-freezone-business-setup' },
     { name: 'mainland', label: 'Mainland', path: '/mainland-company-formation-in-uae' },
     { name: 'visa', label: 'Visa', path: '/visa' },
     { name: 'license', label: 'License', path: '/license' },
@@ -323,13 +323,13 @@ export default function Navbar() {
             <div className="relative w-1/3 flex flex-col items-center justify-center  h-[230px] rounded-r-xl">
               {/* Freezone */}
               <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-                <span>Freezone</span>
+                <a href='/uae-freezone-business-setup'>Freezone</a>
                 <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
               </div>
 
               {/* Offshore */}
               <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-                <span>Offshore</span>
+                <a href='/offshore-company-formation-in-uae'>Offshore</a>
                 <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
               </div>
             </div>

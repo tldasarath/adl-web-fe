@@ -24,7 +24,7 @@ const page = () => {
                 title={license.licenseType}
                 decription={"Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."}
                 buttonText={"Get a Free Consultation"}
-                url={"/"} />
+                url={"#schedule-meeting"} />
 
             <MainSection title={license.title} paragraph={license.serviceDescription} image={license.image} />
             <CommercialLicenseSection sectionTitle={license.sections.sectionTitle} benefitsTitle={license.sections.benefitsTitle} activities={license.sections.activities} benefits={license.sections.benefits} />

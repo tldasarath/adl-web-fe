@@ -19,7 +19,7 @@ const page = () => {
                 subTitle={"Formation in UAE"}
                 decription={"we help you establish a compliant, tax-efficient, and globally recognized offshore entity in the UAE — offering confidential structure, 100% foreign ownership, and international banking support."}
                 buttonText={"Get a Free Consultation"}
-                url={"/"} />
+                url={"#schedule-meeting"} />
 
             <WhychooseOffshore />
             <OffshoreTypes />

@@ -3,7 +3,12 @@ import InnerBanner from "@/Components/Common/InnerBanner";
 import Footer from "@/Components/Footer/Footer";
 import Navbar from "@/Components/Navbar/Navbar";
 import AboutFreezoneDetails from "@/Components/freezonePage/AboutFreezoneDetails";
+import FreezoneAdvantages from "@/Components/freezonePage/FreezoneAdvantages";
+import FreezoneCategories from "@/Components/freezonePage/FreezoneCategories";
 import FreezoneInfoCard from "@/Components/freezonePage/FreezoneInfoCard";
+import FreezoneLicenses from "@/Components/freezonePage/FreezoneLicenses";
+import FreezoneProcessCubes from "@/Components/freezonePage/FreezoneProcessCubes";
+import PricingPackages from "@/Components/freezonePage/PricingPackages";
 import TestimonialSection from "@/Components/freezonePage/TestimonialSection";
 import React from "react";
 export const metadata = {
@@ -26,12 +31,17 @@ const page = () => {
           "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
         }
         buttonText={"Get a Free Consultation"}
-        url={"/"}
+        url={"#schedule-meeting"}
       />
 
       <AboutFreezoneDetails />
       <FreezoneInfoCard />
-<TestimonialSection/>
+      {/* <FreezoneProcessCubes/> */}
+      <FreezoneCategories/>
+      <FreezoneLicenses/>
+      <PricingPackages/>
+      <FreezoneAdvantages/>
+      <TestimonialSection />
       <InnerBanner
         title={"LStart Your UAE Freezone Business with ADL"}
         description={
