@@ -24,7 +24,7 @@ export default function Navbar() {
     { name: 'home', label: 'Home', path: '/' },
     { name: 'about', label: 'About', path: '/about-us' },
     { name: 'service', label: 'Service', path: '/services' },
-    { name: 'freezone', label: 'Freezone', path: '/freezone' },
+    { name: 'freezone', label: 'Freezone', path: '/uae-freezone-business-setup' },
     { name: 'mainland', label: 'Mainland', path: '/mainland-company-formation-in-uae' },
     { name: 'visa', label: 'Visa', path: '/visa' },
     { name: 'license', label: 'License', path: '/license' },

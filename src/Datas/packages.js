@@ -1,9 +1,9 @@
 export const packages = [
     {
       id: 1,
-      title: "ADAFZ Package",
+      title: "ADAFZ\nPackage",
       description: "Forem ipsumconsectetur adipiscing elit. Nunc vulputate libero et t odio mattis.",
-      price: "999",
+      price: " AED 22,160",
       image: "/assets/images/package/adafz.png",
       keyPoints: [
         "Jorem ipsum dolor sit amet dolor sit",
@@ -16,9 +16,9 @@ export const packages = [
     },
     {
       id: 2,
-      title: "Shams Package",
+      title: "Shams\nPackage",
       description: "Forem ipsumconsectetur adipiscing elit. Nunc vulputate libero et t odio mattis.",
-      price: "2,499",
+      price: " AED 22,160",
       image: "/assets/images/package/shams.png",
       keyPoints: [
         "Jorem ipsum dolor sit amet dolor sit",
@@ -31,9 +31,9 @@ export const packages = [
     },
     {
       id: 3,
-      title: "IFZA Package",
+      title: "IFZA\nPackage",
       description: "Forem ipsumconsectetur adipiscing elit. Nunc vulputate libero et t odio mattis.",
-      price: "4,999",
+      price: " AED 22,160",
       image: "/assets/images/package/ifza.png",
      keyPoints: [
         "Jorem ipsum dolor sit amet dolor sit",
