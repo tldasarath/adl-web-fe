@@ -142,7 +142,7 @@ export default function ScheduleMeeting() {
   };
 
   return (
-    <section className="h-auto lg:h-[600px]  py-8 md:py-14 ">
+    <section id='schedule-meeting' className="h-auto lg:h-[600px]  py-8 md:py-14 ">
       <Container>
         <div className="container  glass rounded-4xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 xl:gap-12 items-start">

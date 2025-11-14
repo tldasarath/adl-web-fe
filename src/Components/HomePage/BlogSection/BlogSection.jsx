@@ -1,6 +1,7 @@
 import Container from "@/Components/Common/Container";
 import { blogs } from "@/Datas/blogs";
 import Image from "next/image";
+import Link from "next/link";
 
 
 
@@ -17,10 +18,11 @@ Stay updated with the latest insights on UAE business setup, visa services, comp
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
           {blogs.splice(0,4).map((blog, index) => (
-            <div
+            <Link
               key={index}
               className="relative group overflow-hidden rounded-2xl "
-            >
+          href={`/blogs/${blog.id}`}
+          >
               <Image
                 src={blog.image}
                 alt={blog.title}
@@ -38,7 +40,7 @@ Stay updated with the latest insights on UAE business setup, visa services, comp
                   {blog.excerpt}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div></Container>
