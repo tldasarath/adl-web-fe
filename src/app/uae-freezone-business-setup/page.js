@@ -28,7 +28,7 @@ const page = () => {
       <HeroSection
         title={"UAE Freezone Business Setup Services"}
         decription={
-          "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+          "UAE freezone business setup services provide fast company formation, flexible licensing, and full ownership benefits, helping entrepreneurs establish operations with simplified procedures, affordable packages, and investor-friendly regulations across leading freezones in the UAE."
         }
         buttonText={"Get a Free Consultation"}
         url={"#schedule-meeting"}
@@ -36,7 +36,7 @@ const page = () => {
 
       <AboutFreezoneDetails />
       <FreezoneInfoCard />
-      {/* <FreezoneProcessCubes/> */}
+      <FreezoneProcessCubes/>
       <FreezoneCategories/>
       <FreezoneLicenses/>
       <PricingPackages/>
