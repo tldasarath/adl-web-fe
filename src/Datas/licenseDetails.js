@@ -2,6 +2,7 @@ export const licenseDetails = [
     {
         "id": "commercial-license",
         "licenseType": "Commercial License",
+        "description":"A UAE Commercial License allows companies to engage in trading, import, export, and distribution activities. It is ideal for entrepreneurs planning to operate retail, wholesale, or general trading businesses within Dubai and other Emirates.",
         "title": "Start Your Business with UAE Commercial License",
         "image": "/assets/images/license/commercial-license.png",
         "seo": {
@@ -60,12 +61,19 @@ export const licenseDetails = [
             { "title": "Freezone vs Mainland Trade License – Which Is Better?","image":"/assets/images/post/post1.jpg", "cta": "Learn More" },
             { "title": "Top Profitable Trading Business Ideas in UAE","image":"/assets/images/post/post1.jpg", "cta": "Explore" },
             { "title": "Cost Breakdown: UAE Commercial License Fees in 2025","image":"/assets/images/post/post1.jpg", "cta": "Read Guide" }
-        ]
+        ],
+        "banner": {
+    "title": "Get Free Consultation for Commercial License ",
+    "description": "Book a free consultation to understand the complete process of obtaining your Commercial License in the UAE. Our experts guide you with requirements, costs, documents, and approval steps, ensuring a smooth and compliant setup tailored to your business needs."
+}
+
     },
     {
         "id": "professional-license",
         "licenseType": "Professional License",
         "title": "UAE Professional License for Service-Based Businesses",
+       "description": "A UAE Professional License is designed for individuals and firms providing specialized skills or consultancy services. It enables professionals to legally offer expert services with full ownership benefits across various sectors within the UAE.",
+
         "image": "/assets/images/license/professional-license.png",
 
         "seo": {
@@ -110,12 +118,19 @@ export const licenseDetails = [
             { "title": "Professional License vs Freelance Permit","image":"/assets/images/post/post1.jpg", "cta": "Learn More" },
             { "title": "Cost of Professional License in Dubai – 2025 Guide","image":"/assets/images/post/post1.jpg", "cta": "Explore" },
             { "title": "Best Consultancy Business Ideas in UAE","image":"/assets/images/post/post1.jpg", "cta": "Read Guide" }
-        ]
+        ],
+        "banner": {
+    "title": "Get Free Consultation for Professional License",
+    "description": "Schedule a free consultation to explore the steps for securing your Professional License in the UAE. Our team explains documentation, approvals, timelines, and cost-effective options, ensuring your service-based business is established smoothly and efficiently."
+}
+
     },
     {
         "id": "industrial-license",
         "licenseType": "Industrial License",
         "title": "Start Your Manufacturing Business with Industrial License UAE",
+  "description": "A UAE Industrial License is essential for businesses involved in manufacturing, processing, or production activities. It authorizes companies to operate factories and industrial units while complying with all government regulations and environmental standards.",
+
         "image": "/assets/images/license/industrial-license.png",
 
         "seo": {
@@ -161,12 +176,20 @@ export const licenseDetails = [
             { "title": "Top Manufacturing Zones in UAE for Investors", "image":"/assets/images/post/post1.jpg","cta": "Learn More" },
             { "title": "Industrial Setup Cost in UAE – Detailed Breakdown", "image":"/assets/images/post/post1.jpg","cta": "Explore" },
             { "title": "Why UAE Is Becoming a Global Manufacturing Hub", "image":"/assets/images/post/post1.jpg","cta": "Read Guide" }
-        ]
+        ],
+       "banner": {
+    "title": "Get Free Consultation for Industrial License",
+    "description": "Book a free consultation to learn the exact requirements for obtaining your Industrial License. Our advisors help with documentation, approvals, feasibility guidelines, and regulatory compliance, ensuring your manufacturing business follows proper procedures and achieves quick setup."
+}
+
     },
+    
     {
         "id": "tourism-license",
         "licenseType": "Tourism License",
         "title": "Comprehensive Guide to UAE Tourism License Setup",
+        "description": "A UAE Tourism License allows companies to operate travel agencies, tour operations, and related services. It is ideal for businesses offering travel booking, holiday packages, tourism activities, and destination management solutions.",
+
         "image": "/assets/images/license/tourism-license.png",
 
         "seo": {
@@ -211,13 +234,19 @@ export const licenseDetails = [
             { "title": "Dubai Tourism License Cost & Requirements 2025","image":"/assets/images/post/post1.jpg", "cta": "Learn More" },
             { "title": "Inbound vs Outbound Tourism License Explained","image":"/assets/images/post/post1.jpg", "cta": "Explore" },
             { "title": "Top Travel Business Ideas in UAE", "image":"/assets/images/post/post1.jpg","cta": "Read Guide" }
-        ]
+        ],
+        "banner": {
+    "title": "Get Free Consultation for Tourism License",
+    "description": "Get a free consultation to understand how to obtain your Tourism License in the UAE. We guide you through approvals, documentation, requirements, and cost details, ensuring your travel or tour business launches successfully with full compliance."
+}
+
     },
     {
         "id": "e-trader-license",
         "licenseType":"E-Trader License",
         "title": "Start Your Online venture with UAE E-Trader License",
         "image": "/assets/images/license/e-trader-license.png",
+"description": "The UAE E-Trader License allows individuals to conduct online business activities legally. It is ideal for freelancers, home-based entrepreneurs, and online sellers operating through social media platforms or digital marketplaces.",
 
         "seo": {
             "title": "E-Trader License in UAE | Online Business License Dubai",
@@ -266,13 +295,18 @@ export const licenseDetails = [
             { "title": "Instagram Business Licensing Rules in UAE","image":"/assets/images/post/post1.jpg", },
             { "title": "Best E-Commerce License Options in UAE","image":"/assets/images/post/post1.jpg", },
             { "title": "Dropshipping in UAE: Legal Guide & Setup","image":"/assets/images/post/post1.jpg", }
-        ]
+        ],"banner": {
+    "title": "Get Free Consultation for E-Trader License",
+    "description": "Book a free consultation to learn how to obtain your E-Trader License. Our experts explain eligibility, documentation, fees, and setup timelines, helping you start your online business confidently and legally across Dubai and other Emirates."
+}
+
     },
     {
         "id": "freelance-permit",
         "licenseType": "Freelance Permit",
         "title": "UAE Freelance Permit for Independent Professionals",
         "image": "/assets/images/license/freelance-permit.png",
+"description": "A UAE Freelance Permit empowers individuals to work independently across various creative, technical, or professional fields. It enables legal solo practice with flexible options for visas, workspace, and long-term opportunities.",
 
         "seo": {
             "title": "Freelance Permit UAE | Become a Licensed Freelancer in Dubai",
@@ -321,6 +355,10 @@ export const licenseDetails = [
             { "title": "Freelance Visa vs Business License — What’s Right for You?","image":"/assets/images/post/post1.jpg" },
             { "title": "How to Start Freelancing in Dubai Legally","image":"/assets/images/post/post1.jpg" },
             { "title": "UAE Freelance Visa Cost & Requirements","image":"/assets/images/post/post1.jpg" }
-        ]
+        ],"banner": {
+    "title": "Get Free Consultation for Freelance Permit",
+    "description": "Schedule a free consultation to understand the complete process of securing your Freelance Permit. We clarify required documents, eligibility, fees, and application steps, helping you start your independent career smoothly and with full compliance."
+}
+
     }
 ]

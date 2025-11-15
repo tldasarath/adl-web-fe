@@ -144,7 +144,7 @@ const Services = () => {
                     </h2>
               <div className=" flex justify-end">
                   <p className="text-base lg:text-lg mb-8 max-w-lg font-light leading-normal">
-                        Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+We offer business support in Dubai, handling company setup, visas, approvals, documentation, corporate services, and essential processes to help entrepreneurs start, manage, and grow their businesses smoothly across the UAE today.
                     </p>
               </div>
                 </div>

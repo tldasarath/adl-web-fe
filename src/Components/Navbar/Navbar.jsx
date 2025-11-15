@@ -34,7 +34,6 @@ export default function Navbar() {
   ];
 
   const serviceItems = [
-    // { name: 'Business Setup', path: '/services/business-setup' },
     { name: 'Company Formation', path: '/services/company-formation' },
     { name: 'Golden Visa', path: '/services/golden-visa' },
     { name: 'PRO Services', path: '/services/pro-services' },
@@ -74,17 +73,24 @@ export default function Navbar() {
     { name: 'Blue Visa', path: '/visa/blue-visa' },
   ];
 
-  // detect active route
+  // Combine routes for active match
+  const allRoutes = [
+    ...navItems,
+    ...serviceItems.map(s => ({ name: 'service', path: s.path })),
+    ...licenseItems.map(l => ({ name: 'license', path: l.path })),
+    ...visaItems.map(v => ({ name: 'visa', path: v.path })),
+  ];
+
+  // Detect active section without flicker
   useEffect(() => {
-    // Find the deepest matching route (not just '/')
-    const current = [...navItems]
-      .sort((a, b) => b.path.length - a.path.length) // longest path first
-      .find((item) => pathname.startsWith(item.path));
+    const current = [...allRoutes]
+      .sort((a, b) => b.path.length - a.path.length)
+      .find(item => pathname.startsWith(item.path));
 
     if (current) setActiveSection(current.name);
   }, [pathname]);
 
-  // match dropdown width to navbar glass div
+  // Dropdown width
   useEffect(() => {
     const updateWidth = () => {
       if (glassRef.current) setDropdownWidth(glassRef.current.offsetWidth);
@@ -94,41 +100,31 @@ export default function Navbar() {
     return () => window.removeEventListener('resize', updateWidth);
   }, []);
 
-  // close dropdown if clicked outside
+  // Close dropdown on outside click
   useEffect(() => {
     const handleClick = (e) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(e.target) &&
-        glassRef.current &&
-        !glassRef.current.contains(e.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target) &&
+          glassRef.current && !glassRef.current.contains(e.target)) {
         setIsServiceOpen(false);
       }
-      if (
-        licenseDropdownRef.current &&
-        !licenseDropdownRef.current.contains(e.target) &&
-        glassRef.current &&
-        !glassRef.current.contains(e.target)
-      ) {
+
+      if (licenseDropdownRef.current && !licenseDropdownRef.current.contains(e.target) &&
+          glassRef.current && !glassRef.current.contains(e.target)) {
         setIsLicenseOpen(false);
       }
-      if (
-        visaDropdownRef.current &&
-        !visaDropdownRef.current.contains(e.target) &&
-        glassRef.current &&
-        !glassRef.current.contains(e.target)
-      ) {
+
+      if (visaDropdownRef.current && !visaDropdownRef.current.contains(e.target) &&
+          glassRef.current && !glassRef.current.contains(e.target)) {
         setIsVisaOpen(false);
       }
     };
+
     document.addEventListener('click', handleClick);
     return () => document.removeEventListener('click', handleClick);
   }, []);
 
   return (
     <>
-      {/* NAVBAR */}
       <nav className="top-0 left-0 right-0 z-[1000] bg-transparent transition-all duration-500">
         <Container>
           <div
@@ -136,17 +132,15 @@ export default function Navbar() {
             className="flex glass-bg items-center justify-between px-6 py-2 rounded-3xl relative"
           >
             {/* Logo */}
-            <div className="flex-shrink-0">
-              <Link href="/" className="flex items-center">
-                <Image
-                  src="/assets/images/logos/logo.png"
-                  alt="Logo"
-                  width={130}
-                  height={100}
-                  className="rounded-lg w-24 sm:w-26 md:w-24 xl:w-32 h-auto"
-                />
-              </Link>
-            </div>
+            <Link href="/" className="flex-shrink-0 flex items-center">
+              <Image
+                src="/assets/images/logos/logo.png"
+                alt="Logo"
+                width={130}
+                height={100}
+                className="rounded-lg w-24 sm:w-26 md:w-24 xl:w-32 h-auto"
+              />
+            </Link>
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex space-x-0">
@@ -155,32 +149,15 @@ export default function Navbar() {
                   <Link
                     href={item.path}
                     onMouseEnter={() => {
-                      if (item.name === 'service') {
-                        setIsServiceOpen(true);
-                        setIsLicenseOpen(false);
-                        setIsVisaOpen(false);
-                      }
-                      if (item.name === 'license') {
-                        setIsLicenseOpen(true);
-                        setIsServiceOpen(false);
-                        setIsVisaOpen(false);
-                      }
-                      if (item.name === 'visa') {
-                        setIsVisaOpen(true);
-                        setIsServiceOpen(false);
-                        setIsLicenseOpen(false);
-                      }
+                      setIsServiceOpen(item.name === 'service');
+                      setIsLicenseOpen(item.name === 'license');
+                      setIsVisaOpen(item.name === 'visa');
                     }}
-                    onClick={(e) => {
-                      if (['service', 'license', 'visa'].includes(item.name)) {
-                        e.preventDefault(); // 🔒 Stop navigation for dropdowns
-                      } else {
-                        setActiveSection(item.name);
-                      }
-                    }} className={`relative px-2 2xl:px-6 py-3 rounded-2xl 2xl:rounded-3xl font-normal transition-all duration-300 transform hover:scale-105 active:scale-95 ${activeSection === item.name
+                    className={`relative px-2 2xl:px-6 py-3 rounded-2xl font-normal transition-all duration-300 transform hover:scale-105 active:scale-95 ${
+                      activeSection === item.name
                         ? 'glass-bg'
                         : 'text-white/80 hover:text-white hover:bg-white/5'
-                      }`}
+                    }`}
                   >
                     {item.label}
                     {activeSection === item.name && (
@@ -204,20 +181,18 @@ export default function Navbar() {
 
           {/* Mobile Dropdown */}
           {isMobileMenuOpen && (
-            <div className="md:hidden ">
+            <div className="md:hidden">
               <div className="space-y-1">
                 {navItems.map((item) => (
                   <Link
                     key={item.name}
                     href={item.path}
-                    onClick={() => {
-                      setActiveSection(item.name);
-                      setIsMobileMenuOpen(false);
-                    }}
-                    className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${activeSection === item.name
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                      activeSection === item.name
                         ? 'text-white glass-bg'
                         : 'text-white/80 hover:text-white hover:bg-white/10'
-                      }`}
+                    }`}
                   >
                     {item.label}
                   </Link>
@@ -237,51 +212,18 @@ export default function Navbar() {
           onMouseLeave={() => setIsServiceOpen(false)}
         >
           <div
-            className="glass-bg rounded-xl overflow-hidden transition-all"
+            className="glass-bg rounded-xl overflow-hidden"
             style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
           >
-            <div
-              className="max-h-[230px] overflow-y-auto p-6 scrollbar-ultrathin"
-            >
-              <div className="grid grid-cols-4 gap-4 text-white items-center text-sm">
+            <div className="max-h-[230px] overflow-y-auto p-6 scrollbar-ultrathin">
+              <div className="grid grid-cols-4 gap-4 text-white text-sm">
                 {serviceItems.map((service, i) => (
                   <Link
                     href={service.path}
                     key={i}
-                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
+                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all hover:bg-white/10"
                   >
-                    <p className="font-normal text-white z-10">{service.name}</p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* LICENSE DROPDOWN */}
-      {isVisaOpen && (
-        <div
-          ref={licenseDropdownRef}
-          className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
-          onMouseEnter={() => setIsVisaOpen(true)}
-          onMouseLeave={() => setIsVisaOpen(false)}
-        >
-          <div
-            className="glass-bg rounded-xl overflow-hidden transition-all"
-            style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
-          >
-            <div
-              className="max-h-[230px] overflow-y-auto p-6 scrollbar-thin scrollbar-thumb-white/30 scrollbar-track-transparent"
-            >
-              <div className="grid grid-cols-4 gap-4 text-white items-center text-sm">
-                {visaItems.map((visa, i) => (
-                  <Link
-                    href={visa.path}
-                    key={i}
-                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
-                  >
-                    <p className="font-normal text-white z-10">{visa.name}</p>
+                    {service.name}
                   </Link>
                 ))}
               </div>
@@ -291,49 +233,71 @@ export default function Navbar() {
       )}
 
       {/* VISA DROPDOWN */}
-      {isLicenseOpen && (
+      {isVisaOpen && (
         <div
           ref={visaDropdownRef}
+          className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
+          onMouseEnter={() => setIsVisaOpen(true)}
+          onMouseLeave={() => setIsVisaOpen(false)}
+        >
+          <div
+            className="glass-bg rounded-xl overflow-hidden"
+            style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
+          >
+            <div className="max-h-[230px] overflow-y-auto p-6 scrollbar-medium">
+              <div className="grid grid-cols-4 gap-4 text-white text-sm">
+                {visaItems.map((visa, i) => (
+                  <Link
+                    href={visa.path}
+                    key={i}
+                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all hover:bg-white/10"
+                  >
+                    {visa.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* LICENSE DROPDOWN */}
+      {isLicenseOpen && (
+        <div
+          ref={licenseDropdownRef}
           className="hidden lg:flex justify-center absolute left-0 right-0 top-[95px] z-[9999]"
           onMouseEnter={() => setIsLicenseOpen(true)}
           onMouseLeave={() => setIsLicenseOpen(false)}
         >
           <div
-            className="glass-bg rounded-xl overflow-hidden flex transition-all"
+            className="glass-bg rounded-xl overflow-hidden flex"
             style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
           >
-            {/* Left side: Visa options */}
-            <div
-              className="max-h-[160px] overflow-y-auto p-6 scrollbar-ultrathin w-3/4"
-            >
-              <div className="grid grid-cols-3 gap-4 text-white items-center text-sm">
+            <div className="max-h-[160px] overflow-y-auto p-6 w-3/4 scrollbar-ultrathin">
+              <div className="grid grid-cols-3 gap-4 text-white text-sm">
                 {licenseItems.map((license, i) => (
                   <Link
                     href={license.path}
                     key={i}
-                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all cursor-pointer hover:bg-white/10"
+                    className="glass-bg rounded-2xl w-[250px] p-3 text-center transition-all hover:bg-white/10"
                   >
-                    <p className="font-normal text-white z-10">{license.name}</p>
+                    {license.name}
                   </Link>
                 ))}
               </div>
             </div>
 
-            {/* Right side: Image */}
-            <div className="relative w-1/3 flex flex-col items-center justify-center  h-[230px] rounded-r-xl">
-              {/* Freezone */}
+            <div className="relative w-1/3 flex flex-col items-center justify-center h-[230px] rounded-r-xl">
               <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-                <a href='/uae-freezone-business-setup'>Freezone</a>
+                <Link href="/uae-freezone-business-setup">Freezone</Link>
                 <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
               </div>
 
-              {/* Offshore */}
               <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-                <a href='/offshore-company-formation-in-uae'>Offshore</a>
+                <Link href="/offshore-company-formation-in-uae">Offshore</Link>
                 <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
               </div>
             </div>
-
           </div>
         </div>
       )}

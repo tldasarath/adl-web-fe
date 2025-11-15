@@ -41,7 +41,7 @@ Once the license and visas are approved, the business can officially begin opera
     excerpt:
       "A comparison between mainland and freezone business setup options in Dubai, highlighting ownership, flexibility, and cost differences.",
     image:
-      "/assets/images/blogs-page/mainland-vs-freezone-which-is-better-for-your-business.jpg",
+      "/assets/images/blogs-page/freezone-company-setup.png",
     seoTitle:
       "Mainland vs Freezone Company Setup | Which One Is Right for You?",
     metaDescription:
@@ -311,7 +311,7 @@ Choosing a reliable local sponsor is essential for smooth operations and long-te
     excerpt:
       "A clear guide to the UAE document attestation process for educational, personal, and commercial documents.",
     image:
-      "/assets/images/blogs-page/how-document-attestation-works-in-the-uae.jpg",
+      "/assets/images/blogs-page/how-document-attestation-works.png",
     seoTitle: "Document Attestation UAE | MOFA and Embassy Process",
     metaDescription:
       "Learn how document attestation works in the UAE, including notarization, embassy stamping, and MOFA approval.",
@@ -412,7 +412,7 @@ Accurate translation ensures legal clarity and compliance. Certified services pr
     excerpt:
       "A step-by-step explanation of the Emirates ID and medical fitness procedure required for UAE residency.",
     image:
-      "/assets/images/blogs-page/how-to-get-your-emirates-id-and-medical-done-in-dubai.jpg",
+      "/assets/images/blogs-page/how-to-get-emirates-id-and-medical.png",
     seoTitle:
       "Emirates ID Dubai | Medical Fitness Test and Registration Guide",
     metaDescription:
@@ -480,7 +480,7 @@ Freezone companies benefit from tax exemptions, complete ownership, and simplifi
     excerpt:
       "An overview of legal and court support services provided for individuals and businesses in Dubai.",
     image:
-      "/assets/images/blogs-page/dubai-court-and-legal-support-services-explained.jpg",
+      "/assets/images/blogs-page/dubai-court-and-legal-services-explained.png",
     seoTitle:
       "Dubai Court Services | Legal Documentation and Support",
     metaDescription:

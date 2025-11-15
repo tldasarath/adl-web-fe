@@ -9,21 +9,21 @@ const businessData = [
   {
     id: 1,
     title: "Freezone",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...",
+    description: "Freezone companies enjoy full ownership, tax advantages, simplified licensing, and business setup.",
     image: "/assets/images/businessSection/freezone.png",
     url:"/uae-freezone-business-setup"
   },
   {
     id: 2,
     title: "Mainland",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...",
+    description: "Mainland setup enables UAE operations with full ownership and flexible business activities.",
     image: "/assets/images/businessSection/mainland.png",
     url:"/mainland-company-formation-in-uae"
   },
   {
     id: 3,
     title: "Offshore",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie...",
+    description: "Offshore structures offer asset protection, privacy, trading flexibility, and simplified international operations.",
     image: "/assets/images/businessSection/offshore.png",
     url:"offshore-company-formation-in-uae"
   },

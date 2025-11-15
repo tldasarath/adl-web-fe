@@ -9,9 +9,9 @@ const BusinessServices = () => {
     <section className=" relative h-auto xl:h-[900px]  py-8 md:py-14 w-full ">
 
 
-      <div className="absolute left-[80%] -top-30 -z-10">
+      {/* <div className="absolute left-[80%] -top-30 -z-10">
         <img src="/assets/images/bg/bubble.png" alt="" className="relative w-[500px] h-[400px] object-contain" />
-      </div>
+      </div> */}
       <Container>
         <div className="">
           <div className="grid grid-cols-1 gap-12">

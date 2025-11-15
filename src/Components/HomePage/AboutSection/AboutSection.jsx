@@ -95,9 +95,9 @@ export default function AboutSection() {
 
       </div>
 
-      <div className="absolute left-[80%] top-40 md:top-96">
+      {/* <div className="absolute left-[80%] top-40 md:top-96">
         <img src="/assets/images/bg/bubble.png" alt="" className="relative w-[500px] h-[400px] object-contain" />
-      </div>
+      </div> */}
 
       <Container>
         <div className="space-y-12">

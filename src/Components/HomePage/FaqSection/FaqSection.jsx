@@ -11,13 +11,13 @@ export default function FAQSection() {
   return (
     <section className="py-8 md:py-14 relative overflow-hidden">
       {/* Decorative background */}
-      <div className="absolute left-[80%] -top-10 -z-10">
+      {/* <div className="absolute left-[80%] -top-10 -z-10">
         <img
           src="/assets/images/bg/bubble.png"
           alt=""
           className="relative w-[500px] h-[400px] object-contain"
         />
-      </div>
+      </div> */}
 
       <Container>
         <div className="max-w-7xl mx-auto px-6">

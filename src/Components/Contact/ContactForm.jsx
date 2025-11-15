@@ -85,12 +85,12 @@ Message: ${formData.message}
           {/* Left Section */}
           <div>
             <h2 className="text-2xl mb-5 md:text-3xl font-bold text-white">
-              Say Hello,<br />Let’s Start Business
+              Connect With Trusted UAE <br/>Business Setup Advisors
+
             </h2>
 
             <p className="text-sm md:text-base mb-8 font-light leading-normal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
+             Connect with expert business setup consultants in Dubai, UAE for guidance, support, and fast company formation assistance today.
             </p>
 
             {/* Social Links */}

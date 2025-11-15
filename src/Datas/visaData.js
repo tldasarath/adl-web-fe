@@ -662,7 +662,7 @@ export const visaDetails = [
     buttonUrl: "/",
   },
 
-  image: "/assets/images/visas/uae-freelancer-visa.png",
+  image: "/assets/images/visas/freelancer-visa.png",
 
   title: "ADL Helps You Build a Successful Freelance Career in the UAE",
 
@@ -801,7 +801,7 @@ export const visaDetails = [
     buttonUrl: "/",
   },
 
-  image: "/assets/images/visas/uae-blue-visa.png",
+  image: "/assets/images/visas/blue-visa-uae.png",
 
   title: "ADL Helps You Secure the UAE\u00a0Blue Visa With Ease",
 
