@@ -87,7 +87,7 @@ export default function ScheduleMeeting() {
     const message = `Hello! I'd like to schedule a meeting:\n\nName: ${userInfo.name}\nEmail: ${userInfo.email}\nPhone: ${userInfo.phone}\nPurpose: ${userInfo.purpose}\nDate: ${selectedDate.date} ${selectedDate.day}\nTime: ${selectedTime}`;
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappUrl = `https://wa.me/9947695010?text=${encodedMessage}`; // Replace with your number
+    const whatsappUrl = `https://wa.me/971542179221?text=${encodedMessage}`; // Replace with your number
 
     window.open(whatsappUrl, '_blank');
     setIsModalOpen(false);
@@ -160,7 +160,7 @@ export default function ScheduleMeeting() {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <button
-                    onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+                    onClick={() => window.open('https://wa.me/971542179221', '_blank')}
                     className="glass px-13 xl:px-8 py-5 xl:py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                   >
                     <img src="/assets/images/icons/whatsapp.png" alt="" className="w-7 h-7" />
@@ -169,7 +169,7 @@ export default function ScheduleMeeting() {
                   </button>
 
                   <button
-                    onClick={() => window.open('tel:+1234567890')}
+                    onClick={() => window.open('tel:+971542179221')}
                     className="glass px-15 xl:px-8 py-5 xl:py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                   >
                     <img src="/assets/images/icons/call.png" alt="" className="w-5 h-5" />

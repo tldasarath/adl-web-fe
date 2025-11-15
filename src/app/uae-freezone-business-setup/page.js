@@ -31,7 +31,7 @@ const page = () => {
           "Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
         }
         buttonText={"Get a Free Consultation"}
-        url={"#schedule-meeting"}
+        url={"/#schedule-meeting"}
       />
 
       <AboutFreezoneDetails />

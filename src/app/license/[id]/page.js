@@ -9,6 +9,7 @@ import MainSection from "@/Components/LicensePage/MainSection";
 import RelatedBlogs from "@/Components/LicensePage/RelatedBlogs";
 import WhyADLSection from "@/Components/LicensePage/WhyADLSection";
 import Navbar from "@/Components/Navbar/Navbar";
+import { blogs } from "@/Datas/blogs";
 import { licenseDetails } from "@/Datas/licenseDetails";
 import { useParams } from "next/navigation";
 import React from "react";
@@ -31,7 +32,7 @@ const page = () => {
             <WhyADLSection description={license.whyADL} />
             <InnerBanner title={"Lorem ipsum dolor sit amet, consectetur "} description={"Vorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit"} buttonText={"Book a Free Consultation"} />
             <FAQS faqs={license.faqs} />
-            <RelatedBlogs blogs={license.blogs} />
+            <RelatedBlogs blogs={blogs} />
             <Footer />
         </div>
     );

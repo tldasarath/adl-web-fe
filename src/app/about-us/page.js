@@ -23,9 +23,8 @@ const page = () => {
     <div>
       <Navbar />
       <HeroSection 
-      title={"Borem ipsum dolor sit"} 
-      subTitle={"in Dubaiamet, consectetur "} 
-      decription={"Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.ADL Business Solutions simplifies the entire process of company setup in Dubai and across the UAE — from trade licensing to operational compliance."} buttonText={"Get a Free Consultation"} url={"#schedule-meeting"} />
+      title={"Business Setup Consultants in UAE"} 
+      decription={"ADL Business Solutions simplifies the entire process of company setup in Dubai and across the UAE — from trade licensing to operational compliance."} buttonText={"Get a Free Consultation"} url={"#schedule-meeting"} />
       <InsightsSection />
       <AboutSection />
       <ScheduleMeeting />

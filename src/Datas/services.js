@@ -2615,6 +2615,188 @@ export const serviceDetails = [
 
 
   },
+  {
+    id: "virtual-office",
+ seo: {
+  title:
+    "Virtual Office Setup UAE | Premium Business Address & Remote Office Solutions – ADL Business Solutions",
+  description:
+    "Set up a trusted virtual office in the UAE with ADL Business Solutions. Get a legal business address, mail handling, call support, and documentation for Mainland and Freezone company formation — fast, compliant, and affordable.",
+  keywords:
+    "virtual office UAE, UAE virtual office services, business address UAE, virtual workspace Dubai, mainland virtual office, freezone virtual office setup"
+},
+
+
+
+    heroSection: {
+      title: " Virtual Office Setup UAE",
+
+      description:
+" ADL Business Solutions provides government-approved virtual office services in the UAE — giving you a legal address, compliance documents, and full administrative support without renting physical space.",
+      buttonText: "Get a Quote",
+      buttonUrl: "/"
+    },
+
+    image: "/assets/images/service-details/business-setup.png",
+
+    title: "  Fast & Secure Online MOA & POA Services in Dubai",
+
+ paragraph1:
+  "A virtual office in the UAE is the smartest way to establish a legitimate business presence without the high cost of physical office rent. Whether you're an entrepreneur, remote founder, or international company, ADL Business Solutions ensures your virtual office is fully compliant with Mainland and Freezone requirements.",
+
+paragraph2:
+  "From official business addresses and call handling to Ejari/lease documents and mail management, we provide complete virtual office solutions recognized by UAE authorities. This allows you to operate from anywhere while maintaining a strong, professional business identity in the UAE.",
+    button1Text: " Book Online MOA & POA Consultation",
+    button1Url: "/",
+    button2Text: "Get MOA / POA Services",
+    button2Url: "/",
+
+ meeting: {
+  title: "Let’s Set Up Your UAE Virtual Office",
+  description:
+    "Our consultants will help you choose the right virtual office plan based on your license type, budget, and jurisdiction — Mainland or Freezone. Book a free 15-minute consultation to get a personalized plan.",
+  buttonText: "Book a Meeting Now",
+  buttonUrl: "/book-consultation"
+},
+
+
+
+
+
+
+
+    section1: {
+      title: "Why Choose a Virtual Office in the UAE",
+    description1:
+  "The UAE allows businesses to operate with a virtual office, giving you a legal address, official documentation, and administrative support — all at a fraction of the cost of a physical workspace. It is an ideal solution for startups, remote teams, and foreign investors who want to run a UAE business flexibly and efficiently.",
+
+description2:
+  "At ADL Business Solutions, we provide recognized and fully compliant virtual office services tailored to your license type, helping you launch operations quickly, maintain a professional presence, and meet all UAE regulatory requirements.",
+    },
+
+ section2: {
+  title: "Our Virtual Office Solutions",
+  description:
+    "We offer end-to-end virtual office services designed for all kinds of businesses:",
+  points: [
+    {
+      id: 1,
+      title: "Official Business Address",
+      description:
+        "A premium UAE address approved for business license issuance and renewal."
+    },
+    {
+      id: 2,
+      title: "Mail & Package Handling",
+      description:
+        "We receive and securely store your documents with instant notifications."
+    },
+    {
+      id: 3,
+      title: "Dedicated Landline & Call Forwarding",
+      description:
+        "Professional call answering and forwarding to maintain business accessibility."
+    },
+    {
+      id: 4,
+      title: "Virtual Ejari / Lease Agreement",
+      description:
+        "Required for Mainland licensing, immigration, and visa procedures."
+    },
+    {
+      id: 5,
+      title: "Freezone Virtual Office Packages",
+      description:
+        "Address solutions approved by major UAE freezones."
+    },
+    {
+      id: 6,
+      title: "Meeting Room & Workspace Access",
+      description:
+        "Access coworking spaces and meeting rooms when needed."
+    },
+    {
+      id: 7,
+      title: "Add-On PRO & Administrative Support",
+      description:
+        "Support for license processing, visas, and corporate administrative tasks."
+    }
+  ]
+},
+
+
+
+ section3: {
+  title: "Why Choose ADL Business Solutions",
+  description:
+    "With ADL, your virtual office becomes a complete and professional UAE business presence.",
+  points: [
+    "Government-Recognized Address Solutions",
+    "Affordable Packages for All License Types",
+    "Fast Setup — Same-Day Documentation Available",
+    "Full Call & Mail Management",
+    "Optional Services: Visa Support, Bank Account, PRO, Accounting"
+  ],
+  image: {
+    src: "/assets/images/service-details/why-choose-us.png",
+    alt: "Virtual office services"
+  }
+},
+
+
+
+  faqs: [
+  {
+    question: "Is a virtual office accepted for business licensing in the UAE?",
+    answer:
+      "Yes — many Mainland and Freezone authorities accept virtual offices for license issuance."
+  },
+  {
+    question: "Can I operate fully without a physical office?",
+    answer:
+      "Yes, depending on your business activity. Many service-based activities allow complete virtual operations."
+  },
+  {
+    question: "Will I get Ejari or address proof?",
+    answer:
+      "Yes, we provide the required official documentation depending on your jurisdiction."
+  },
+  {
+    question: "Do virtual offices include meeting room usage?",
+    answer:
+      "Yes — selected packages offer scheduled meeting room and workspace access."
+  },
+  {
+    question: "Can ADL help with visa processing and corporate bank accounts?",
+    answer:
+      "Absolutely. We provide visa assistance, PRO services, and bank account opening support once your virtual office is active."
+  }
+],
+
+
+
+blogs: [
+  "Why Virtual Offices Are Becoming Popular in the UAE",
+  "How to Choose the Right Virtual Office Package in Dubai",
+  "Freezone vs Mainland Virtual Office — Key Differences",
+  "Top Benefits of Running a UAE Business Virtually",
+  "Cost-Effective Business Setup: Virtual Office Explained"
+]
+,
+finalCta: {
+  headline: "Ready to Activate Your UAE Virtual Office?",
+  subheadline:
+    "ADL Business Solutions makes virtual office setup simple, compliant, and cost-effective — so you can focus on growing your business from anywhere.",
+  button1Text: "🚀 Get Your Virtual Office",
+  button1Url: "/",
+  button2Text: "📞 Book a Free Consultation",
+  button2Url: "/book-consultation"
+},
+
+
+
+
+  },
 
 
 ];
@@ -2762,7 +2944,7 @@ export const services = [
   { id: 2, title: 'PRO Services', description: 'Professional PRO services for all government transactions and document processing.' },
   { id: 3, title: 'Company Formation', description: 'End-to-end company formation services for various business structures in UAE.' },
   { id: 4, title: 'Visa Services', description: 'Comprehensive visa and immigration assistance for your employees and partners.' },
-  { id: 5, title: 'UAE Government Approvals', description: 'Support for opening and managing corporate bank accounts with top UAE banks.' },
+  { id: 5, title: 'UAE Government Approvals', description: 'Essential UAE government approvals, permits, and clearances managed efficiently for seamless setup.' },
 ];
 
 export const businessServices = [
@@ -2803,7 +2985,7 @@ export const businessServices = [
   },
   {
     id: 8,
-    title: "Legal Translation Services",
-    description: "Accurate, certified legal translations for all your business documents — accepted by UAE ministries, courts, and embassies."
+    title: "Iso certification & trademark registration",
+    description: "ISO certification and trademark registration services enhance compliance, protect brands, and support businesses in meeting standards for stronger market credibility overall."
   }
 ];

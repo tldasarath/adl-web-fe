@@ -1,4 +1,5 @@
  import Image from "next/image";
+import Link from "next/link";
  
 
  
@@ -20,9 +21,11 @@
            {/* Slider wrapper */}
            <div className="flex animate-slide-x gap-4 pt-10 w-max">
              {duplicatedPosts.map((post, index) => (
-               <div
+               <Link
                  key={index}
                  className="bg-gradient-to-b from-[#1c2334] to-[#0e1424] rounded-2xl overflow-hidden shadow-md min-w-[280px] sm:min-w-[320px] md:min-w-[360px] flex-shrink-0"
+                                     href={`/blogs/${post.id}`}
+
                >
                  <div className="relative w-full h-72">
                    <Image
@@ -35,7 +38,7 @@
                  <div className="p-5">
                    <p className=" text-sm md:text-base font-normal mb-3">{post.title}</p>
                  </div>
-               </div>
+               </Link>
              ))}
            </div>
          </div>

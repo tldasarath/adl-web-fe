@@ -7,6 +7,7 @@ import FAQSection from "@/Components/mainlandPage/FaqSection";
 import SuggestedBlogs from "@/Components/mainlandPage/SuggestedBlogs";
 import AboutVisa from "@/Components/visaPage/AboutVisa";
 import VisaTabs from "@/Components/visaPage/VisaTabs";
+import { blogs } from "@/Datas/blogs";
 import { visaDetails } from "@/Datas/visaData";
 import { useParams } from "next/navigation";
 
@@ -38,7 +39,7 @@ export default function Page() {
         buttonUrl={visa.meeting.buttonUrl}
       />
       <FAQSection faqs={visa.faqs} />
-      <SuggestedBlogs blogs={visa.relatedBlogs} />
+      <SuggestedBlogs blogs={blogs.slice(0,4)} />
       <Footer />
     </div>
   );

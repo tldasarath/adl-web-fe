@@ -28,7 +28,7 @@ export default function page() {
         // subTitle={freezone.hero.subTitle} 
         decription={freezone.hero.subheadline}
         buttonText={"Get a Free Consultation"}
-        url={"#schedule-meeting"} />
+        url={"/schedule-meeting"} />
       <AboutFreezone title={freezone.about.title} image={freezone.image} description={freezone.about.overview} highlights={freezone.about?.highlights} />
       <TypesOfLicenses title={freezone.typesOfLicenses.title} licenses={freezone.typesOfLicenses.licenses} description={freezone.typesOfLicenses.description} />
       <CompanySetupProcess setupProcess={freezone.setupProcess} />
