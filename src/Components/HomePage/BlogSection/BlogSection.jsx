@@ -1,32 +1,9 @@
 import Container from "@/Components/Common/Container";
+import { blogs } from "@/Datas/blogs";
 import Image from "next/image";
+import Link from "next/link";
 
-const blogs = [
-  {
-    title: "Business Setup",
-    description:
-      "Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a mattis nulla. Sed dignissim, metus nec fringilla accumsan.",
-    image: "/assets/images/blogs/business-setup.png", // Replace with actual image paths
-  },
-  {
-    title: "Visa",
-    description:
-      "Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a mattis nulla. Sed dignissim, metus nec fringilla accumsan.",
-    image: "/assets/images/blogs/visa.png",
-  },
-  {
-    title: "PRO",
-    description:
-      "Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a mattis nulla. Sed dignissim, metus nec fringilla accumsan.",
-    image: "/assets/images/blogs/pro.png",
-  },
-  {
-    title: "Compliance",
-    description:
-      "Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a mattis nulla. Sed dignissim, metus nec fringilla accumsan.",
-    image: "/assets/images/blogs/compliance.png",
-  },
-];
+
 
 export default function BlogSection() {
   return (
@@ -36,16 +13,16 @@ export default function BlogSection() {
                 <h2 className="text-2xl mb-3 md:text-3xl main-text font-bold text-white ">
             Our Recent Blog</h2>
                 <p className="text-base lg:text-lg mb-8 font-light leading-normal">
-            Worem ipsum dolor sit amet consecteturdolor sit amet
-          </p>
+Stay updated with the latest insights on UAE business setup, visa services, compliance, and market trends. Explore expert tips and guides designed to help entrepreneurs and companies grow confidently in the UAE.          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-          {blogs.map((blog, index) => (
-            <div
+          {blogs.splice(0,4).map((blog, index) => (
+            <Link
               key={index}
               className="relative group overflow-hidden rounded-2xl "
-            >
+          href={`/blogs/${blog.id}`}
+          >
               <Image
                 src={blog.image}
                 alt={blog.title}
@@ -58,12 +35,12 @@ export default function BlogSection() {
       "linear-gradient(90deg, rgba(36,43,61,1) 0%, rgba(10,14,29,1) 48%)",
     backgroundPosition: "center center",
   }}>
-                <h3 className="text-lg font-semibold mb-2">{blog.title}</h3>
+<h3 className="text-lg font-semibold mb-2 truncate">{blog.title}</h3>
                 <p className="text-sm text-gray-300 line-clamp-3">
-                  {blog.description}
+                  {blog.excerpt}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div></Container>

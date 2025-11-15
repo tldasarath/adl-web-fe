@@ -31,7 +31,7 @@ const page = () => {
           "UAE freezone business setup services provide fast company formation, flexible licensing, and full ownership benefits, helping entrepreneurs establish operations with simplified procedures, affordable packages, and investor-friendly regulations across leading freezones in the UAE."
         }
         buttonText={"Get a Free Consultation"}
-        url={"/"}
+        url={"/#schedule-meeting"}
       />
 
       <AboutFreezoneDetails />

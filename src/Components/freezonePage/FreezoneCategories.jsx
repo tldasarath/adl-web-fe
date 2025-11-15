@@ -59,7 +59,7 @@ const RAW_DATA = {
         title: "Meydan Free Zone",
         desc: "Digital-first Freezone with affordable licensing.",
         img: "/assets/images/freezone/category/ifza-freezone-dubai.png",
-        link: "/meydan-freezone-dubai.png",
+        link: "/meydan-freezone-dubai",
       },
     ],
   },

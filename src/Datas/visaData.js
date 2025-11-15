@@ -642,4 +642,283 @@ export const visaDetails = [
       },
     ],
   },
+  {
+  id: "freelance-visa",
+
+  seo: {
+    title:
+      "UAE Freelancer Visa Services | Self-Employment Permit | ADL Business Solutions",
+    description:
+      "Apply for the UAE Freelancer Visa with ADL Business Solutions. Get your freelance permit, residency visa, Emirates ID, and family sponsorship support with expert guidance.",
+    keywords:
+      "UAE Freelancer Visa, Dubai freelance permit, UAE self-employed visa, self-employment visa UAE, freelance residency Dubai",
+  },
+
+  heroSection: {
+    title: "UAE Freelancer Visa",
+    description:
+      "Start your freelance career in the UAE with a self-sponsored residency visa and legal freelance permit.",
+    buttonText: "Check Your Eligibility",
+    buttonUrl: "/",
+  },
+
+  image: "/assets/images/visas/uae-freelancer-visa.png",
+
+  title: "ADL Helps You Build a Successful Freelance Career in the UAE",
+
+  paragraph1:
+    "The UAE Freelancer Visa allows individuals to legally work as independent professionals without the need for a company sponsor. This visa is ideal for creatives, digital specialists, consultants, educators, and technical experts who want flexible work opportunities and the ability to collaborate with multiple clients across the UAE. It offers a simple and affordable pathway to establish yourself as a self-employed professional.",
+
+  paragraph2:
+    "ADL Business Solutions manages the entire freelancer visa process — from obtaining your freelance permit and reviewing your portfolio to coordinating income verification, medical tests, Emirates ID processing, and visa stamping. Our expert team ensures a smooth application journey that meets all UAE government requirements.",
+
+  button1Text: "Check Your Eligibility",
+  button1Url: "/",
+  button2Text: "Apply for Freelancer Visa",
+  button2Url: "/apply/freelancer-visa",
+
+  meeting: {
+    title: "Check Your Eligibility for a UAE Freelancer Visa",
+    description:
+      "Book a free consultation with our visa specialists to check if you qualify for a UAE freelance permit and residency visa. We’ll help you prepare all required documents and ensure a fast and compliant application.",
+    buttonText: "Book a Free Consultation",
+    buttonUrl: "/book-consultation",
+  },
+
+  section1: {
+    title: "Eligibility Categories",
+    points: [
+      { id: 1, title: "Creative Professionals (design, media, content)" },
+      { id: 2, title: "Digital Experts (SEO, developers, marketers)" },
+      { id: 3, title: "IT & Technical Freelancers" },
+      { id: 4, title: "Consultants & Trainers" },
+      { id: 5, title: "Educators & Coaches" },
+      { id: 6, title: "Self-employed individuals with relevant experience" },
+    ],
+  },
+
+  section2: {
+    title: "Freelancer Visa Benefits",
+    points: [
+      "Self-sponsored residency",
+      "Freedom to work with multiple clients",
+      "2-year residency, renewable",
+      "Lower cost than full company setup",
+      "Sponsor family members",
+      "Legal operation under freelance permit",
+    ],
+  },
+
+  section3: {
+    title: "Application Support Includes",
+    points: [
+      "Freelance permit issuance",
+      "Portfolio and activity review",
+      "Income verification guidance",
+      "Medical test & Emirates ID coordination",
+      "Residency visa stamping & renewals",
+      "Family sponsorship assistance",
+    ],
+  },
+
+  whyChoose: {
+    title: "Why Choose ADL",
+    points: [
+      "Specialists in freelancer & self-employed visas",
+      "Strong approval success rate",
+      "Support with portfolio and income documents",
+      "End-to-end government coordination",
+      "Transparent pricing and clear guidance",
+    ],
+  },
+
+  faqs: [
+    {
+      question: "What documents are required?",
+      answer:
+        "Passport, photo, CV, portfolio, certificates, and proof of income.",
+    },
+    {
+      question: "Do I need an NOC?",
+      answer:
+        "Only if you are currently employed in the UAE. Some freezones require an NOC.",
+    },
+    {
+      question: "How long is the visa valid?",
+      answer: "2 years, renewable.",
+    },
+    {
+      question: "Can I sponsor my family?",
+      answer:
+        "Yes. You can sponsor your spouse, children, and parents if your income meets the required threshold.",
+    },
+  ],
+
+  relatedBlogs: [
+    {
+      id: "blog-fv-1",
+      title: "Complete Guide to UAE Freelancer Visa",
+      href: "/blog/complete-guide-uae-freelancer-visa",
+      image: "/assets/images/visas/guide-uae-freelancer-visa.png",
+    },
+    {
+      id: "blog-fv-2",
+      title: "Cost Breakdown of UAE Freelance Permit",
+      href: "/blog/freelance-permit-cost-breakdown",
+      image: "/assets/images/visas/freelance-permit-cost.png",
+    },
+    {
+      id: "blog-fv-3",
+      title: "Professions Eligible for UAE Freelancer Visa",
+      href: "/blog/professions-eligible-freelancer-visa",
+      image: "/assets/images/visas/professions-freelancer-visa.png",
+    },
+    {
+      id: "blog-fv-4",
+      title: "Freelancer Visa vs Green Visa – Which Is Better?",
+      href: "/blog/freelancer-visa-vs-green-visa",
+      image: "/assets/images/visas/freelancer-vs-green-visa.png",
+    },
+  ],
+},
+{
+  id: "blue-visa",
+
+  seo: {
+    title:
+      "UAE Blue Visa Services | 10-Year Blue Residency Visa | ADL Business Solutions",
+    description:
+      "Apply for the UAE Blue Visa with ADL Business Solutions. Secure a 10-year residency for contributions in environment, sustainability, and climate action. Full documentation and visa processing support.",
+    keywords:
+      "UAE Blue Visa, Blue Residency UAE, sustainability visa UAE, 10-year residency UAE, environmental expert visa",
+  },
+
+  heroSection: {
+    title: "UAE Blue Visa",
+    description:
+      "Secure long-term residency in recognition of your contribution to climate action, sustainability, and environmental impact.",
+    buttonText: "Check Your Eligibility",
+    buttonUrl: "/",
+  },
+
+  image: "/assets/images/visas/uae-blue-visa.png",
+
+  title: "ADL Helps You Secure the UAE\u00a0Blue Visa With Ease",
+
+  paragraph1:
+    "The UAE Blue Visa offers 10-year renewable residency to individuals who have made outstanding contributions to environmental protection, sustainability, climate action, marine conservation, renewable energy, or green innovation. It is designed for scientists, researchers, environmental experts, and professionals whose work supports the UAE’s long-term sustainability goals.",
+
+  paragraph2:
+    "ADL Business Solutions supports applicants through every step of the Blue Visa process — including eligibility evaluation, documentation review, achievement verification, application submission, medical and Emirates ID processing, and residency stamping. Our team ensures a smooth, clear, and professional visa journey tailored to high-profile sustainability contributors.",
+
+  button1Text: "Check Your Eligibility",
+  button1Url: "/",
+  button2Text: "Apply for Blue Visa",
+  button2Url: "/apply/blue-visa",
+
+  meeting: {
+    title: "Check Your Eligibility for the UAE Blue Visa",
+    description:
+      "Book a consultation with our Blue Visa experts to assess your eligibility based on achievements in sustainability, environmental innovation, or climate action. We ensure complete guidance from documentation to visa approval.",
+    buttonText: "Book a Free Consultation",
+    buttonUrl: "/book-consultation",
+  },
+
+  section1: {
+    title: "Eligibility Categories",
+    points: [
+      { id: 1, title: "Environmental Scientists & Researchers" },
+      { id: 2, title: "Clean-Energy Specialists & Innovators" },
+      { id: 3, title: "Sustainability Entrepreneurs" },
+      { id: 4, title: "Climate Change & Green-Tech Experts" },
+      { id: 5, title: "Conservationists & Environmental Activists" },
+      { id: 6, title: "Professionals recognized for environmental impact" },
+    ],
+  },
+
+  section2: {
+    title: "Blue Visa Benefits",
+    points: [
+      "10-year renewable residency",
+      "No sponsor or employer required",
+      "Eligibility to sponsor family members",
+      "Recognition as a sustainability expert in the UAE",
+      "Long-term stability with freedom to work or invest",
+      "Opportunity to contribute to the UAE’s green initiatives",
+    ],
+  },
+
+  section3: {
+    title: "Application Support Includes",
+    points: [
+      "Eligibility assessment",
+      "Documentation review & preparation",
+      "Achievement and contribution verification",
+      "Medical test & Emirates ID coordination",
+      "Visa stamping & residency activation",
+      "Ongoing renewal and compliance support",
+    ],
+  },
+
+  whyChoose: {
+    title: "Why Choose ADL",
+    points: [
+      "Experts in long-term UAE residency categories",
+      "High approval rate for skilled and exceptional applicants",
+      "Strong understanding of sustainability-related documents",
+      "Full coordination with UAE government departments",
+      "Transparent process and dedicated case manager",
+    ],
+  },
+
+  faqs: [
+    {
+      question: "Do I need to invest in property for the Blue Visa?",
+      answer:
+        "No. The Blue Visa is awarded based on contributions to environmental protection, sustainability, and climate action — not investment.",
+    },
+    {
+      question: "What is the validity of the Blue Visa?",
+      answer: "10 years, renewable.",
+    },
+    {
+      question: "Can I apply from outside the UAE?",
+      answer: "Yes. Blue Visa applicants can apply from inside or outside the UAE.",
+    },
+    {
+      question: "What achievements qualify?",
+      answer:
+        "Recognized work, research, awards, publications, sustainability projects, or proven environmental impact.",
+    },
+  ],
+
+  relatedBlogs: [
+    {
+      id: "blog-bv-1",
+      title: "UAE Blue Visa – Complete Eligibility Guide",
+      href: "/blog/uae-blue-visa-eligibility",
+      image: "/assets/images/visas/uae-blue-visa-guide.png",
+    },
+    {
+      id: "blog-bv-2",
+      title: "How Environmental Professionals Qualify for the Blue Visa",
+      href: "/blog/environmental-professionals-blue-visa",
+      image: "/assets/images/visas/environmental-experts-blue-visa.png",
+    },
+    {
+      id: "blog-bv-3",
+      title: "Blue Visa vs Golden Visa – Key Differences",
+      href: "/blog/blue-visa-vs-golden-visa",
+      image: "/assets/images/visas/blue-vs-golden-visa.png",
+    },
+    {
+      id: "blog-bv-4",
+      title: "Careers & Opportunities for Blue Visa Holders in UAE",
+      href: "/blog/careers-for-blue-visa-holders",
+      image: "/assets/images/visas/blue-visa-careers.png",
+    },
+  ],
+}
+
+
 ];

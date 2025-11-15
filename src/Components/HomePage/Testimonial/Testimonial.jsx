@@ -3,54 +3,67 @@ import Image from "next/image";
 
 const testimonials = [
   {
-    date: "Oct 10, 2025",
     message:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a mattis nulla.",
-    name: "Arjun K",
-    role: "Designer",
-    avatar: "/images/avatar-1.png",
+      "ADL made my business setup process unbelievably smooth. From choosing the right freezone to getting my license issued, everything was done faster than expected. Highly recommended!",
+    name: "Ahammed",
   },
   {
-    date: "Oct 12, 2025",
     message:
-      "Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
-    name: "Priya M",
-    role: "Developer",
-    avatar: "/images/avatar-2.png",
+      "I had no idea where to start with UAE company formation, but the ADL team guided me step-by-step. Their transparency and professionalism are unmatched.",
+    name: "Mustahafa",
   },
   {
-    date: "Oct 15, 2025",
     message:
-      "Cras vel ligula nec sapien facilisis aliquam. Nulla facilisi. Integer non turpis sit amet metus ultrices malesuada.",
-    name: "Rahul S",
-    role: "Manager",
-    avatar: "/images/avatar-3.png",
+      "Exceptional service! ADL handled my investor visa, Emirates ID, and medical test without any hassle. They really took care of everything for me.",
+    name: "Anil P",
   },
   {
-    date: "Oct 18, 2025",
     message:
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-    name: "Neha P",
-    role: "Consultant",
-    avatar: "/images/avatar-4.png",
+      "Very reliable and trustworthy. ADL helped me set up my e-commerce company in the SPC Free Zone within days. The team is friendly, supportive, and always available.",
+    name: "Sadique KM",
   },
   {
-    date: "Oct 21, 2025",
     message:
-      "Duis nec nisi vel lacus convallis pharetra. Nulla facilisi. Donec tempus metus ac eros tincidunt, at efficitur elit mattis.",
-    name: "Karan V",
-    role: "UI/UX",
-    avatar: "/images/avatar-5.png",
+      "Thanks to ADL, my family visa process was completed smoothly. No delays, no complications — just perfect execution.",
+    name: "Vishnu KP",
   },
   {
-    date: "Oct 25, 2025",
     message:
-      "Ut sit amet elit quis libero gravida elementum. Proin efficitur, justo sed viverra malesuada, magna urna laoreet velit.",
-    name: "Sneha T",
-    role: "Team Lead",
-    avatar: "/images/avatar-6.png",
+      "I appreciate the honesty and clarity ADL maintains. No hidden charges, no confusion. They explained everything clearly and delivered exactly what they promised.",
+    name: "Ahmmed Malik",
+  },
+  {
+    message:
+      "Great experience with ADL! They helped me choose an affordable freezone and saved me a lot of money. Best consultancy I’ve worked with.",
+    name: "Benniyamin",
+  },
+  {
+    message:
+      "Professional, fast, and knowledgeable. ADL handled my corporate bank account assistance and document clearing with ease.",
+    name: "Elyas KP",
+  },
+  {
+    message:
+      "The customer service is excellent. They respond quickly and make sure every step is completed on time. I will definitely continue working with ADL.",
+    name: "Mithran",
+  },
+  {
+    message:
+      "ADL made my mainland LLC setup very simple. They coordinated with all government departments on my behalf. Fantastic team.",
+    name: "Diya Raman",
+  },
+  {
+    message:
+      "I was confused about which visa suits my situation. ADL guided me perfectly and completed my employment visa process within a few days.",
+    name: "Arjun",
+  },
+  {
+    message:
+      "I trust ADL because they treat clients with care. They handled my complete business setup from start to finish — I literally didn’t have to worry about anything.",
+    name: "Raj P",
   },
 ];
+
 
 export default function TestimonialSlider() {
   // Duplicate testimonials for smooth looping
@@ -63,8 +76,7 @@ export default function TestimonialSlider() {
                 <h2 className="text-2xl mb-5 md:text-3xl text-center  main-text font-bold text-white ">
           Testimonial</h2>
                 <p className="text-base lg:text-lg mb-8 font-light leading-normal">
-          Once ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
-        </p>
+Clients choose ADL for our transparency, speed, and hassle-free service. Read how we’ve helped businesses set up and grow smoothly in the UAE.        </p>
       </div>
 
       {/* 3 Row Vertical Slider */}
@@ -113,7 +125,7 @@ function TestimonialCard({
       <p className="text-sm text-gray-400 mb-3">{date}</p>
       <p className="text-gray-300 mb-6 leading-relaxed">{message}</p>
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full overflow-hidden">
+        {/* <div className="w-10 h-10 rounded-full overflow-hidden">
           <Image
             src={avatar}
             alt={name}
@@ -121,10 +133,10 @@ function TestimonialCard({
             height={40}
             className="object-cover w-full h-full"
           />
-        </div>
+        </div> */}
         <div className="text-left">
           <h4 className="text-sm font-semibold">{name}</h4>
-          <p className="text-xs text-gray-400">{role}</p>
+          {/* <p className="text-xs text-gray-400">{role}</p> */}
         </div>
       </div>
     </div>

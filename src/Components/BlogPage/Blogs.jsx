@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import MeetingComponent from "../Common/MeetingComponent";
 import Container from "../Common/Container";
+import Link from "next/link";
 
 export default function Blogs() {
   const [meetingModal, setMeetingModal] = useState(false);
@@ -51,8 +52,9 @@ export default function Blogs() {
           {/* Grid Layout for Blog Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {currentBlogs.map((blog) => (
-              <div
+              <Link
                 key={blog.id}
+                    href={`/blogs/${blog.id}`}
                 className="glass-bg rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col"
               >
                 <div className="relative w-full h-40 md:h-56">
@@ -67,7 +69,7 @@ export default function Blogs() {
                     <p className="text-gray-300 mt-3 text-sm leading-relaxed">{blog.excerpt}</p>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 

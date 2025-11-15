@@ -26,8 +26,8 @@ export default function Navbar() {
     { name: 'service', label: 'Service', path: '/services' },
     { name: 'freezone', label: 'Freezone', path: '/uae-freezone-business-setup' },
     { name: 'mainland', label: 'Mainland', path: '/mainland-company-formation-in-uae' },
-    { name: 'visa', label: 'Visa', path: '/visa' },
-    { name: 'license', label: 'License', path: '/license' },
+    { name: 'visa', label: 'Visa', path: '/visa/employment-visa' },
+    { name: 'license', label: 'License', path: '/license/commercial-license' },
     { name: 'gallery', label: 'Gallery', path: '/gallery' },
     { name: 'blog', label: 'Blog', path: '/blogs' },
     { name: 'contact', label: 'Contact', path: '/contact' },
@@ -40,19 +40,19 @@ export default function Navbar() {
     { name: 'PRO Services', path: '/services/pro-services' },
     { name: 'Local Sponsorship', path: '/services/local-sponsorship' },
     { name: 'Visa Services', path: '/services/visa-services' },
-    { name: 'ISO Certification & Trademark Registration', path: '/services/iso-trademark' },
+    { name: 'ISO Certification & Trademark Registration', path: '/services/iso-certification-trademark-registration' },
     { name: 'Virtual Office', path: '/services/virtual-office' },
     { name: 'Company Liquidation', path: '/services/company-liquidation' },
     { name: 'Document Attestation', path: '/services/document-attestation' },
     { name: 'Legal Translation', path: '/services/legal-translation' },
-    { name: 'Insurance & VAT Services', path: '/services/insurance-vat' },
+    { name: 'Insurance & VAT Services', path: '/services/insurance-vat-services' },
     { name: 'Bank Account Opening', path: '/services/bank-account-opening' },
     { name: 'Typing Services', path: '/services/typing-services' },
     { name: 'UAE Government Approvals', path: '/services/uae-government-approvals' },
-    { name: 'Medical & Emirates ID Services', path: '/services/medical-emirates-id' },
-    { name: 'FREEZONE', path: '/services/freezone' },
+    { name: 'Medical & Emirates ID Services', path: '/services/medical-emirates-id-services' },
+    { name: 'FREEZONE', path: '/services/freezone-company-setup' },
     { name: 'Dubai Court Services', path: '/services/dubai-court-services' },
-    { name: 'Online MOA & POA Services', path: '/services/online-moa-poa' },
+    { name: 'Online MOA & POA Services', path: '/services/online-moa-poa-services' },
   ];
 
   const licenseItems = [
@@ -204,7 +204,7 @@ export default function Navbar() {
 
           {/* Mobile Dropdown */}
           {isMobileMenuOpen && (
-            <div className="md:hidden switcher">
+            <div className="md:hidden ">
               <div className="space-y-1">
                 {navItems.map((item) => (
                   <Link
@@ -215,7 +215,7 @@ export default function Navbar() {
                       setIsMobileMenuOpen(false);
                     }}
                     className={`block px-4 py-3 rounded-lg font-medium transition-all duration-200 ${activeSection === item.name
-                        ? 'text-white bg-white/20 backdrop-blur-sm'
+                        ? 'text-white glass-bg'
                         : 'text-white/80 hover:text-white hover:bg-white/10'
                       }`}
                   >
@@ -323,13 +323,13 @@ export default function Navbar() {
             <div className="relative w-1/3 flex flex-col items-center justify-center  h-[230px] rounded-r-xl">
               {/* Freezone */}
               <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-                <span>Freezone</span>
+                <a href='/uae-freezone-business-setup'>Freezone</a>
                 <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
               </div>
 
               {/* Offshore */}
               <div className="flex-1 flex flex-col items-center justify-center cursor-pointer text-white text-lg font-normal">
-                <span>Offshore</span>
+                <a href='/offshore-company-formation-in-uae'>Offshore</a>
                 <span className="mt-1 w-40 border-b-[1.5px] border-yellow-400"></span>
               </div>
             </div>

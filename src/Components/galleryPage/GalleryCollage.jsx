@@ -198,13 +198,9 @@ export default function GalleryCollage() {
   const patterns3 = ['md', 'sm', 'sm', 'wide', 'sm', 'sm', 'tall', 'md', 'sm'];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 px-4 md:px-6 lg:px-8 py-16 md:py-20">
+    <div className="min-h-screen  px-4 md:px-6 lg:px-8 py-16 md:py-20">
       {/* Background Effects */}
-      <div className="fixed inset-0 -z-10">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 right-0 w-96 h-96 bg-pink-600/5 rounded-full blur-3xl" />
-      </div>
+   
 
       <div className="max-w-7xl mx-auto">
         {/* Header */}
@@ -214,40 +210,20 @@ export default function GalleryCollage() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16 md:mb-20"
         >
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="inline-block mb-4"
-          >
-            <span className="px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-sm text-purple-300 font-medium">
-              ✨ Creative Gallery Collection
-            </span>
-          </motion.div>
+         
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-purple-300 to-white mb-4"
+            className="text-4xl md:text-5xl lg:text-6xl font-bold  mb-4"
           >
-            Gallery Collage
+            Gallery 
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-gray-400 text-lg max-w-2xl mx-auto"
-          >
-            Explore our stunning collection of images arranged in creative patterns with smooth animations and interactive hover effects
-          </motion.p>
+         
         </motion.div>
 
         {/* Collection 1 */}
-        <SectionTitle
-          title="Featured Collection"
-          subtitle="Handpicked images showcasing our best work and creative vision"
-          delay={0.1}
-        />
+      
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 auto-rows-max">
           {images.slice(0, 9).map((image, index) => (
             <CollageImage
@@ -260,58 +236,15 @@ export default function GalleryCollage() {
           ))}
         </div>
 
-        <SectionDivider delay={0.3} />
 
         {/* Collection 2 */}
-        <SectionTitle
-          title="Premium Selection"
-          subtitle="Curated moments and professional photography from our archive"
-          delay={0.1}
-        />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-8 auto-rows-max">
-          {images.slice(9, 18).map((image, index) => (
-            <CollageImage
-              key={index + 9}
-              image={image}
-              index={index + 9}
-              delay={index}
-              pattern={patterns2[index]}
-            />
-          ))}
-        </div>
+        
+       
 
-        <SectionDivider delay={0.3} />
 
-        {/* Collection 3 */}
-        <SectionTitle
-          title="Latest Moments"
-          subtitle="Fresh and inspiring imagery from our most recent projects"
-          delay={0.1}
-        />
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 auto-rows-max">
-          {images.slice(18, 27).map((image, index) => (
-            <CollageImage
-              key={index + 18}
-              image={image}
-              index={index + 18}
-              delay={index}
-              pattern={patterns3[index]}
-            />
-          ))}
-        </div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false, margin: '-100px' }}
-          className="mt-20 md:mt-32 text-center"
-        >
-          <button className="px-8 md:px-12 py-3 md:py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/50 transform hover:scale-105">
-            View More Gallery
-          </button>
-        </motion.div>
+       
+      
+      
       </div>
     </div>
   );

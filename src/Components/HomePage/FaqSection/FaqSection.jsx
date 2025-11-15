@@ -27,9 +27,7 @@ export default function FAQSection() {
               FAQ
             </h2>
             <p className="text-base max-w-2xl lg:text-lg mb-8 font-light leading-normal">
-              Once ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna.
-              Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
-              dignissim, metus nec fringilla.
+           Find clear answers to common questions about UAE business setup, visas, PRO services, and compliance. Our FAQ section helps you understand processes quickly and confidently.
             </p>
           </div>
 

@@ -109,10 +109,10 @@ export default function AboutSection() {
               At a Glance
             </h2>
 
-            <div className='md:w-3/4 w-full text-start'>
+            <div className='md:w-4/5 w-full text-start'>
               <p className="text-md lg:text-xl font-light leading-relaxed">
 At ADL Business Solutions, we simplify your business journey  from company formation and PRO services to visas, banking, compliance, and long-term business support. Our advisory experts analyze your business goals, recommend the right company structure, and handle all legal and government procedures on your behalf.              </p>
-              <p className="text-md lg:text-xl font-light leading-relaxed">
+              <p className="text-md lg:text-xl mt-2 font-light leading-relaxed">
 With years of experience in UAE business consulting, we empower entrepreneurs, investors, and corporates to build strong and successful businesses with confidence, clarity, and transparency.</p>
             </div>
 

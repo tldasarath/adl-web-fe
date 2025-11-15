@@ -35,7 +35,7 @@ const HeroSection = () => {
             </p>
 
             <div className="flex justify-center">
-              <MainButton text="Learn More" url="/home" />
+              <MainButton text="Free Consultation" url="#schedule-meeting" />
             </div>
           </div>
         </Container>
