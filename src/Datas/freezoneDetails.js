@@ -1,4 +1,5 @@
-export const freezoneDetails = [{
+export const freezoneDetails = [
+    {
     "meta": {
         "title": "IFZA Freezone Dubai | Company Setup & Business Licenses | ADL Business Solutions",
         "description": "Explore IFZA Freezone Dubai with ADL Business Solutions. Get trading, service, e-commerce, and industrial licenses with flexible office options. Start your UAE business today!",
@@ -165,7 +166,8 @@ export const freezoneDetails = [{
             }
         ]
     }
-}, {
+}, 
+{
     "id": "jafza-freezone-dubai",
     "meta": {
         "title": "JAFZA Freezone Dubai | Company Setup & Business Licenses | ADL Business Solutions",
@@ -326,7 +328,8 @@ export const freezoneDetails = [{
             }
         ]
     }
-}, {
+},
+ {
     "id": "meydan-freezone-dubai",
     "meta": {
         "title": "Meydan Freezone Dubai | Business Setup & Company Licenses | ADL Business Solutions",
@@ -3896,7 +3899,8 @@ export const freezoneDetails = [{
     ]
   }
 }
-,{
+,
+{
   "id": "fujairah-free-zone",
   "meta": {
     "title": "Fujairah Free Zone | Company Setup & Licenses | ADL Business Solutions",

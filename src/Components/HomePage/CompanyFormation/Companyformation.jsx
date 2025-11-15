@@ -17,7 +17,7 @@ const Companyformation = () => {
       title: "Freezone",
       description: "Get 100% foreign ownership, tax benefits, and fast setup in UAE Freezones — ideal for e-commerce, trading, media, technology, and global businesses. ADL helps you choose the best Freezone based on your activity, budget, and visa needs.",
       image: "/assets/images/company-formation/Freezone.png",
-            path:'freezone-company-formation-in-uae'
+            path:'uae-freezone-business-setup'
 
     },
     {

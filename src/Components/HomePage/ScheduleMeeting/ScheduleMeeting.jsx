@@ -1,30 +1,28 @@
-'use client';
+"use client";
 
-import ShinyText from '@/Components/Animations/ShinyText';
-import Container from '@/Components/Common/Container';
-import MeetingComponent from '@/Components/Common/MeetingComponent';
-import { useState, useRef } from 'react';
-
-
+import ShinyText from "@/Components/Animations/ShinyText";
+import Container from "@/Components/Common/Container";
+import MeetingComponent from "@/Components/Common/MeetingComponent";
+import { useState, useRef } from "react";
 
 export default function ScheduleMeeting() {
   const [selectedDay, setSelectedDay] = useState(0);
   const [selectedTime, setSelectedTime] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [userInfo, setUserInfo] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    purpose: '',
-    formationType: '',
-    subCategory: ''
+    name: "",
+    email: "",
+    phone: "",
+    purpose: "",
+    formationType: "",
+    subCategory: "",
   });
   const [errors, setErrors] = useState({});
 
   const subCategories = {
     Mainland: ["LLC Company", "Civil Company", "Branch Office"],
     Offshore: ["JAFZA Offshore", "RAK Offshore", "Ajman Offshore"],
-    Freezone: ["DMCC", "IFZA", "Meydan", "RAKEZ", "Sharjah Media City"]
+    Freezone: ["DMCC", "IFZA", "Meydan", "RAKEZ", "Sharjah Media City"],
   };
   const sliderRef = useRef(null);
 
@@ -36,18 +34,21 @@ export default function ScheduleMeeting() {
       date.setDate(date.getDate() + i);
 
       const timeSlots = [
-        { id: `slot-${i}-1`, time: '09:00 AM', available: true },
-        { id: `slot-${i}-2`, time: '10:30 AM', available: true },
-        { id: `slot-${i}-3`, time: '12:00 PM', available: true },
-        { id: `slot-${i}-4`, time: '02:00 PM', available: true },
-        { id: `slot-${i}-5`, time: '03:30 PM', available: true },
-        { id: `slot-${i}-6`, time: '05:00 PM', available: true },
+        { id: `slot-${i}-1`, time: "09:00 AM", available: true },
+        { id: `slot-${i}-2`, time: "10:30 AM", available: true },
+        { id: `slot-${i}-3`, time: "12:00 PM", available: true },
+        { id: `slot-${i}-4`, time: "02:00 PM", available: true },
+        { id: `slot-${i}-5`, time: "03:30 PM", available: true },
+        { id: `slot-${i}-6`, time: "05:00 PM", available: true },
       ];
 
       days.push({
-        date: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-        day: date.toLocaleDateString('en-US', { weekday: 'short' }),
-        timeSlots
+        date: date.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+        }),
+        day: date.toLocaleDateString("en-US", { weekday: "short" }),
+        timeSlots,
       });
     }
     return days;
@@ -55,11 +56,9 @@ export default function ScheduleMeeting() {
 
   const daysSchedule = generateNextDays();
 
-
   const handleScheduleClick = (value) => {
     setIsModalOpen(value);
     setTimeout(() => setSliderPos(0), 300);
-
   };
 
   const handleTimeSelect = (time) => {
@@ -73,8 +72,10 @@ export default function ScheduleMeeting() {
     if (!userInfo.name.trim()) newErrors.name = "Full name is required";
     if (!userInfo.email.trim()) newErrors.email = "Email is required";
     if (!userInfo.phone.trim()) newErrors.phone = "Phone number is required";
-    if (!userInfo.formationType) newErrors.formationType = "Please select a company formation";
-    if (!userInfo.subCategory) newErrors.subCategory = "Please select a subcategory";
+    if (!userInfo.formationType)
+      newErrors.formationType = "Please select a company formation";
+    if (!userInfo.subCategory)
+      newErrors.subCategory = "Please select a subcategory";
     if (!selectedTime) newErrors.selectedTime = "Please select a meeting time";
     if (!userInfo.purpose.trim()) newErrors.purpose = "Please enter purpose";
 
@@ -89,12 +90,11 @@ export default function ScheduleMeeting() {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/971542179221?text=${encodedMessage}`; // Replace with your number
 
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, "_blank");
     setIsModalOpen(false);
-    setUserInfo({ name: '', email: '', phone: '', purpose: '' });
+    setUserInfo({ name: "", email: "", phone: "", purpose: "" });
     setSelectedTime(null);
   };
-
 
   const [sliderPos, setSliderPos] = useState(0);
   // const sliderRef = useRef(null);
@@ -142,11 +142,13 @@ export default function ScheduleMeeting() {
   };
 
   return (
-    <section id='schedule-meeting' className="h-auto lg:h-[600px]  py-8 md:py-14 ">
+    <section
+      id="schedule-meeting"
+      className="h-auto lg:h-[600px]  py-8 md:py-16 lg:py-24 "
+    >
       <Container>
         <div className="container  glass rounded-4xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 xl:gap-12 items-start">
-
             {/* Left Section */}
             <div className="space-y-8  ">
               <div className="p-5 md:p-9  rounded-3xl">
@@ -155,26 +157,42 @@ export default function ScheduleMeeting() {
                 </h2>
 
                 <p className="text-base lg:text-lg mb-8 font-light leading-normal">
-                  Start your UAE business journey with expert guidance. Book a meeting with our business setup specialists and get personalized advice on licensing, visas, banking, and company formation. We will help you choose the right structure and ensure a seamless setup process from start to finish.
+                  Start your UAE business journey with expert guidance. Book a
+                  meeting with our business setup specialists and get
+                  personalized advice on licensing, visas, banking, and company
+                  formation. We will help you choose the right structure and
+                  ensure a seamless setup process from start to finish.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <button
-                    onClick={() => window.open('https://wa.me/971542179221', '_blank')}
+                    onClick={() =>
+                      window.open("https://wa.me/971542179221", "_blank")
+                    }
                     className="glass px-13 xl:px-8 py-5 xl:py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                   >
-                    <img src="/assets/images/icons/whatsapp.png" alt="" className="w-7 h-7" />
+                    <img
+                      src="/assets/images/icons/whatsapp.png"
+                      alt=""
+                      className="w-7 h-7"
+                    />
                     <p className="text-base lg:text-lg font-light leading-relaxed">
-                      Chat Now </p>
+                      Chat Now{" "}
+                    </p>
                   </button>
 
                   <button
-                    onClick={() => window.open('tel:+971542179221')}
+                    onClick={() => window.open("tel:+971542179221")}
                     className="glass px-15 xl:px-8 py-5 xl:py-4 rounded-2xl font-semibold transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
                   >
-                    <img src="/assets/images/icons/call.png" alt="" className="w-5 h-5" />
+                    <img
+                      src="/assets/images/icons/call.png"
+                      alt=""
+                      className="w-5 h-5"
+                    />
                     <p className="text-base lg:text-lg font-light leading-relaxed">
-                      Call Now</p>
+                      Call Now
+                    </p>
                   </button>
                 </div>
               </div>
@@ -183,9 +201,13 @@ export default function ScheduleMeeting() {
             {/* Right Section */}
             <div className=" p-5 md:p-9 rounded-3xl">
               <h3 className="text-3xl lg:text-4xl font-semibold text-white mb-3 ">
-                Schedule a Call</h3>
+                Schedule a Call
+              </h3>
               <p className="text-base lg:text-lg mb-4 font-light leading-normal">
-                Prefer a quick call instead? Choose your preferred date and time to connect with our team. We’ll walk you through requirements, timelines, and the best business setup options based on your goals and budget.
+                Prefer a quick call instead? Choose your preferred date and time
+                to connect with our team. We’ll walk you through requirements,
+                timelines, and the best business setup options based on your
+                goals and budget.
               </p>
               {/* Days Selection */}
               <div className="flex gap-4 mb-8 overflow-x-auto py-2">
@@ -193,17 +215,17 @@ export default function ScheduleMeeting() {
                   <button
                     key={index}
                     onClick={() => setSelectedDay(index)}
-                    className={`flex-1 min-w-[80px] py-3 px-4 rounded-2xl text-center transition-all duration-300 backdrop-blur-sm ${selectedDay === index
-                      ? 'bg-white border-2 border-blue-400/50 text-blue-700'
-                      : 'bg-[#0D1325] border-2 border-white/30 text-white hover:bg-white/30'
-                      }`}
+                    className={`flex-1 min-w-[80px] py-3 px-4 rounded-2xl text-center transition-all duration-300 backdrop-blur-sm ${
+                      selectedDay === index
+                        ? "bg-white border-2 border-blue-400/50 text-blue-700"
+                        : "bg-[#0D1325] border-2 border-white/30 text-white hover:bg-white/30"
+                    }`}
                   >
                     <div className="font-semibold">{day.day}</div>
                     <div className="text-sm">{day.date}</div>
                   </button>
                 ))}
               </div>
-
 
               <div
                 ref={sliderRef}
@@ -214,12 +236,15 @@ export default function ScheduleMeeting() {
                   Slide to Schedule
                   
                 </p> */}
-                <div className='text-center w-full font-semibold pointer-events-none'>               <ShinyText
-                  text="Slide to Schedule"
-                  disabled={false}
-                  speed={2.5}
-                  className='custom-class'
-                /></div>
+                <div className="text-center w-full font-semibold pointer-events-none">
+                  {" "}
+                  <ShinyText
+                    text="Slide to Schedule"
+                    disabled={false}
+                    speed={2.5}
+                    className="custom-class"
+                  />
+                </div>
 
                 <div
                   onMouseDown={handleMouseDown}
@@ -247,7 +272,6 @@ export default function ScheduleMeeting() {
                   </svg>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -257,8 +281,6 @@ export default function ScheduleMeeting() {
       {isModalOpen && (
         <MeetingComponent handleScheduleClick={handleScheduleClick} />
       )}
-
-
     </section>
   );
 }

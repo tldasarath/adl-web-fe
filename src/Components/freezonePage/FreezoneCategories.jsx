@@ -6,200 +6,9 @@ import { motion } from "framer-motion";
 import Container from "../Common/Container";
 import Link from "next/link";
 import MainButton from "../button/MainButton";
+import { RAW_DATA } from "@/Datas/freezoneData";
 
-const RAW_DATA = {
-  "Dubai Freezones": {
-    subtitle:
-      "Dubai leads the UAE with world-renowned Freezones that cater to every business sector.",
-    items: [
-      {
-        id: "jafza",
-        title: "Jebel Ali Free Zone (JAFZA)",
-        desc: "The UAE's largest logistics and trade hub.",
-        img: "/assets/images/freezone/category/jafza-freezone-dubai.png",
-        link: "/jafza-freezone-dubai",
-      },
-      {
-        id: "dmcc",
-        title: "Dubai Multi Commodities Centre (DMCC)",
-        desc: "A premium free zone for digital entrepreneurs.",
-        img: "/assets/images/freezone/category/dmcc-freezone-dubai.png",
-        link: "/dmcc-freezone-dubai",
-      },
-      {
-        id: "dafza",
-        title: "Dubai Airport Freezone (DAFZA)",
-        desc: "Premium option for aviation and international trade.",
-        img: "/assets/images/freezone/category/dafza-freezone-dubai.png",
-        link: "/dafza-freezone-dubai",
-      },
-      {
-        id: "dwc",
-        title: "Dubai South (DWC)",
-        desc: "Perfect for logistics, eCommerce, and innovation-driven startups.",
-        img: "/assets/images/freezone/category/dwc-freezone-dubai.png",
-        link: "/dubai-south-freezone",
-      },
-      {
-        id: "dic",
-        title: "Dubai Internet City",
-        desc: "Designed for tech, media, and creative sectors.",
-        img: "/assets/images/freezone/category/dubai-internet-city.png",
-        link: "/dubai-media-internet-d3-difc",
-      },
-      {
-        id: "ifza",
-        title: "IFZA (International Free Zone Authority)",
-        desc: "Flexible and fast-growing with multi-activity options.",
-        img: "/assets/images/freezone/category/ifza-freezone-dubai.png",
-        link: "/ifza-freezone-dubai",
-      },
-      {
-        id: "meydan",
-        title: "Meydan Free Zone",
-        desc: "Digital-first Freezone with affordable licensing.",
-        img: "/assets/images/freezone/category/ifza-freezone-dubai.png",
-        link: "/meydan-freezone-dubai",
-      },
-    ],
-  },
 
-  "Abu Dhabi Freezones": {
-    subtitle:
-      "Abu Dhabi hosts world-class industrial and media Freezones for strategic businesses.",
-    items: [
-      {
-        id: "adgm",
-        title: "Abu Dhabi Global Market (ADGM)",
-        desc: "Leading financial hub located on Al Maryah Island.",
-        img: "/assets/images/freezone/category/adgm-abu-dhabi.png",
-        link: "/adgm-abu-dhabi",
-      },
-      {
-        id: "kizad",
-        title: "KIZAD",
-        desc: "Strategic hub for industry and logistics.",
-        img: "/assets/images/freezone/category/kizad-abu-dhabi.png",
-        link: "/kizad-abu-dhabi",
-      },
-      {
-        id: "masdar",
-        title: "Masdar City Freezone",
-        desc: "Dedicated to sustainability and renewable energy.",
-        img: "/assets/images/freezone/category/masdar-city-freezone-abu-dhabi.png",
-        link: "/masdar-city-freezone-abu-dhabi",
-      },
-      {
-        id: "twofour54",
-        title: "twofour54",
-        desc: "A creative media and production powerhouse.",
-        img: "/assets/images/freezone/category/twofour54-abu-dhabi.png",
-        link: "/twofour54-abu-dhabi",
-      },
-    ],
-  },
-
-  "Sharjah Freezones": {
-    subtitle: "Sharjah Freezones support light manufacturing and trading.",
-    items: [
-      {
-        id: "saif",
-        title: "Sharjah Airport International Free Zone (SAIF)",
-        desc: "Known for efficient licensing and logistics.",
-        img: "/assets/images/freezone/category/saif-freezone-dubai.png",
-        link: "/saif-zone-sharjah",
-      },
-      {
-        id: "hamriyah",
-        title: "Hamriyah Free Zone",
-        desc: "Industrial hub for manufacturing and storage.",
-        img: "/assets/images/freezone/category/hamriyah-free-zone-sharjah.png",
-        link: "/hamriyah-free-zone-sharjah",
-      },
-      {
-        id: "shams",
-        title: "Sharjah Media City (SHAMS)",
-        desc: "Modern Freezone for creative industries.",
-        img: "/assets/images/freezone/category/shams-sharjah.png",
-        link: "/shams-sharjah",
-      },
-      {
-        id: "spcfz",
-        title: "Sharjah Publishing City (SPCFZ)",
-        desc: "Specialized in printing and content distribution.",
-        img: "/assets/images/freezone/category/spcfz-sharjah-publishing-city.png",
-        link: "/spcfz-sharjah-publishing-city",
-      },
-    ],
-  },
-
-  "Ras Al Khaimah Freezones": {
-    subtitle: "Ras Al Khaimah offers cost-effective industrial freezones.",
-    items: [
-      {
-        id: "rakez",
-        title: "Ras Al Khaimah Economic Zone (RAKEZ)",
-        desc: "Multi-sector business ecosystem.",
-        img: "/assets/images/freezone/category/rakez-ras-al-khaimah.png",
-        link: "/rakez-ras-al-khaimah",
-      },
-      {
-        id: "rakmc",
-        title: "RAK Maritime City",
-        desc: "Focused on shipping, trade, and marine logistics.",
-        img: "/assets/images/freezone/category/rak-maritime-city.png",
-        link: "/rak-maritime-city",
-      },
-    ],
-  },
-
-  "Ajman Freezones": {
-    subtitle: "Ajman Freezones for small & medium enterprises.",
-    items: [
-      {
-        id: "afz",
-        title: "Ajman Free Zone (AFZ)",
-        desc: "Budget-friendly with modern facilities.",
-        img: "/assets/images/freezone/category/afz-ajman.png",
-        link: "/afz-ajman",
-      },
-      {
-        id: "amc",
-        title: "Ajman Media City Free Zone (AMCFZ)",
-        desc: "For digital and creative entrepreneurs.",
-        img: "/assets/images/freezone/category/ajman-media-city.png",
-        link: "/ajman-media-city",
-      },
-    ],
-  },
-
-  "Fujairah & Umm Al Quwain": {
-    subtitle: "Coastal & logistics-focused Freezones.",
-    items: [
-      {
-        id: "ffz",
-        title: "Fujairah Free Zone",
-        desc: "Industrial and manufacturing hub with port access.",
-        img: "/assets/images/freezone/category/fujairah-free-zonne.png",
-        link: "/fujairah-free-zone",
-      },
-      {
-        id: "fcc",
-        title: "Fujairah Creative City",
-        desc: "Perfect for media, marketing, and consultancy.",
-        img: "/assets/images/freezone/category/fujairah-creative-cityy.png",
-        link: "/fujairah-creative-city",
-      },
-      {
-        id: "uaq",
-        title: "Umm Al Quwain Free Trade Zone (UAQFTZ)",
-        desc: "Ideal for startups and freelancers at low cost.",
-        img: "/assets/images/freezone/category/uaq-free-trade-zone.png",
-        link: "/uaq-free-trade-zone",
-      },
-    ],
-  },
-};
 
 const TABS = Object.keys(RAW_DATA);
 const SPEED_PX_PER_SEC = 80;
@@ -213,6 +22,10 @@ export default function FreezonesCategories() {
   const draggingRef = useRef(false);
   const startXRef = useRef(0);
   const startScrollRef = useRef(0);
+
+  // extra refs for click detection
+  const initialTargetRef = useRef(null);
+  const movedRef = useRef(false);
 
   const baseItems = useMemo(() => RAW_DATA[activeTab].items || [], [activeTab]);
   const items = useMemo(
@@ -284,19 +97,46 @@ export default function FreezonesCategories() {
     };
   }, []);
 
+  /* -------------------------
+     Improved pointer/touch handlers:
+     - don't start drag when user starts on interactive element (a, button, img, svg)
+     - record initial target and whether pointer moved; if move < THRESHOLD, dispatch click to allow navigation
+     - maintain wrap-around logic and allow two-way dragging
+     ------------------------- */
   useEffect(() => {
     const el = carouselRef.current;
     if (!el) return;
 
+    const CLICK_MOVE_THRESHOLD = 6; // px — below this treat as a click / tap
+
+    const isInteractive = (node) => {
+      try {
+        return !!node?.closest?.("a, button, input, textarea, select, label, img, svg");
+      } catch {
+        return false;
+      }
+    };
+
     const onDown = (e) => {
+      // If user started on an interactive element (link/button/img), do NOT start drag — allow native click/navigation.
+      if (isInteractive(e.target)) {
+        initialTargetRef.current = e.target;
+        movedRef.current = false; // allow native click to proceed
+        return;
+      }
+
       draggingRef.current = true;
       pausedRef.current = true;
       const clientX =
         e.clientX ?? (e.touches && e.touches[0] && e.touches[0].clientX) ?? 0;
       startXRef.current = clientX;
       startScrollRef.current = el.scrollLeft;
+      initialTargetRef.current = e.target;
+      movedRef.current = false;
       try {
-        el.setPointerCapture?.(e.pointerId);
+        if (typeof e.pointerId !== "undefined" && el.setPointerCapture) {
+          el.setPointerCapture(e.pointerId);
+        }
       } catch (err) {}
     };
 
@@ -305,6 +145,8 @@ export default function FreezonesCategories() {
       const clientX =
         e.clientX ?? (e.touches && e.touches[0] && e.touches[0].clientX) ?? 0;
       const dx = clientX - startXRef.current;
+
+      if (Math.abs(dx) > 3) movedRef.current = true;
       el.scrollLeft = startScrollRef.current - dx;
 
       const total = el.scrollWidth;
@@ -316,16 +158,52 @@ export default function FreezonesCategories() {
     };
 
     const onUp = (e) => {
+      // If we never started a drag (because initial down was on interactive element) — allow native click/navigation.
+      if (!draggingRef.current) {
+        // small safeguard: if the down target was interactive and user didn't move, let native click happen.
+        initialTargetRef.current = null;
+        movedRef.current = false;
+        return;
+      }
+
+      // End drag
+      const clientX =
+        e.clientX ?? (e.changedTouches && e.changedTouches[0] && e.changedTouches[0].clientX) ?? 0;
+      const dx = clientX - startXRef.current;
+
       draggingRef.current = false;
       pausedRef.current = false;
       try {
-        el.releasePointerCapture?.(e.pointerId);
+        if (typeof e.pointerId !== "undefined" && el.releasePointerCapture) {
+          el.releasePointerCapture(e.pointerId);
+        }
       } catch (err) {}
+
+      // If movement was tiny, treat as a click: trigger navigation by dispatching a click on the nearest anchor.
+      if (!movedRef.current && Math.abs(dx) < CLICK_MOVE_THRESHOLD && initialTargetRef.current) {
+        const startNode = initialTargetRef.current;
+        const link = startNode.closest && startNode.closest("a");
+        if (link) {
+          // dispatch a real click so Next.js Link navigates
+          link.click();
+        } else {
+          // fallback: dispatch click on the original target
+          try {
+            startNode.click && startNode.click();
+          } catch (err) {}
+        }
+      }
+
+      initialTargetRef.current = null;
+      movedRef.current = false;
     };
 
-    el.addEventListener("pointerdown", onDown, { passive: true });
-    window.addEventListener("pointermove", onMove, { passive: true });
+    // pointer events
+    el.addEventListener("pointerdown", onDown);
+    window.addEventListener("pointermove", onMove);
     window.addEventListener("pointerup", onUp);
+
+    // touch fallbacks (mobile)
     el.addEventListener("touchstart", onDown, { passive: true });
     window.addEventListener("touchmove", onMove, { passive: false });
     window.addEventListener("touchend", onUp);
@@ -334,6 +212,7 @@ export default function FreezonesCategories() {
       el.removeEventListener("pointerdown", onDown);
       window.removeEventListener("pointermove", onMove);
       window.removeEventListener("pointerup", onUp);
+
       el.removeEventListener("touchstart", onDown);
       window.removeEventListener("touchmove", onMove);
       window.removeEventListener("touchend", onUp);
@@ -411,10 +290,6 @@ export default function FreezonesCategories() {
             {RAW_DATA[activeTab].subtitle}
           </motion.h3>
 
-          {/* <motion.h3 key={activeTab + "-carousel-heading"} initial="hidden" animate="visible" variants={carouselHeadingV} className="text-white text-xl md:text-2xl font-semibold mt-8 mb-4 text-center lg:text-left">
-            {activeTab}
-          </motion.h3> */}
-
           <div className="mt-2">
             <div
               ref={carouselRef}
@@ -429,7 +304,7 @@ export default function FreezonesCategories() {
               {items.map((it, idx) => (
                 <Link
                   key={`${it.id}-${idx}`}
-                  href={it.link}
+                  href={`/freezone/${it.link}`}
                   className="shrink-0"
                 >
                   <article

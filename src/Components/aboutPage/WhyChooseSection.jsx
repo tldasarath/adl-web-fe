@@ -168,7 +168,7 @@ const WhyChooseSection = () => {
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl w-full" style={{ aspectRatio: '457/373' }}>
               {/* Image */}
               <img
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop"
+                src="/assets/images/about/why-choose-adl.png"
                 alt="Business professionals shaking hands"
                 className="w-full h-full object-cover"
               />

@@ -21,7 +21,6 @@ export const metadata = {
 };
 
 const page = () => {
-
   return (
     <div>
       <Navbar />
@@ -33,23 +32,22 @@ const page = () => {
         buttonText={"Get a Free Consultation"}
         url={"/#schedule-meeting"}
       />
-
       <AboutFreezoneDetails />
       <FreezoneInfoCard />
-      <FreezoneProcessCubes/>
-      <FreezoneCategories/>
-      <FreezoneLicenses/>
-      <PricingPackages/>
-      <FreezoneAdvantages/>
+      <FreezoneProcessCubes />
+      <FreezoneCategories />
+      <FreezoneLicenses />
+      <PricingPackages />
+      <FreezoneAdvantages />
       <TestimonialSection />
       <InnerBanner
-        title={"LStart Your UAE Freezone Business with ADL"}
+        title={"Start Your UAE Freezone Business with ADL"}
         description={
           "Take your business to new heights in one of the UAE’s globally recognized Freezones.Connect with ADL Business Solutions to explore the best jurisdiction for your business goals and begin your journey toward success — today."
         }
         buttonText={"Book a Free Consultation"}
+        link={"/contact"}
       />
-
       <Footer />
     </div>
   );
