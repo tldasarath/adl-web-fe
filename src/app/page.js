@@ -19,6 +19,8 @@ import TestimonialSection from "@/Components/HomePage/Testimonial/Testimonial";
 import ValuesSection from "@/Components/HomePage/ValuesSection/ValuesSection";
 import VisaTypesSection from "@/Components/HomePage/VisaTypes/VisaTypesSection";
 
+
+
 export const metadata = {
   title: "Business Setup Services in UAE | ADL Business Solutions | #UAE",
   description:

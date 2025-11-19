@@ -4,11 +4,9 @@ import { teamMembers } from "@/Datas/teams";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion"; // <-- added
 
 const TeamSection = () => {
-  // Sample team data
-  
-
   const sliderRef = useRef(null);
 
   // Clone slides for infinite effect
@@ -22,7 +20,22 @@ const TeamSection = () => {
   }, []);
 
   return (
-    <section className="h-auto lg:h-[700px]  py-8 md:py-14 w-full overflow-hidden">
+    <motion.section
+      className="h-auto lg:h-[700px] py-8 md:py-14 w-full overflow-hidden"
+      // 🔥 Premium animation: soft zoom + blur + fade + slight lift
+      initial={{ opacity: 0, y: 30, scale: 0.94, filter: "blur(6px)" }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        filter: "blur(0px)",
+      }}
+      viewport={{ once: false, amount: 0.25 }}
+      transition={{
+        duration: 0.9,
+        ease: [0.16, 1, 0.3, 1], // smooth bezier easing (elegant, premium)
+      }}
+    >
       <div className="w-full ">
         <Container>
           <div>
@@ -30,8 +43,8 @@ const TeamSection = () => {
               Meet Our Team
             </h2>
             <p className="text-base lg:text-lg mb-8 font-light leading-normal">
-              Our dedicated team of professionals is committed to delivering exceptional results
-              and driving innovation in everything we do.
+              Our dedicated team of professionals is committed to delivering
+              exceptional results and driving innovation in everything we do.
             </p>
           </div>
         </Container>
@@ -61,7 +74,7 @@ const TeamSection = () => {
 
                   {/* 🧾 Content */}
                   <div className="p-4 flex flex-col flex-1 justify-between">
-                    <div className="flex items-center   justify-between ">
+                    <div className="flex items-center justify-between ">
                       <h3 className="text-lg text-[#E9C05F] font-semibold truncate">
                         {member.name}
                       </h3>
@@ -69,7 +82,9 @@ const TeamSection = () => {
                         <ArrowUpRight className="w-6 h-6 text-[#E9C05F]" />
                       </button>
                     </div>
-                    <p className="font-medium mb-5 text-sm">{member.position}</p>
+                    <p className="font-medium mb-5 text-sm">
+                      {member.position}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -94,7 +109,7 @@ const TeamSection = () => {
           width: max-content;
         }
       `}</style>
-    </section>
+    </motion.section>
   );
 };
 

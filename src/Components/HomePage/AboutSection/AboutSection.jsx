@@ -1,6 +1,5 @@
 'use client';
 
-import MainButton from '@/Components/button/MainButton';
 import SecondaryButton from '@/Components/button/SecondaryButton';
 import Container from '@/Components/Common/Container';
 import { useEffect, useRef, useState } from 'react';
@@ -15,7 +14,7 @@ export default function AboutSection() {
   const [clients, setClients] = useState(0);
   const [staff, setStaff] = useState(0);
 
-  // Intersection Observer to detect when section is in viewport
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
