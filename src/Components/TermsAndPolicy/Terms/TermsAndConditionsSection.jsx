@@ -75,7 +75,7 @@ export default function TermsAndConditionsSection() {
         <Container>
           <div className="max-w-7xl grid lg:grid-cols-12 gap-8 items-start">
             <section className="lg:col-span-8">
-              <div className="glass-card p-6 md:p-10 rounded-3xl border border-white/8 shadow-2xl">
+              <div className="glass-bg p-6 md:p-10 rounded-3xl">
                 {/* animated list of fixed sections */}
                 <div className="mt-6 space-y-6">
                   {SECTIONS.map((s, idx) => (
@@ -162,24 +162,7 @@ export default function TermsAndConditionsSection() {
           </div>
         </Container>
 
-        <style jsx>{`
-          .glass-card {
-            background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-            backdrop-filter: blur(8px) saturate(120%);
-            -webkit-backdrop-filter: blur(8px) saturate(120%);
-          }
-          .glass-bg {
-            background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-            backdrop-filter: blur(6px) saturate(115%);
-            -webkit-backdrop-filter: blur(6px) saturate(115%);
-          }
-          @media (min-width: 1024px) {
-            main {
-              padding-top: 6rem;
-              padding-bottom: 6rem;
-            }
-          }
-        `}</style>
+  
       </main>
     </>
   );

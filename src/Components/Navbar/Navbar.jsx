@@ -33,26 +33,42 @@ export default function Navbar() {
     { name: 'contact', label: 'Contact', path: '/contact' },
   ];
 
-  const serviceItems = [
-    { name: 'Company Formation', path: '/services/company-formation' },
-    { name: 'Golden Visa', path: '/services/golden-visa' },
-    { name: 'PRO Services', path: '/services/pro-services' },
-    { name: 'Local Sponsorship', path: '/services/local-sponsorship' },
-    { name: 'Visa Services', path: '/services/visa-services' },
-    { name: 'ISO Certification & Trademark Registration', path: '/services/iso-certification-trademark-registration' },
-    { name: 'Virtual Office', path: '/services/virtual-office' },
-    { name: 'Company Liquidation', path: '/services/company-liquidation' },
-    { name: 'Document Attestation', path: '/services/document-attestation' },
-    { name: 'Legal Translation', path: '/services/legal-translation' },
-    { name: 'Insurance & VAT Services', path: '/services/insurance-vat-services' },
-    { name: 'Bank Account Opening', path: '/services/bank-account-opening' },
-    { name: 'Typing Services', path: '/services/typing-services' },
-    { name: 'UAE Government Approvals', path: '/services/uae-government-approvals' },
-    { name: 'Medical & Emirates ID Services', path: '/services/medical-emirates-id-services' },
-    { name: 'FREEZONE', path: '/services/freezone-company-setup' },
-    { name: 'Dubai Court Services', path: '/services/dubai-court-services' },
-    { name: 'Online MOA & POA Services', path: '/services/online-moa-poa-services' },
-  ];
+ const serviceItems = [
+  { name: 'Company Formation', path: '/services/company-formation-dubai' },
+  { name: 'Golden Visa', path: '/services/golden-visa-services-dubai' },
+  { name: 'PRO Services', path: '/services/pro-services-dubai' },
+  { name: 'Local Sponsorship', path: '/services/local-sponsorship-dubai' },
+  { name: 'Visa Services', path: '/services/visa-services-dubai' },
+  { 
+    name: 'ISO Certification & Trademark Registration', 
+    path: '/services/iso-and-trademark-services-dubai' 
+  },
+  { name: 'Virtual Office', path: '/services/virtual-office-dubai' },
+  { name: 'Company Liquidation', path: '/services/company-liquidation-dubai' },
+  { name: 'Document Attestation', path: '/services/document-attestation-dubai' },
+  { name: 'Legal Translation', path: '/services/legal-translation-dubai' },
+  { name: 'Insurance & VAT Services', path: '/services/insurance-vat-services-dubai' },
+  { 
+    name: 'Bank Account Opening', 
+    path: '/services/corporate-bank-account-opening-dubai' 
+  },
+  { name: 'Typing Services', path: '/services/typing-services-dubai' },
+  { 
+    name: 'UAE Government Approvals', 
+    path: '/services/uae-government-approvals-services' 
+  },
+  { 
+    name: 'Medical & Emirates ID Services', 
+    path: '/services/medical-emirates-id-services-dubai' 
+  },
+  { name: 'FREEZONE', path: '/services/freezone-company-setup-dubai' },
+  { name: 'Dubai Court Services', path: '/services/dubai-court-services' },
+  { 
+    name: 'Online MOA & POA Services', 
+    path: '/services/online-moa-poa-services-dubai' 
+  },
+];
+
 
   const licenseItems = [
     { name: 'Commercial License', path: '/license/commercial-license' },
@@ -216,7 +232,7 @@ export default function Navbar() {
             style={{ width: dropdownWidth ? `${dropdownWidth}px` : 'auto' }}
           >
             <div className="max-h-[230px] overflow-y-auto p-6 scrollbar-ultrathin">
-              <div className="grid grid-cols-4 gap-4 text-white text-sm">
+              <div className="grid lg:grid-cols-3 xl:grid-cols-4 gap-4 text-white text-sm">
                 {serviceItems.map((service, i) => (
                   <Link
                     href={service.path}

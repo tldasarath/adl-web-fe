@@ -55,14 +55,14 @@ export default function PrivacyPolicySection() {
 
   return (
     <>
-      <main className="min-h-screen  flex items-center py-8 md:py-0 ">
+<main className="min-h-screen py-8 md:py-0">
         <Container>
-          <div className="w-full max-w-6xl  grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div className="w-full max-w-6xl flex flex-col lg:flex-row gap-8 items-start">
             <motion.section
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
-              className="lg:col-span-8"
+              className="flex-1"
             >
               {/* ********* NOTE: parent is now a plain div (not motion/div with animate="show") ********* */}
               <div className="space-y-6">
@@ -87,7 +87,7 @@ export default function PrivacyPolicySection() {
                   viewport={{ once: false, amount: 0.2 }}
                   className="mt-2"
                 >
-                  <div className="glass-card p-6 rounded-2xl border border-white/10 shadow-xl">
+                  <div className="b p-6 rounded-2xl border border-white/10 shadow-xl">
                     <h3 className="text-base font-semibold text-white">Extra notes</h3>
                     <ul className="mt-3 list-disc list-inside text-white/80 text-sm space-y-2">
                       <li>
@@ -109,7 +109,7 @@ export default function PrivacyPolicySection() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
-              className="lg:col-span-4"
+className="w-full lg:w-80 flex-shrink-0"
               aria-labelledby="privacy-contact-heading"
             >
               <div className="sticky top-20 space-y-6">
@@ -194,20 +194,7 @@ export default function PrivacyPolicySection() {
           </div>
         </Container>
 
-        <style jsx>{`
-          .glass-card {
-            background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
-            backdrop-filter: blur(8px) saturate(120%);
-            -webkit-backdrop-filter: blur(8px) saturate(120%);
-          }
-
-          @media (min-width: 1024px) {
-            main {
-              padding-top: 6rem;
-              padding-bottom: 6rem;
-            }
-          }
-        `}</style>
+      
       </main>
     </>
   );

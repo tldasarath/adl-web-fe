@@ -9,6 +9,14 @@ import OffshoreFormationServices from "@/Components/OffshorePage/OffshoreFormati
 import OffshoreTypes from "@/Components/OffshorePage/OffshoreTypes";
 import WhychooseOffshore from "@/Components/OffshorePage/WhychooseOffshore";
 import React from "react";
+export const metadata = {
+  title:
+    "Offshore Company Formation in UAE | Dubai, RAK & Ajman Offshore | ADL Business Solutions",
+  description:
+    "Set up your UAE offshore company with ADL Business Solutions. We provide fast & compliant offshore company formation in Dubai, RAK, and Ajman with bank account assistance, documentation, and full advisory. Start your tax-efficient global business today.",
+  keywords:
+    "UAE offshore company, Dubai offshore setup, RAK offshore company formation, Ajman offshore business setup, tax-free UAE company, offshore bank account UAE, business setup UAE, ADL Business Solutions",
+};
 
 const page = () => {
     return (

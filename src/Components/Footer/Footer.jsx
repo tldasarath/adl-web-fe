@@ -42,7 +42,7 @@ export default function Footer() {
             {[
               { icon: <FaFacebookF />, link: "https://www.facebook.com/profile.php?id=61581712689548" },
               { icon: <FaInstagram />, link: "https://www.instagram.com/adl_business_solutions_/" },
-              { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/feed/" },
+              { icon: <FaLinkedinIn />, link: "https://www.linkedin.com/in/adl-business-solutions-41369b383/" },
             ].map((social, i) => (
               <a
                 key={i}

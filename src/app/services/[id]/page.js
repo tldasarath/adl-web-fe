@@ -9,6 +9,7 @@ import WhyChooseDubai from "@/Components/ServiceDetails/Choose-Dubai";
 import FAQSection from "@/Components/ServiceDetails/FAQSection";
 import PointsSection from "@/Components/ServiceDetails/PointsSection";
 import WhyChooseSection from "@/Components/ServiceDetails/WhyChooseSection";
+import { blogs } from "@/Datas/blogs";
 import { serviceDetails } from "@/Datas/services";
 import { useParams } from "next/navigation";
 
@@ -34,7 +35,7 @@ export default function SerivceDetails() {
       <WhyChooseSection title={service.section3.title} description={service.section3.description} points={service.section3.points} image={service.section3.image} />
       <WhyChooseDubai title={service.section1.title} description1={service.section1.description1} description2={service.section1.description2} meetingTitle={service.meeting.title} meetingDescription={service.meeting.description} />
       <FAQSection faqs={service.faqs} />
-      <Blogs />
+      <Blogs blogs={blogs.slice(0,5)} />
       <InnerBanner title={"Ready to Launch Your Business in Dubai"} description={"Let ADL Business Solutions handle the paperwork while you focus on growth. We make business setup seamless, fast, and affordable."} buttonText={"Start Your Business Now"} />
       <Footer />
     </div>

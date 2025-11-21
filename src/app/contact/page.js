@@ -1,3 +1,4 @@
+import HeroSection from "@/Components/Common/HeroSection";
 import InnerBanner from "@/Components/Common/InnerBanner";
 import ContactForm from "@/Components/Contact/ContactForm";
 import Footer from "@/Components/Footer/Footer";

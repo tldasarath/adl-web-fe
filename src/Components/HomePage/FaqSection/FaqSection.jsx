@@ -1,24 +1,43 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
 import Container from "@/Components/Common/Container";
 import { faqs } from "@/Datas/faqs";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 export default function FAQSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
-  return (
-    <section className="py-8 md:py-14 relative overflow-hidden">
-      {/* Decorative background */}
-      {/* <div className="absolute left-[80%] -top-10 -z-10">
-        <img
-          src="/assets/images/bg/bubble.png"
-          alt=""
-          className="relative w-[500px] h-[400px] object-contain"
-        />
-      </div> */}
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
+  const controls = useAnimation();
 
+  useEffect(() => {
+    if (isInView) controls.start("visible");
+    else controls.start("hidden");
+  }, [isInView]);
+
+  const leftVariant = {
+    hidden: { opacity: 0, x: -50 },
+    visible: (i) => ({
+      opacity: 1,
+      x: 0,
+      transition: { delay: i * 0.1, duration: 1},
+    }),
+  };
+
+  const rightVariant = {
+    hidden: { opacity: 0, x: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      x: 0,
+      transition: { delay: i * 0.1, duration: 1 },
+    }),
+  };
+
+  return (
+    <section ref={ref} className="py-8 md:py-14 relative overflow-hidden">
       <Container>
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
@@ -27,45 +46,67 @@ export default function FAQSection() {
               FAQ
             </h2>
             <p className="text-base max-w-2xl lg:text-lg mb-8 font-light leading-normal">
-           Find clear answers to common questions about UAE business setup, visas, PRO services, and compliance. Our FAQ section helps you understand processes quickly and confidently.
+              Find clear answers to common questions about UAE business setup, visas,
+              PRO services, and compliance. Our FAQ section helps you understand
+              processes quickly and confidently.
             </p>
           </div>
 
           {/* FAQ Grid */}
-       <div className="flex flex-col md:flex-row md:items-start md:gap-6">
-  <div className="flex-1 flex flex-col gap-6">
-    {faqs
-      .filter((_, i) => i % 2 === 0) // left column
-      .map((faq, index) => (
-        <FAQCard
-          key={index}
-          faq={faq}
-          index={index}
-          hoveredIndex={hoveredIndex}
-          setHoveredIndex={setHoveredIndex}
-        />
-      ))}
-  </div>
-  <div className="flex-1 flex flex-col gap-6">
-    {faqs
-      .filter((_, i) => i % 2 === 1) // right column
-      .map((faq, index) => (
-        <FAQCard
-          key={index + 100}
-          faq={faq}
-          index={index + 100}
-          hoveredIndex={hoveredIndex}
-          setHoveredIndex={setHoveredIndex}
-        />
-      ))}
-  </div>
-</div>
+          <div className="flex flex-col gap-6 md:flex-row md:items-start md:gap-6">
 
+            {/* LEFT COLUMN */}
+            <div className="flex-1 flex flex-col gap-6">
+              {faqs
+                .filter((_, i) => i % 2 === 0)
+                .map((faq, index) => (
+                  <motion.div
+                    key={index}
+                    custom={index}
+                    variants={leftVariant}
+                    initial="hidden"
+                    animate={controls}
+                  >
+                    <FAQCard
+                      faq={faq}
+                      index={index}
+                      hoveredIndex={hoveredIndex}
+                      setHoveredIndex={setHoveredIndex}
+                    />
+                  </motion.div>
+                ))}
+            </div>
+
+            {/* RIGHT COLUMN */}
+            <div className="flex-1 flex flex-col gap-6">
+              {faqs
+                .filter((_, i) => i % 2 === 1)
+                .map((faq, index) => (
+                  <motion.div
+                    key={index + 100}
+                    custom={index}
+                    variants={rightVariant}
+                    initial="hidden"
+                    animate={controls}
+                  >
+                    <FAQCard
+                      faq={faq}
+                      index={index + 100}
+                      hoveredIndex={hoveredIndex}
+                      setHoveredIndex={setHoveredIndex}
+                    />
+                  </motion.div>
+                ))}
+            </div>
+
+          </div>
         </div>
       </Container>
     </section>
   );
 }
+
+/* FAQ CARD */
 const FAQCard = ({ faq, index, hoveredIndex, setHoveredIndex }) => (
   <div
     onMouseEnter={() => setHoveredIndex(index)}
@@ -80,11 +121,10 @@ const FAQCard = ({ faq, index, hoveredIndex, setHoveredIndex }) => (
         }`}
       />
     </div>
+
     <div
       className={`overflow-hidden transition-all duration-500 ease-in-out ${
-        hoveredIndex === index
-          ? "max-h-40 opacity-100"
-          : "max-h-0 opacity-0"
+        hoveredIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
       }`}
     >
       <div className="px-5 pb-4 text-gray-400 text-sm leading-relaxed">

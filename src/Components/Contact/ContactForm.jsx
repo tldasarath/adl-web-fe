@@ -71,7 +71,7 @@ Message: ${formData.message}
   };
 
   return (
-    <div className="relative py-8 md:pb-14 md:pt-48 flex items-center justify-center">
+    <div className="relative py-8 md:pb-14 md:pt-20 lg:pt-60 flex items-center justify-center">
       {/* Background Glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="-z-10 absolute w-[380px] h-[180px] -right-24 top-50 bg-[#376CBC] opacity-30 blur-[100px] rounded-[60%]" />

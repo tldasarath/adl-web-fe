@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const posts = [
   {
@@ -16,13 +20,15 @@ const posts = [
   {
     image: "/assets/images/post/03.jpg",
     title: "Happy Diwali",
-    description: "Your brand is your identity. Your name, your idea, your hard work.",
+    description:
+      "Your brand is your identity. Your name, your idea, your hard work.",
     date: "November 2, 2025",
   },
   {
     image: "/assets/images/post/04.jpg",
     title: "BANKING ON YOUR TERMS",
-    description: "Struggling with UAE document approvals Let our experts handle every step - fast, legal, and hassle-free.",
+    description:
+      "Struggling with UAE document approvals Let our experts handle every step - fast, legal, and hassle-free.",
     date: "October 29, 2025",
   },
   {
@@ -54,44 +60,90 @@ const posts = [
 export default function SocialMediaSection() {
   const duplicatedPosts = [...posts, ...posts];
 
-  return (
-    <section className="py-8 md:py-14 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-2xl mb-5 md:text-3xl text-center main-text font-bold text-white">
-          Social Media
-        </h2>
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
+  const controls = useAnimation();
 
-        <div className="relative">
+  useEffect(() => {
+    if (isInView) controls.start("visible");
+    else controls.start("hidden");
+  }, [isInView, controls]);
+
+  const fadeUpVariant = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.7, ease: "easeOut" },
+    },
+  };
+
+  const cardVariant = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: (i) => ({
+      opacity: 1,
+      scale: 1,
+      transition: { delay: i * 0.08, duration: 0.5 },
+    }),
+  };
+
+  return (
+    <section ref={ref} className="py-8 md:py-14 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
+
+        {/* Heading Animation */}
+        <motion.h2
+          initial="hidden"
+          animate={controls}
+          variants={fadeUpVariant}
+          className="text-2xl mb-5 md:text-3xl text-center main-text font-bold text-white"
+        >
+          Social Media
+        </motion.h2>
+
+        {/* Slider Section */}
+        <motion.div
+          initial="hidden"
+          animate={controls}
+          variants={fadeUpVariant}
+          className="relative"
+        >
           <div className="flex animate-slide-x gap-4 pt-10 w-max">
             {duplicatedPosts.map((post, index) => (
-              <a
-                key={index}
+              <motion.a
                 href="https://www.instagram.com/adl_business_solutions_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-b from-[#1c2334] to-[#0e1424] 
+                key={index}
+                custom={index}
+                variants={cardVariant}
+                initial="hidden"
+                animate={controls}
+                whileHover={{ scale: 1.03 }}
+                transition={{ type: "spring", stiffness: 120 }}
+                className="bg-gradient-to-b from-[#1c2334] to-[#0e1424]
                 rounded-2xl overflow-hidden shadow-md 
-                w-[260px] sm:w-[300px] md:w-[340px] flex-shrink-0 hover:opacity-90 transition"
+                w-[260px] sm:w-[300px] md:w-[340px] flex-shrink-0
+                transition"
               >
-                <div className="relative w-full aspect-[4/5]">
-  <Image
-    src={post.image}
-    alt={post.title}
-    fill
-    className="object-cover"
-  />
-</div>
-
+                <div className="relative w-full aspect-[4/5] rounded-b-none">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
 
                 <div className="p-5">
                   <p className="text-sm md:text-base font-normal mb-3 truncate">
                     {post.description}
                   </p>
                 </div>
-              </a>
+              </motion.a>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
