@@ -103,10 +103,10 @@ const ManagerSection = () => {
           >
             <div className="relative h-60 w-60  md:h-96 md:w-96">
               <Image
-                src="/assets/images/team/person1.png"
+                src="/assets/images/team/ADIL MUHAMMED.jpg"
                 alt="ADIL MUHAMMED"
                 fill
-                className="object-cover"
+                className="object-cover rounded-4xl"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
