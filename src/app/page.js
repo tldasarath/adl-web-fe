@@ -18,16 +18,18 @@ import TeamSection from "@/Components/HomePage/TeamSection/TeamSection";
 import TestimonialSection from "@/Components/HomePage/Testimonial/Testimonial";
 import ValuesSection from "@/Components/HomePage/ValuesSection/ValuesSection";
 import VisaTypesSection from "@/Components/HomePage/VisaTypes/VisaTypesSection";
+import { buildSEO } from "./lib/seo";
 
 
 
-export const metadata = {
+export const metadata = buildSEO({
   title: "Business Setup Services in UAE | ADL Business Solutions | #UAE",
   description:
     "Professional business setup services in UAE by ADL Business Solutions. Expert support for company formation, licensing, visas, and PRO services.",
   keywords:
     "business setup services uae,business setup services dubai,company formation uae,company formation services uae,business setup consultants dubai,dubai business setup,uae company formation experts,start business in dubai,business setup support dubai,business consulting dubai",
-};
+  canonical: "https://adlbusinesssolutions.com/",
+});
 
 export default function Home() {
   return (

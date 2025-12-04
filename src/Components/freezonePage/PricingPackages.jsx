@@ -178,7 +178,7 @@ export default function PricingPackages() {
                         }`}
                       role="status"
                     >
-                      {pkg.price}
+                     AED {pkg.price}
                     </div>
                   </div>
 

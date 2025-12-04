@@ -5,12 +5,19 @@ import Navbar from "@/Components/Navbar/Navbar";
 import GalleryCollage from "@/Components/galleryPage/GalleryCollage";
 
 import React from "react";
-export const metadata = {
-  title: "How to Start a Business in Dubai | Step-by-Step UAE Business Setup Guide",
+import { buildSEO } from "../lib/seo";
+export const metadata = buildSEO({
+  title: "Gallery | ADL Business Solutions | Our Work & Achievements",
   description:
-    "Learn the full process of starting a business in Dubai. ADL Business Solutions explains licensing, registration, and legal compliance for UAE entrepreneurs.",
-  keywords: "business setup Dubai, start business UAE, company formation Dubai",
-};
+    "Explore the ADL Business Solutions gallery showcasing our events, client interactions, business setup achievements, and corporate milestones across the UAE.",
+  keywords:
+    "ADL Business Solutions gallery, UAE business setup gallery, corporate events UAE, business consultancy images, ADL achievements, Dubai business setup portfolio",
+  canonical: "https://adlbusinesssolutions.com/gallery",
+  type: "website",
+  image: "/assets/images/gallery/gallery_img1.jpg", // optional — fallback applies if needed
+});
+
+
 
 const page = () => {
     return (

@@ -78,12 +78,27 @@ export default function Footer() {
             <div className="flex items-center gap-3 ">
 <div className="bg-[#BFA157] rounded-full px-3 py-3">              <FaPhoneAlt className="text-black" />
 </div>
-              <span className="text-gray-300">+971 54 217 9221</span>
+           <div className=" flex items-center">
+  {/* WhatsApp Clickable Number */}
+  <a
+    href="https://wa.me/971566668400"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-gray-300 "
+  >
+    +971 56 666 8400,
+  </a>
+
+  {/* Second Number */}
+  <span className="text-gray-300">04 254 7288</span>
+</div>
+
             </div>
             <div className="flex items-center gap-3">
 <div className="bg-[#BFA157] rounded-full px-3 py-3">
                 <FaEnvelope className="text-black" />
-</div>              <span className="text-gray-300">info@adlbusinesssolutions.com</span>
+</div>             
+ <span className="text-gray-300">info@adlbusinesssolutions.com</span>
             </div>
             <div className="flex items-center gap-3">
           <div className="bg-[#BFA157] rounded-full px-3 py-3">
@@ -133,8 +148,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Divider */}
-        <div className="border-t border-[#E9C05F] mt-8 pt-6 text-sm text-gray-500">
-          © {new Date().getFullYear()} ADL Business Solutions. All Rights Reserved.
+        <div className="border-t border-[#E9C05F] mt-8 pt-6 text-sm ">
+          © {new Date().getFullYear()} ADL Business Solutions by <a href="https://nextmedia.ae/"    target="_blank" 
+    rel="noopener noreferrer">Next Media</a>. All Rights Reserved.
         </div>
       </div>
 </Container>

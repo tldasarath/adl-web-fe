@@ -100,7 +100,7 @@ export const packages = [
           id: "meydan",
           title: "Meydan Free Zone",
           desc: "Digital-first Freezone with affordable licensing.",
-          img: "/assets/images/freezone/category/ifza-freezone-dubai.png",
+          img: "/assets/images/freezone/category/meydan-freezone-dubai.png",
           link: "/meydan-freezone-dubai",
         },
       ],

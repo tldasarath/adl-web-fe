@@ -86,8 +86,9 @@ export default function SetupPackages({
                 {/* Price Tag */}
                 <div className="flex justify-center">
                   <span className="glass-bg text-white text-sm md:text-base font-medium rounded-xl px-4 py-2 shadow-sm">
-                    AED {pkg.startingPriceAED.toLocaleString()}
-                  </span>
+                    AED 
+                    {pkg.startingPriceAED.toLocaleString()}
+                    </span>
                 </div>
               </motion.div>
             );
